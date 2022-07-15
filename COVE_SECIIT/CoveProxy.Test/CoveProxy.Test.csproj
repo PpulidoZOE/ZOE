@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2B1466D-39CE-4165-8453-31B71E0037CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoveProxy.Test</RootNamespace>
+    <AssemblyName>CoveProxy.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.Configuration, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.1.1.2\lib\netstandard1.1\Microsoft.Extensions.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.1.1.2\lib\netstandard1.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.FileExtensions.1.1.2\lib\net451\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Json.1.1.2\lib\net451\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.1.1\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.1.1.1\lib\netstandard1.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Physical.1.1.1\lib\net451\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileSystemGlobbing.1.1.1\lib\net45\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.1.1.2\lib\netstandard1.1\Microsoft.Extensions.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.1.1.2\lib\netstandard1.1\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.1.1.1\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.15.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.15.0\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SW-sdk, Version=0.0.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SW-sdk.0.0.10\lib\net35-client\SW-sdk.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.3.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoveManejadorTest.cs" />
+    <Compile Include="EncriptadorTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoveProxy\CoveProxy.csproj">
+      <Project>{C7531793-D507-4AC3-97AA-0F746203FAAF}</Project>
+      <Name>CoveProxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="COVEIMPTEST001CampoObsModificado.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="COVEIMPTEST001.xml" />
+    <Content Include="COVE_modificado.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="COVE_modificado2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="COVE_modificado_3.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Ejemplos Prueba\Ejemplo_GWT921026L97-IA.xml" />
+    <Content Include="FACT0004MQ - Con acento y con espacio.xml" />
+    <Content Include="FACT0004MQ - Con acento.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="FACT0004MQ - Con espacio.xml" />
+    <Content Include="FACT0004MQ - Sin acento sin espacio.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TEST_COVE.xml" />
+    <Content Include="Timbrado\CertificadoEjemplos\Carvajal\datos certificado.txt" />
+    <Content Include="Timbrado\CertificadoEjemplos\contrasena.txt" />
+    <Content Include="Timbrado\CertificadoEjemplos\Ekomercio\contraseña.txt" />
+    <Content Include="Timbrado\CertificadoEjemplos\FacturacionModerna\contrasen~a.txt" />
+    <Content Include="Timbrado\CertificadoEjemplos\FacturacionModerna\TUMG_contrasena.txt" />
+    <Content Include="Timbrado\CertificadoEjemplos\FolioDigital\Certificado PF.txt" />
+    <Content Include="Timbrado\CertificadoEjemplos\FolioDigital\Certificado PM .txt" />
+    <Content Include="Timbrado\CertificadoEjemplos\PaxFacturacion\contraseña.txt" />
+    <Content Include="Timbrado\DART\CFDIPAX001_17SEP2018.xml" />
+    <Content Include="Timbrado\DART\CFDIPAXF01.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Timbrado\XMLEjemplos\10003.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Carvajal\CFDI_0000.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Timbrado\XMLEjemplos\Carvajal\CFDI_Carvajal.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Timbrado\XMLEjemplos\Carvajal\Ejemplo XML CCE.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Carvajal\ejemplochedraui.XML" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\88877_v2 - Carvajal.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\Diverza\2018-1-001.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\Diverza\2018-1-001TEST.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\Diverza\ERRORES_12345.txt" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\Ejemplo001_CFDI33.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\Emision33_comercio11.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\FD_cce_1.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\cce_1.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\cfdv33-base.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\ejemplochedraui.XML" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\FD_33.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\PaxFacturacion\CFDIPAX001.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\PaxFacturacion\PAX_TEST.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI 3.3\Zoe\CFDI002.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Diverza\10004 - Diverza.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Diverza\Prueba corregida.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Diverza\1000 - Diverza.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Ekomercio\FACTDEF099 - Ekomercio.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FacturacionModerna\10004 - FactModerna.xml" />
+    <Content Include="Timbrado\XMLEjemplos\10004.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FacturacionModerna\1004-FactModerna_Con_Sello.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Timbrado\XMLEjemplos\cfdi c_nomina.xml" />
+    <Content Include="Timbrado\XMLEjemplos\cfdi c_registroFiscal.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Diverza\CFDIconSello-Ejemplo1-CCE-Normal%28Timbre%29-Diverza.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Diverza\CFDIconSello-Ejemplo2-CCE-Muestras%28Timbre%29.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Timbrado\XMLEjemplos\Diverza\CFDIsinSello-Ejemplo1-CCE-Normal%28Emision%29.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Diverza\CFDI Sin Sello - Diverza.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDITest2.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDITest.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI_ComercioExterior.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI_ComercioExterior2.xml" />
+    <Content Include="Timbrado\XMLEjemplos\CFDI_Sin_Sello.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Timbrado\XMLEjemplos\FacturacionModerna\FactModerna_ComercioExterior.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FacturacionModerna\FACTURA-FactModerna.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FacturacionModerna\FACTURA.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Diverza\prueba_cce - Diverza.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FacturacionModerna\prueba_cce.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FacturaComplementoComercioExterior.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Timbrado\XMLEjemplos\FolioDigital\CFDI 3.3\CFDI000.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FolioDigital\CFDI 3.3\CFDI000_TEST.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FolioDigital\CFDI 3.3\ZEFEPRUEBA01.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FolioDigital\FD_XML_Ejemplo Sin Sello.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Timbrado\XMLEjemplos\FolioDigital\FD_XML_Ejemplo.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Timbrado\XMLEjemplos\FacturacionModerna\xml_factmoderna_sellado.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FacturacionModerna\FACTDEF099 - FactModerna.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FacturacionModerna\1000 - FacturacionModerna.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Generados por ZOE\1000.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Generados por ZOE\3250.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Generados por ZOE\5564.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FacturacionModerna\88877 - FactModerna.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Generados por ZOE\88877.xml" />
+    <Content Include="Timbrado\XMLEjemplos\FolioDigital\FD_88877_v2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Timbrado\XMLEjemplos\Carvajal\88877_v2 - Carvajal.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Generados por ZOE\88877_v2.xml" />
+    <Content Include="Timbrado\XMLEjemplos\Generados por ZOE\FACTDEF099.xml" />
+    <Content Include="Timbrado\XSLT\cadenaoriginal_3_2.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timbrado\XSLT\cadenaoriginal_TFD_1_0.xslt" />
+    <Content Include="Timbrado\XSLT\CFDI 3.3\cadenaoriginal_3_3.xslt" />
+    <Content Include="Timbrado\XSLT\CFDI 3.3\cadenaoriginal_TFD_1_1.xslt" />
+    <Content Include="Timbrado\XSLT\CFDI 3.3\ComercioExterior11.xslt" />
+    <Content Include="Timbrado\XSLT\ComercioExterior10.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timbrado\XSLT\SAT cadenaoriginal_3_2.xslt" />
+    <Content Include="Timbrado\XSLT\utilerias.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML Nueva estructura\COVE2-PUNTO90_IA.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML Nueva estructura\COVE2-PUNTO90_NOIA.xml" />
+    <Content Include="XML Nueva estructura\COVE2.xml" />
+    <Content Include="XML Nueva estructura\COVE_AcusePDF.xml" />
+    <Content Include="XML Nueva estructura\ejemplo_cove.xml" />
+    <Content Include="XML Nueva estructura\ejemplo_cove4.xml" />
+    <Content Include="XML Nueva estructura\FACT0002MQ-FACT0003MQ.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML Nueva estructura\FACT0003MQ-FACT0004MQ.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML Nueva estructura\PUNTO90.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML Nueva estructura\VUCEM V4 - Envío.xml" />
+    <Content Include="XML Nueva estructura\VUCEMEnvio.xml" />
+    <Content Include="XML Version 5\COVE2-DOSPARTES_IA.xml" />
+    <Content Include="XML Version 5\COVE3-COVE4_IA.xml" />
+    <Content Include="XML Version 5\COVE3-COVE4_NOIA.xml" />
+    <Content Include="XML Version 5\COVE3_Cove.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML Version 5\DOSPARTES-TEST00004_NOIA.xml" />
+    <Content Include="XML Version 5\DOSPARTES_Cove.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLCaracteresEspeciales\18EMOL-BSLP-33.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLCaracteresEspeciales\18EPT-0273.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="00001000000101739962.cer" />
+    <None Include="00001000000101739962.p12" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="FACT0002MQ-FACT0003MQ_IA.xml" />
+    <Content Include="FACT0002MQ-FACT0003MQ_NOIA.xml" />
+    <None Include="CoveXSD\RecibirCove.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="COVE_modificado_4.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GADS590724tb9\Claveprivada_FIEL_GADS590724TB9_20150703_124032.key" />
+    <None Include="GADS590724tb9\Claveprivada_FIEL_GADS590724TB9_20150703_124032.key.pem" />
+    <None Include="GADS590724tb9\gads590724tb9.cer" />
+    <None Include="GADS590724tb9\gads590724tb9.cer.pem" />
+    <None Include="GADS590724tb9\gads590724tb9.p12" />
+    <None Include="gwt921026l97.cer" />
+    <None Include="gwt921026l97.p12" />
+    <Shadow Include="Test References\CoveProxy.accessor" />
+    <None Include="NPB960219TM5\npb960219tm5.cer" />
+    <None Include="NPB960219TM5\npb960219tm5.p12" />
+    <None Include="packages.config" />
+    <None Include="pmm1106013z4.cer" />
+    <None Include="pmm1106013z4.p12" />
+    <None Include="Timbrado\CertificadoEjemplos\20001000000200000192.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\20001000000200000192.key" />
+    <None Include="Timbrado\CertificadoEjemplos\20001000000200000192.key.pem" />
+    <None Include="Timbrado\CertificadoEjemplos\aaa010101aaa.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\aaa010101aaa.key" />
+    <None Include="Timbrado\CertificadoEjemplos\Carvajal\20001000000100005870.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\Carvajal\20001000000100005870.key" />
+    <None Include="Timbrado\CertificadoEjemplos\Diverza\30001000000300023708.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\Diverza\30001000000300023708.key" />
+    <None Include="Timbrado\CertificadoEjemplos\Ekomercio\CSD01_AAA010101AAA.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\Ekomercio\CSD01_AAA010101AAA.key" />
+    <None Include="Timbrado\CertificadoEjemplos\FacturacionModerna\esi920427886_1210221507s.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\FacturacionModerna\esi920427886_1210221507s.key" />
+    <None Include="Timbrado\CertificadoEjemplos\FacturacionModerna\TUMG620310R95_1210241209S.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\FacturacionModerna\TUMG620310R95_1210241209S.key" />
+    <None Include="Timbrado\CertificadoEjemplos\FolioDigital\CertificadoFirmadoPF.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\FolioDigital\CertificadoFirmadoPM.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\FolioDigital\CSD_GAI020902FG4.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\FolioDigital\CSD_GAI020902FG4.key" />
+    <None Include="Timbrado\CertificadoEjemplos\FolioDigital\LlavePkcs8PF.key" />
+    <None Include="Timbrado\CertificadoEjemplos\FolioDigital\LlavePkcs8PM.key" />
+    <None Include="Timbrado\CertificadoEjemplos\PaxFacturacion\00001000000401656956.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\PaxFacturacion\00001000000409476637.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\PaxFacturacion\Claveprivada_FIEL_BMM080124RT5_20180212_141825.key" />
+    <None Include="Timbrado\CertificadoEjemplos\PaxFacturacion\CSD_Planta_BMM080124RT5_20160307_115627.key" />
+    <None Include="Timbrado\CertificadoEjemplos\PaxFacturacion\CSD_Pruebas_CFDI_MAG041126GT8.cer" />
+    <None Include="Timbrado\CertificadoEjemplos\PaxFacturacion\CSD_Pruebas_CFDI_MAG041126GT8.key" />
+    <None Include="Timbrado\DART\CSD_DART_DE_TIJUANA_S_DE_RL_DE_CV_DTI0511155E8_20160627_084555.key" />
+    <None Include="Timbrado\DART\CSD_DART_DE_TIJUANA_S_DE_RL_DE_CV_DTI0511155E8_20160627_084555s.cer" />
+    <None Include="Timbrado\XMLEjemplos\CFDI 3.3\catCFDI.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Timbrado\XMLEjemplos\CFDI 3.3\cfdv33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Timbrado\XMLEjemplos\CFDI 3.3\tdCFDI.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Timbrado\XSLT\CFDI 3.3\catCFDI.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Timbrado\XSLT\CFDI 3.3\cfdv33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Timbrado\XSLT\CFDI 3.3\ComercioExterior11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Timbrado\XSLT\SATcfdv32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Timbrado\XSLT\SATComercioExterior10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="toar0011165w7.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="toar0011165w7.p12" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AGRUPADA-AGRUPAMQ-IA.xml" />
+    <Content Include="AGRUPADA-AGRUPAMQ-NOIA.xml" />
+    <Content Include="AGRUPAMP.xml" />
+    <Content Include="DF-0000001640.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

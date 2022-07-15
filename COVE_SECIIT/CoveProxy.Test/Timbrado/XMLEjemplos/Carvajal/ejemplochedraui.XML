@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" 
+                  version="3.2" serie="CH" folio="069" fecha="2017-12-25T10:26:42" 
+                  sello="TVlleetPmOVyg6rJf7uYpNzsGVfkPho2ERMYXC4CrExnqVE68IjHmUZhdsJwZQQsmvgazwoTNgWcK02H6m3TbLFJ4B6witirQGqCWeM9Iwg3W2zyiuQlcdnP6VIP3k0JKTRnrw3HRjmerACAzD3ysV83ZJlukleEcVx88CtWWpI=" 
+                  formaDePago="PAGO EN UNA SOLA EXHIBICION" 
+                  noCertificado="00001000000201334075" 
+                  certificado="MIIEhTCCA22gAwIBAgIUMDAwMDEwMDAwMDAyMDEzMzQwNzUwDQYJKoZIhvcNAQEFBQAwggGVMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMSEwHwYJKoZIhvcNAQkBFhJhc2lzbmV0QHNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxFDASBgNVBAcMC0N1YXVodMOpbW9jMRUwEwYDVQQtEwxTQVQ5NzA3MDFOTjMxPjA8BgkqhkiG9w0BCQIML1Jlc3BvbnNhYmxlOiBDZWNpbGlhIEd1aWxsZXJtaW5hIEdhcmPDrWEgR3VlcnJhMB4XDTEyMDYxMjIxMDQ1NVoXDTE2MDYxMjIxMDQ1NVowgcYxIzAhBgNVBAMTGk9SR0FOSVpBQ0lPTiBBTE1VIFNBIERFIENWMSMwIQYDVQQpExpPUkdBTklaQUNJT04gQUxNVSBTQSBERSBDVjEjMCEGA1UEChMaT1JHQU5JWkFDSU9OIEFMTVUgU0EgREUgQ1YxJTAjBgNVBC0THE9BTDA4MDgwNUE2MSAvIE1VTFg2NzA3MzA1SDcxHjAcBgNVBAUTFSAvIE1YTEE2NzA3MzBIREZKUEwwOTEOMAwGA1UECxMFQUxNVTEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKlsFTFOkTn9v+xjru83wBw8oMHDsaC09VKR3HOmqEtqxn5gQpubHVKOpd8wDtSlz6DH1f1kMKoVdNCgwxdbE1gwaEJYejY3Wy1/H9rpiHLYbQV3NxO7Y679RkJDwq4it0elwgrL53jJXBhGq9rbhMPpmxT83Tz6pgMx0WhS7YaxAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBBQUAA4IBAQA4foB1xugULO81zy7q16ZOCVHrO9tZAyKHOJkrROJsMpO/ofyCkXfKKP9nrAYANLYLvGBT1Y93YmyVJyYLLXfWJMH+Bqnnyj9X2psPs+OuMW5ieT6n+RaVwIgQSlervycrPrWOfLJAmxfCNjdGmvp9TXjjfB0Uy/FGXnuGRfVmDuOfRm5VdcF2Sfhh5ymo4YKwBfq6+Tf8MFlyLqWsAQRlfwTeEj9eKvA0DGNAFbBDaOFScNisIMClGN5gqGckEKpmpXYi/Xj8eq7rFfzSirziYUoyev/U59iUG9HN5TIkpmwk8eJOLLYBxktSb21Q5tcO7RrlvjgHZ/RjPPdmJgsa" 
+                  condicionesDePago="60" 
+                  subTotal="36105.01" total="41881.80" metodoDePago="TRANSFERENCIA ELECTRONICA" 
+                  tipoDeComprobante="ingreso" Moneda="MXN" LugarExpedicion="CUAUTITLAN IZCALLI" 
+                  NumCtaPago="NO IDENTIFICADO" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<cfdi:Emisor rfc="FMF970224TA4" nombre="Emisor de Prueba">
+		<cfdi:DomicilioFiscal calle="AV DE LAS MONTAÑAS" noExterior="101-B" noInterior="0" colonia="ATLANTA" localidad="CUAUTITLAN IZCALLI" municipio="CUAUTITLAN IZCALLI" estado="ESTADO DE MEXICO" pais="MEXICO" codigoPostal="54740" />
+		<cfdi:RegimenFiscal Regimen="General de Ley Personas Morales" />
+	</cfdi:Emisor>
+	<cfdi:Receptor rfc="TCH850701RM1" nombre="TIENDAS CHEDRAUI S.A. DE C.V.">
+		<cfdi:Domicilio calle="AV. CONSTITUYENTES" noExterior="1150" noInterior="0" colonia="LOMAS ALTAS" localidad="DISTRITO FEDERAL" municipio="MIGUEL HIDALGO" estado="DISTRITO FEDERAL" pais="MEXICO" codigoPostal="11950" />
+	</cfdi:Receptor>
+	<cfdi:Conceptos>
+		<cfdi:Concepto cantidad="20" unidad="CJ" noIdentificacion="7501145600665" descripcion="Cepillo Iesa Rectangular 66" valorUnitario="156.63" importe="3132.60" />
+		<cfdi:Concepto cantidad="2" unidad="CJ" noIdentificacion="7501145600146" descripcion="Cepillo Iesa 25" valorUnitario="303.44" importe="606.88" />
+		<cfdi:Concepto cantidad="25" unidad="CJ" noIdentificacion="7501145600726" descripcion="Cepillo Iesa Bebe 66" valorUnitario="156.63" importe="3915.75" />
+		<cfdi:Concepto cantidad="32" unidad="CJ" noIdentificacion="7501145600337" descripcion="Cepillo Iesa 33" valorUnitario="197.28" importe="6312.96" />
+		<cfdi:Concepto cantidad="24" unidad="CJ" noIdentificacion="7501145600252" descripcion="Cepillo Iesa Redondo 25" valorUnitario="273.10" importe="6554.40" />
+		<cfdi:Concepto cantidad="19" unidad="CJ" noIdentificacion="7501145600115" descripcion="Cepillo Iesa Arana 11" valorUnitario="197.28" importe="3748.32" />
+		<cfdi:Concepto cantidad="33" unidad="CJ" noIdentificacion="7501145600177" descripcion="Cepillo Iesa Ovalado 17" valorUnitario="262.98" importe="8678.34" />
+		<cfdi:Concepto cantidad="24" unidad="CJ" noIdentificacion="7501145600139" descripcion="Ligas Iesa 2 Piezas" valorUnitario="131.49" importe="3155.76" />
+	</cfdi:Conceptos>
+	<cfdi:Impuestos totalImpuestosTrasladados="5776.79">
+		<cfdi:Traslados>
+			<cfdi:Traslado impuesto="IVA" tasa="16.00" importe="5776.79" />
+		</cfdi:Traslados>
+	</cfdi:Impuestos>
+</cfdi:Comprobante>

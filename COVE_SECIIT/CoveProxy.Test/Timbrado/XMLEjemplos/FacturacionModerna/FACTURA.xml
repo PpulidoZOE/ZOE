@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+                  version="3.2" 
+                  serie="AA" 
+                  folio="4" 
+                  fecha="2016-06-20T10:12:58" 
+  sello="" 
+                  formaDePago="Pago en una sola exhibición" 
+                  noCertificado="" 
+                  certificado="" 
+                  condicionesDePago="Contado" 
+                  subTotal="1498.00" 
+                  descuento="0.00" 
+  Moneda="MXN" 
+                  total="1737.68" 
+                  tipoDeComprobante="ingreso" 
+                  metodoDePago="Cheque" 
+                  LugarExpedicion="San Pedro Garza García, Nuevo León, México" 
+                  NumCtaPago="No identificado">
+  <cfdi:Emisor rfc="TUMG620310R95" nombre="FACTURACION MODERNA SA DE CV">
+    <cfdi:DomicilioFiscal calle="RIO GUADALQUIVIR" noExterior="238" colonia="ORIENTE DEL VALLE" municipio="San Pedro Garza García" estado="Nuevo León" pais="México" codigoPostal="66220"/>
+    <cfdi:RegimenFiscal Regimen="REGIMEN GENERAL DE LEY PERSONAS MORALES"/>
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="XAXX010101000" nombre="PUBLICO EN GENERAL">
+    <cfdi:Domicilio calle="CERRADA DE AZUCENAS" noExterior="109" colonia="REFORMA" municipio="Oaxaca de Juárez" estado="Oaxaca" pais="México" codigoPostal="68050"/>
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="3" unidad="PIEZA" descripcion="CAJA DE HOJAS BLANCAS TAMAÑO CARTA" valorUnitario="450.00" importe="1350.00"/>
+    <cfdi:Concepto cantidad="8" unidad="PIEZA" descripcion="RECOPILADOR PASTA DURA 3 ARILLOS" valorUnitario="18.50" importe="148.00"/>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="239.68">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="16" importe="239.68"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos> 
+ 
+</cfdi:Comprobante>

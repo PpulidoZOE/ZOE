@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="Response" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="Response" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="Response">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FacturasVentaRequest">
+    <wsdl:part name="XMLVenta" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="FacturasVentaResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="FacturaprodPortType">
+    <wsdl:operation name="FacturasVenta">
+      <documentation>FacturasVenta</documentation>
+      <wsdl:input message="tns:FacturasVentaRequest" />
+      <wsdl:output message="tns:FacturasVentaResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FacturaprodBinding" type="tns:FacturaprodPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="FacturasVenta">
+      <soap:operation soapAction="https://apps9.laser.com.mx/WebServicesPro/Pedimento5.php/FacturasVenta/FacturasVenta" style="rpc" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="Response" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="Response" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Facturaprod">
+    <wsdl:port name="FacturaprodPort" binding="tns:FacturaprodBinding">
+      <soap:address location="https://apps9.laser.com.mx:443/WebServicesPro/Pedimento5.php/FacturasVenta" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

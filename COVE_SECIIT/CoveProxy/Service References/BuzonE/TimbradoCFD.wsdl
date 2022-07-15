@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:intf="http://timbrado.buzone.com.mx/TimbradoCFD" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns1="http://timbrado.buzone.com.mx/TimbradoCFD/Schema" xmlns:impl="http://timbrado.buzone.com.mx/TimbradoCFD" targetNamespace="http://timbrado.buzone.com.mx/TimbradoCFD" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://timbrado.buzone.com.mx/TimbradoCFD/Schema">
+      <xsd:complexType name="TimbradoRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="usuario" type="xsd:string" />
+          <xsd:element minOccurs="1" name="password" type="xsd:string" />
+          <xsd:element minOccurs="1" name="xmlCFD" type="xsd:anyType" />
+          <xsd:element minOccurs="0" name="titulo" type="xsd:string" />
+          <xsd:element minOccurs="0" name="conector" type="xsd:string" />
+          <xsd:element minOccurs="0" name="fileType" type="xsd:string" />
+          <xsd:element minOccurs="1" name="returnCFDTimbrado" type="xsd:int" />
+          <xsd:element minOccurs="0" name="comentario" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TimbradoDatosAdicionales">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="batchId" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="status" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="errorList" nillable="true" type="tns1:errorList" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TimbradoResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xmlCFDTimbrado" type="xsd:anyType" />
+          <xsd:element minOccurs="0" name="UUID" type="xsd:string" />
+          <xsd:element minOccurs="0" name="selloSAT" type="xsd:string" />
+          <xsd:element minOccurs="0" name="version" type="xsd:string" />
+          <xsd:element minOccurs="0" name="noCertificadoSAT" type="xsd:string" />
+          <xsd:element minOccurs="0" name="selloCFD" type="xsd:string" />
+          <xsd:element minOccurs="0" name="fechaTimbrado" type="xsd:dateTime" />
+          <xsd:element wsdl:required="false" minOccurs="0" name="rfcProvCertif" type="xsd:string" />
+          <xsd:element wsdl:required="false" minOccurs="0" name="leyenda" type="xsd:string" />
+          <xsd:element name="datosAdicionales" nillable="true" type="tns1:TimbradoDatosAdicionales" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TimbradoError">
+        <xsd:sequence />
+      </xsd:complexType>
+      <xsd:complexType name="errorList">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="unbounded" name="error" type="tns1:error" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="error">
+        <xsd:attribute name="code" type="xsd:string" use="required" />
+        <xsd:attribute name="message" type="xsd:string" use="required" />
+        <xsd:attribute name="detail" type="xsd:string" use="required" />
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://timbrado.buzone.com.mx/TimbradoCFD">
+      <xsd:import namespace="http://timbrado.buzone.com.mx/TimbradoCFD/Schema" />
+      <xsd:element name="in0" type="tns1:TimbradoRequest" />
+      <xsd:element name="timbradoCFDReturn" type="tns1:TimbradoResponse" />
+      <xsd:element name="fault" type="tns1:TimbradoError" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="timbradoCFDResponse">
+    <wsdl:part name="timbradoCFDReturn" element="impl:timbradoCFDReturn" />
+  </wsdl:message>
+  <wsdl:message name="TimbradoError">
+    <wsdl:part name="fault" element="impl:fault" />
+  </wsdl:message>
+  <wsdl:message name="timbradoCFDRequest">
+    <wsdl:part name="in0" element="impl:in0" />
+  </wsdl:message>
+  <wsdl:portType name="TimbradoCFD">
+    <wsdl:operation name="timbradoCFD" parameterOrder="in0">
+      <wsdl:input name="timbradoCFDRequest" message="impl:timbradoCFDRequest" />
+      <wsdl:output name="timbradoCFDResponse" message="impl:timbradoCFDResponse" />
+      <wsdl:fault name="TimbradoError" message="impl:TimbradoError" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TimbradoCFDSoapBinding" type="impl:TimbradoCFD">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="timbradoCFD">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="timbradoCFDRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="timbradoCFDResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="TimbradoError">
+        <wsdlsoap:fault use="literal" name="TimbradoError" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TimbradoCFDService">
+    <wsdl:port name="TimbradoCFD" binding="impl:TimbradoCFDSoapBinding">
+      <wsdlsoap:address location="https://prepws.buzone.com.mx:8448/BuzonEIWTimBrado/services/TimbradoCFD" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

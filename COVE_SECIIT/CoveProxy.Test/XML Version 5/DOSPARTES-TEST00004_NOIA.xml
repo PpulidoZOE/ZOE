@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<solicitarRecibirRelacionFacturasNoIAServicio>
+  <comprobantes>
+    <tipoOperacion>1</tipoOperacion>
+    <fechaExpedicion>2012-01-17</fechaExpedicion>
+    <observaciones></observaciones>
+    <rfcConsultas>
+      <rfcConsulta>GATR730803K93</rfcConsulta>
+    </rfcConsultas>
+    <patentesAduanales>
+      <patenteAduanal>3491</patenteAduanal>
+    </patentesAduanales>
+    <tipoFigura>4</tipoFigura>
+    <correoElectronico>rgarcia@zoeitcustoms.com</correoElectronico>
+    <firmaElectronica>
+      <certificado>aaa99999aaa</certificado>
+      <cadenaOriginal>|TOCE.EXP|DOSPARTES-TEST00004|1|2012-01-17|4|GATR730803K93|3491|DOSPARTES|0|0|1|ENS851002FB0|ENSATEC S.A. DE C.V. &amp;uacute; &amp;nacute; &amp;Nacute; &amp;aacute; &amp;Eacute; &amp;Iacute; &amp;Oacute; &amp;Uacute;|CALLE COLINAS &amp; &lt; &gt; &quot; &#39; &amp;aacute; &amp;eacute; &amp;iacute; &amp;oacute;|11730|COLINAS|TIJUANA|TITJUANA|BAJA CALIFORNIA|MEX|22680|0|irs|cliente para submaquila|calle int|no ext|no int|col|loc|muni|CA|USA|111|Maquina Ruda|6|1.000|USD|15.000000|15.000000|15.0000|0100                        US|1999|213458-9874|Maquina Ruda SM|6|2.000|USD|11.000000|22.000000|22.0000|Maquina Ruda|6|3.000|USD|10.000000|30.000000|30.0000|0100                        US|1999|213458-9874|TEST00004|0|0|1|ENS851002FB0|ENSATEC S.A. DE C.V. &amp;uacute; &amp;nacute; &amp;Nacute; &amp;aacute; &amp;Eacute; &amp;Iacute; &amp;Oacute; &amp;Uacute;|CALLE COLINAS &amp; &lt; &gt; &quot; &#39; &amp;aacute; &amp;eacute; &amp;iacute; &amp;oacute;|11730|COLINAS|TIJUANA|TITJUANA|BAJA CALIFORNIA|MEX|22680|0|irs|cliente para submaquila|calle int|no ext|no int|col|loc|muni|CA|USA|111|ENSAMBLE DE CONECTOR DE METAL PARA LA INDUSTRIA AUTOMATRIZ|12|20.000|USD|78.000000|78.000000|78.0000|TORNILLOS (1)|6|3.000|USD|21.230000|63.690000|63.6900|FORD|MUSTANG|</cadenaOriginal>
+      <firma>bbb888bbb</firma>
+    </firmaElectronica>
+    <numeroRelacionFacturas>DOSPARTES-TEST00004</numeroRelacionFacturas>
+    <facturas>
+      <numeroFactura>DOSPARTES</numeroFactura>
+      <certificadoOrigen>0</certificadoOrigen>
+      <numeroExportadorAutorizado></numeroExportadorAutorizado>
+      <subdivision>0</subdivision>
+      <emisor>
+        <tipoIdentificador>1</tipoIdentificador>
+        <identificacion>ENS851002FB0</identificacion>
+        <apellidoPaterno></apellidoPaterno>
+        <apellidoMaterno></apellidoMaterno>
+        <nombre>ENSATEC S.A. DE C.V. &amp;uacute; &amp;nacute; &amp;Nacute; &amp;aacute; &amp;Eacute; &amp;Iacute; &amp;Oacute; &amp;Uacute;</nombre>
+        <domicilio>
+          <calle>CALLE COLINAS &amp; &lt; &gt; &quot; &#39; &amp;aacute; &amp;eacute; &amp;iacute; &amp;oacute;</calle>
+          <numeroExterior></numeroExterior>
+          <numeroInterior>11730</numeroInterior>
+          <colonia>COLINAS</colonia>
+          <localidad>TIJUANA</localidad>
+          <municipio>TITJUANA</municipio>
+          <entidadFederativa>BAJA CALIFORNIA</entidadFederativa>
+          <pais>MEX</pais>
+          <codigoPostal>22680</codigoPostal>
+        </domicilio>
+      </emisor>
+      <destinatario>
+        <tipoIdentificador>0</tipoIdentificador>
+        <identificacion>irs</identificacion>
+        <apellidoPaterno></apellidoPaterno>
+        <apellidoMaterno></apellidoMaterno>
+        <nombre>cliente para submaquila</nombre>
+        <domicilio>
+          <calle>calle int</calle>
+          <numeroExterior>no ext</numeroExterior>
+          <numeroInterior>no int</numeroInterior>
+          <colonia>col</colonia>
+          <localidad>loc</localidad>
+          <municipio>muni</municipio>
+          <entidadFederativa>CA</entidadFederativa>
+          <pais>USA</pais>
+          <codigoPostal>111</codigoPostal>
+        </domicilio>
+      </destinatario>
+      <mercancias>
+        <descripcionGenerica>Maquina Ruda</descripcionGenerica>
+        <claveUnidadMedida>6</claveUnidadMedida>
+        <tipoMoneda>USD</tipoMoneda>
+        <cantidad>1.000</cantidad>
+        <valorUnitario>15.000000</valorUnitario>
+        <valorTotal>15.000000</valorTotal>
+        <valorDolares>15.0000</valorDolares>
+        <descripcionesEspecificas>
+          <marca>0100                        US</marca>
+          <modelo>1999</modelo>
+          <subModelo></subModelo>
+          <numeroSerie>213458-9874</numeroSerie>
+        </descripcionesEspecificas>
+      </mercancias>
+      <mercancias>
+        <descripcionGenerica>Maquina Ruda SM</descripcionGenerica>
+        <claveUnidadMedida>6</claveUnidadMedida>
+        <tipoMoneda>USD</tipoMoneda>
+        <cantidad>2.000</cantidad>
+        <valorUnitario>11.000000</valorUnitario>
+        <valorTotal>22.000000</valorTotal>
+        <valorDolares>22.0000</valorDolares>
+      </mercancias>
+      <mercancias>
+        <descripcionGenerica>Maquina Ruda</descripcionGenerica>
+        <claveUnidadMedida>6</claveUnidadMedida>
+        <tipoMoneda>USD</tipoMoneda>
+        <cantidad>3.000</cantidad>
+        <valorUnitario>10.000000</valorUnitario>
+        <valorTotal>30.000000</valorTotal>
+        <valorDolares>30.0000</valorDolares>
+        <descripcionesEspecificas>
+          <marca>0100                        US</marca>
+          <modelo>1999</modelo>
+          <subModelo></subModelo>
+          <numeroSerie>213458-9874</numeroSerie>
+        </descripcionesEspecificas>
+      </mercancias>
+    </facturas>
+    <facturas>
+      <numeroFactura>TEST00004</numeroFactura>
+      <certificadoOrigen>0</certificadoOrigen>
+      <numeroExportadorAutorizado></numeroExportadorAutorizado>
+      <subdivision>0</subdivision>
+      <emisor>
+        <tipoIdentificador>1</tipoIdentificador>
+        <identificacion>ENS851002FB0</identificacion>
+        <apellidoPaterno></apellidoPaterno>
+        <apellidoMaterno></apellidoMaterno>
+        <nombre>ENSATEC S.A. DE C.V. &amp;uacute; &amp;nacute; &amp;Nacute; &amp;aacute; &amp;Eacute; &amp;Iacute; &amp;Oacute; &amp;Uacute;</nombre>
+        <domicilio>
+          <calle>CALLE COLINAS &amp; &lt; &gt; &quot; &#39; &amp;aacute; &amp;eacute; &amp;iacute; &amp;oacute;</calle>
+          <numeroExterior></numeroExterior>
+          <numeroInterior>11730</numeroInterior>
+          <colonia>COLINAS</colonia>
+          <localidad>TIJUANA</localidad>
+          <municipio>TITJUANA</municipio>
+          <entidadFederativa>BAJA CALIFORNIA</entidadFederativa>
+          <pais>MEX</pais>
+          <codigoPostal>22680</codigoPostal>
+        </domicilio>
+      </emisor>
+      <destinatario>
+        <tipoIdentificador>0</tipoIdentificador>
+        <identificacion>irs</identificacion>
+        <apellidoPaterno></apellidoPaterno>
+        <apellidoMaterno></apellidoMaterno>
+        <nombre>cliente para submaquila</nombre>
+        <domicilio>
+          <calle>calle int</calle>
+          <numeroExterior>no ext</numeroExterior>
+          <numeroInterior>no int</numeroInterior>
+          <colonia>col</colonia>
+          <localidad>loc</localidad>
+          <municipio>muni</municipio>
+          <entidadFederativa>CA</entidadFederativa>
+          <pais>USA</pais>
+          <codigoPostal>111</codigoPostal>
+        </domicilio>
+      </destinatario>
+      <mercancias>
+        <descripcionGenerica>ENSAMBLE DE CONECTOR DE METAL PARA LA INDUSTRIA AUTOMATRIZ</descripcionGenerica>
+        <claveUnidadMedida>12</claveUnidadMedida>
+        <tipoMoneda>USD</tipoMoneda>
+        <cantidad>20.000</cantidad>
+        <valorUnitario>78.000000</valorUnitario>
+        <valorTotal>78.000000</valorTotal>
+        <valorDolares>78.0000</valorDolares>
+      </mercancias>
+      <mercancias>
+        <descripcionGenerica>TORNILLOS (1)</descripcionGenerica>
+        <claveUnidadMedida>6</claveUnidadMedida>
+        <tipoMoneda>USD</tipoMoneda>
+        <cantidad>3.000</cantidad>
+        <valorUnitario>21.230000</valorUnitario>
+        <valorTotal>63.690000</valorTotal>
+        <valorDolares>63.6900</valorDolares>
+        <descripcionesEspecificas>
+          <marca>FORD</marca>
+          <modelo>MUSTANG</modelo>
+          <subModelo></subModelo>
+          <numeroSerie></numeroSerie>
+        </descripcionesEspecificas>
+      </mercancias>
+    </facturas>
+  </comprobantes>
+</solicitarRecibirRelacionFacturasNoIAServicio>

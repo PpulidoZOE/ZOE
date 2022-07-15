@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<solicitarRecibirCoveServicio>
+  <comprobantes>
+    <tipoOperacion>0</tipoOperacion>
+    <fechaExpedicion>2012-09-07</fechaExpedicion>
+    <observaciones>Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion</observaciones>
+    <rfcConsultas>
+      <rfcConsulta>AIGJ591106T28</rfcConsulta>
+    </rfcConsultas>
+    <patentesAduanales>
+      <patenteAduanal>3051</patenteAduanal>
+    </patentesAduanales>
+    <tipoFigura>5</tipoFigura>
+    <correoElectronico>gluque@zoeitcustoms.com</correoElectronico>
+    <firmaElectronica>
+      <certificado>aaa99999aaa</certificado>
+      <cadenaOriginal>|TOCE.IMP|COVEIMPTEST001|0|2012-09-07|5|Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion-Una larga observacion|AIGJ591106T28|3051|0|0|0|GATR21345555F|RED NETWORK CO. LTD|KEFA ROAD, SCIENCE &amp; INDUSTRIAL PARK|1|NANCHAN DISTRIC, CHENZEN|CHN|518057|1|PMM1106013Z4|HAEMONETICSSSS MEXICO MANUFACTTING S DE LR DE CV|CALLE COLINAS|11731|SECC. COLINAS, PARQUE IND. EL FLORIDO|TIJUANA|TITJUANA|BAJA CALIFORNIA|USA|22244|TORNILLOS (1)|C62_1|1.000|USD|21.230000|21.230000|21.2300|FORD|MUSTANG|TORNILLOS (1)|C62_1|100.000|USD|21.230000|2123.000000|2123.0000|FORD|MUSTANG|</cadenaOriginal>
+      <firma>bbb888bbb</firma>
+    </firmaElectronica>
+    <numeroFacturaOriginal>COVEIMPTEST001</numeroFacturaOriginal>
+    <factura>
+      <certificadoOrigen>0</certificadoOrigen>
+      <numeroExportadorAutorizado></numeroExportadorAutorizado>
+      <subdivision>0</subdivision>
+    </factura>
+    <emisor>
+      <tipoIdentificador>0</tipoIdentificador>
+      <identificacion>GATR21345555F</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>RED NETWORK CO. LTD</nombre>
+      <domicilio>
+        <calle>KEFA ROAD, SCIENCE &amp; INDUSTRIAL PARK</calle>
+        <numeroExterior>1</numeroExterior>
+        <numeroInterior></numeroInterior>
+        <colonia>NANCHAN DISTRIC, CHENZEN</colonia>
+        <localidad></localidad>
+        <municipio></municipio>
+        <entidadFederativa></entidadFederativa>
+        <pais>CHN</pais>
+        <codigoPostal>518057</codigoPostal>
+      </domicilio>
+    </emisor>
+    <destinatario>
+      <tipoIdentificador>1</tipoIdentificador>
+      <identificacion>PMM1106013Z4</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>HAEMONETICSSSS MEXICO MANUFACTTING S DE LR DE CV</nombre>
+      <domicilio>
+        <calle>CALLE COLINAS</calle>
+        <numeroExterior>11731</numeroExterior>
+        <numeroInterior></numeroInterior>
+        <colonia>SECC. COLINAS, PARQUE IND. EL FLORIDO</colonia>
+        <localidad>TIJUANA</localidad>
+        <municipio>TITJUANA</municipio>
+        <entidadFederativa>BAJA CALIFORNIA</entidadFederativa>
+        <pais>USA</pais>
+        <codigoPostal>22244</codigoPostal>
+      </domicilio>
+    </destinatario>
+    <mercancias>
+      <descripcionGenerica>TORNILLOS (1)</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>1.000</cantidad>
+      <valorUnitario>21.230000</valorUnitario>
+      <valorTotal>21.230000</valorTotal>
+      <valorDolares>21.2300</valorDolares>
+      <descripcionesEspecificas>
+        <marca>FORD</marca>
+        <modelo>MUSTANG</modelo>
+        <subModelo></subModelo>
+        <numeroSerie></numeroSerie>
+      </descripcionesEspecificas>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>TORNILLOS (1)</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>100.000</cantidad>
+      <valorUnitario>21.230000</valorUnitario>
+      <valorTotal>2123.000000</valorTotal>
+      <valorDolares>2123.0000</valorDolares>
+      <descripcionesEspecificas>
+        <marca>FORD</marca>
+        <modelo>MUSTANG</modelo>
+        <subModelo></subModelo>
+        <numeroSerie></numeroSerie>
+      </descripcionesEspecificas>
+    </mercancias>
+  </comprobantes>
+</solicitarRecibirCoveServicio>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd http://www.sat.gob.mx/ComercioExterior11 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd" xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" Version="3.3" Folio="CFDIPAXF01" Fecha="2018-08-21T12:15:44" FormaPago="01" Sello="" NoCertificado="00001000000402930765" Certificado="" TipoCambio="19.0000" CondicionesDePago="Contado" SubTotal="88325.00" Descuento="0.00" Moneda="USD" Total="88325.00" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="20000" >
+  <cfdi:Emisor Rfc="DTI0511155E8" RegimenFiscal="601" Nombre="WILLIS DE MEXICO, S.A. DE C.V."/>
+  <cfdi:Receptor Rfc="XEXX010101000" UsoCFDI="P01" ResidenciaFiscal="USA" NumRegIdTrib="666454444" Nombre="WILLIS CONSTRUCTION CO." />
+  <cfdi:Conceptos>
+    <cfdi:Concepto Cantidad="2.000" ClaveUnidad="18" Unidad="06" Descripcion="COMPRESOR DE AIRE" ValorUnitario="5800.00" Importe="11600.0000" Descuento="0.00" ClaveProdServ="01010101" NoIdentificacion="MQ000032-002"/>
+    <cfdi:Concepto Cantidad="3.000" ClaveUnidad="18" Unidad="06" Descripcion="COMPRESOR DE AIRE ACONDICIONADO" ValorUnitario="20000.00" Importe="60000.0000" Descuento="0.00" ClaveProdServ="01010101" NoIdentificacion="MQ000032-003"/>
+    <cfdi:Concepto Cantidad="3.000" ClaveUnidad="18" Unidad="06" Descripcion="COMPRESOR DE AIRE" ValorUnitario="5575.00" Importe="16725.0000" Descuento="0.00" ClaveProdServ="01010101" NoIdentificacion="MQ000032-004"/>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="0.00" >
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <cce11:ComercioExterior Version="1.1" TipoOperacion="2" ClaveDePedimento="A1" CertificadoOrigen="0" Incoterm="DAF" Subdivision="0" TipoCambioUSD="19.0000" TotalUSD="88325.00" >
+      <cce11:Emisor >
+        <cce11:Domicilio Calle="CALLE PEPE NADOR" Colonia="0001" Municipio="001" Estado="AGU" Pais="MEX" CodigoPostal="20000" />
+      </cce11:Emisor>
+      <cce11:Receptor>
+        <cce11:Domicilio Calle="Macedio Alcala no.73" NumeroExterior="4544" Colonia="0001" Municipio="001" Estado="AL" Pais="USA" CodigoPostal="20000" />
+      </cce11:Receptor>
+      <cce11:Mercancias>
+        <cce11:Mercancia NoIdentificacion="MQ000032-002" FraccionArancelaria="84144099" ValorDolares="11600.00" >
+          <cce11:DescripcionesEspecificas Marca="ABD" Modelo="CDE" NumeroSerie="FGH" />
+        </cce11:Mercancia>
+        <cce11:Mercancia NoIdentificacion="MQ000032-003" FraccionArancelaria="84144099" ValorDolares="60000.00" >
+          <cce11:DescripcionesEspecificas Marca="ABD_1" Modelo="CDE_1" NumeroSerie="FGH_1" />
+        </cce11:Mercancia>
+        <cce11:Mercancia NoIdentificacion="MQ000032-004" FraccionArancelaria="84144099" ValorDolares="16725.00" >
+          <cce11:DescripcionesEspecificas Marca="ABD_2" Modelo="CDE_2" NumeroSerie="FGH_2" />
+        </cce11:Mercancia>
+      </cce11:Mercancias>
+    </cce11:ComercioExterior>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

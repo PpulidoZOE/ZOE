@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd http://www.sat.gob.mx/terceros http://www.sat.gob.mx/sitio_internet/cfd/terceros/terceros11.xsd" version="3.2" serie="PGN" folio="0003950" fecha="2013-06-11T04:33:54" sello="COThfR2dNAeqJGj6KCxzkdgNbJpA443dOdyLqVvwQu8aR9TarNlTtdqzOIsahEZQT50UnG/rsCSqUITnhr6wAsk4GDQd04APNtgU2/FD0/+aFoBF1CaXAxs3X68E9seSn+TW2b1JPjCigNHOrQ+ibHsWAYZ0kF1GJpeyRwM7fPA=" formaDePago="PAGO EN UNA SOLA EXHIBICION" noCertificado="20001000000100005867" certificado="MIIEdDCCA1ygAwIBAgIUMjAwMDEwMDAwMDAxMDAwMDU4NjcwDQYJKoZIhvcNAQEFBQAwggFvMRgwFgYDVQQDDA9BLkMuIGRlIHBydWViYXMxLzAtBgNVBAoMJlNlcnZpY2lvIGRlIEFkbWluaXN0cmFjacOzbiBUcmlidXRhcmlhMTgwNgYDVQQLDC9BZG1pbmlzdHJhY2nDs24gZGUgU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjacOzbjEpMCcGCSqGSIb3DQEJARYaYXNpc25ldEBwcnVlYmFzLnNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxEjAQBgNVBAcMCUNveW9hY8OhbjEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTIwMAYJKoZIhvcNAQkCDCNSZXNwb25zYWJsZTogSMOpY3RvciBPcm5lbGFzIEFyY2lnYTAeFw0xMjA3MjcxNzAyMDBaFw0xNjA3MjcxNzAyMDBaMIHbMSkwJwYDVQQDEyBBQ0NFTSBTRVJWSUNJT1MgRU1QUkVTQVJJQUxFUyBTQzEpMCcGA1UEKRMgQUNDRU0gU0VSVklDSU9TIEVNUFJFU0FSSUFMRVMgU0MxKTAnBgNVBAoTIEFDQ0VNIFNFUlZJQ0lPUyBFTVBSRVNBUklBTEVTIFNDMSUwIwYDVQQtExxBQUEwMTAxMDFBQUEgLyBIRUdUNzYxMDAzNFMyMR4wHAYDVQQFExUgLyBIRUdUNzYxMDAzTURGUk5OMDkxETAPBgNVBAsTCFVuaWRhZCAxMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2TTQSPONBOVxpXv9wLYo8jezBrb34i/tLx8jGdtyy27BcesOav2c1NS/Gdv10u9SkWtwdy34uRAVe7H0a3VMRLHAkvp2qMCHaZc4T8k47Jtb9wrOEh/XFS8LgT4y5OQYo6civfXXdlvxWU/gdM/e6I2lg6FGorP8H4GPAJ/qCNwIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQUFAAOCAQEATxMecTpMbdhSHo6KVUg4QVF4Op2IBhiMaOrtrXBdJgzGotUFcJgdBCMjtTZXSlq1S4DG1jr8p4NzQlzxsdTxaB8nSKJ4KEMgIT7E62xRUj15jI49qFz7f2uMttZLNThipunsN/NF1XtvESMTDwQFvas/Ugig6qwEfSZc0MDxMpKLEkEePmQwtZD+zXFSMVa6hmOu4M+FzGiRXbj4YJXn9Myjd8xbL/c+9UIcrYoZskxDvMxc6/6M3rNNDY3OFhBK+V/sPMzWWGt8S1yjmtPfXgFs1t65AZ2hcTwTAuHrKwDatJ1ZPfa482ZBROAAX1waz7WwXp0gso7sDCm2/yUVww==" condicionesDePago="90" subTotal="153" total="1.16" metodoDePago="NO IDENTIFICADO" tipoDeComprobante="egreso" Moneda="MXN" LugarExpedicion="MEXICO, D.F." NumCtaPago="NO IDENTIFICADO" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:terceros="http://www.sat.gob.mx/terceros">
+	<cfdi:Emisor rfc="LAI860308KB9" nombre="PAPELERA GENERAL, S.A. DE C.V.">
+		<cfdi:DomicilioFiscal calle="AV LOS ANGELES # 303 -1B" noExterior="303" noInterior="1B" colonia="COL. SAN MARTIN XOCHINAHUAC" municipio="AZCAPOTZALCO" estado="D.F." pais="MEXICO" codigoPostal="02120" />
+		<cfdi:ExpedidoEn calle="AV LOS ANGELES # 303 -1B" municipio="COL. SAN MARTIN XOCHINAHUAC AZCAPOTZALCO" estado="D.F" pais="MEXICO" codigoPostal="02120" />
+		<cfdi:RegimenFiscal Regimen="General de Ley P.M." />
+	</cfdi:Emisor>
+	<cfdi:Receptor rfc="PRO840423SG8" nombre="PROPIMEX S DE RL DE CV">
+		<cfdi:Domicilio calle="MARIO PANI # 100 PISO 7" colonia="SANTA FE" municipio="CUAJIMALPA" estado="DISTRITO FEDERAL" pais="MEXICO" codigoPostal="05348" />
+	</cfdi:Receptor>
+	<cfdi:Conceptos>
+		<cfdi:Concepto cantidad="240" unidad="box" noIdentificacion="1181915" descripcion="JGO.BAÑO FLOR CRUDO" valorUnitario="75.00" importe="18000.00">
+			<cfdi:ComplementoConcepto>
+				<terceros:PorCuentadeTerceros version="1.1" rfc="LODO82012915" nombre="CARVAJAL2">
+					<terceros:InformacionFiscalTercero calle="Nuevo Leon" noExterior="24" colonia="Lazaro Cardenas" localidad="Estado de México" referencia="A 15 minutos de Mundo E" municipio="Tlalnepantla" estado="Edo. de Mex." pais="México" codigoPostal="54329" />
+					<terceros:InformacionAduanera numero="65050" fecha="2013-01-14" />
+					<terceros:Impuestos>
+						<terceros:Retenciones>
+							<terceros:Retencion impuesto="IVA" importe="150.50" />
+							<terceros:Retencion impuesto="ISR" importe="200.00" />
+						</terceros:Retenciones>
+						<terceros:Traslados>
+							<terceros:Traslado impuesto="IVA" tasa="1500.00" importe="10.00" />
+							<terceros:Traslado impuesto="IEPS" tasa="300.00" importe="340.00" />
+						</terceros:Traslados>
+					</terceros:Impuestos>
+				</terceros:PorCuentadeTerceros>
+			</cfdi:ComplementoConcepto>
+		</cfdi:Concepto>
+		<cfdi:Concepto cantidad="240" unidad="box" noIdentificacion="1181915" descripcion="JGO.BAÑO FLOR CRUDO" valorUnitario="75.00" importe="18000.00">
+			<cfdi:ComplementoConcepto>
+				<terceros:PorCuentadeTerceros version="1.1" rfc="LODO82012915" nombre="CARVAJAL2">
+					<terceros:InformacionFiscalTercero calle="Nuevo Leon" noExterior="24" colonia="Lazaro Cardenas" localidad="Estado de México" referencia="A 15 minutos de Mundo E" municipio="Tlalnepantla" estado="Edo. de Mex." pais="México" codigoPostal="54329" />
+					<terceros:InformacionAduanera numero="65050" fecha="2013-01-14" />
+					<terceros:Impuestos>
+						<terceros:Retenciones>
+							<terceros:Retencion impuesto="IVA" importe="150.50" />
+							<terceros:Retencion impuesto="ISR" importe="200.00" />
+						</terceros:Retenciones>
+						<terceros:Traslados>
+							<terceros:Traslado impuesto="IVA" tasa="1500.00" importe="10.00" />
+							<terceros:Traslado impuesto="IEPS" tasa="300.00" importe="340.00" />
+						</terceros:Traslados>
+					</terceros:Impuestos>
+				</terceros:PorCuentadeTerceros>
+			</cfdi:ComplementoConcepto>
+		</cfdi:Concepto>
+		<cfdi:Concepto cantidad="240" unidad="box" noIdentificacion="1181915" descripcion="JGO.BAÑO FLOR CRUDO" valorUnitario="75.00" importe="18000.00">
+			<cfdi:ComplementoConcepto>
+				<terceros:PorCuentadeTerceros version="1.1" rfc="LODO82012915" nombre="CARVAJAL2">
+					<terceros:InformacionFiscalTercero calle="Nuevo Leon" noExterior="24" colonia="Lazaro Cardenas" localidad="Estado de México" referencia="A 15 minutos de Mundo E" municipio="Tlalnepantla" estado="Edo. de Mex." pais="México" codigoPostal="54329" />
+					<terceros:InformacionAduanera numero="65050" fecha="2013-01-14" />
+					<terceros:Impuestos>
+						<terceros:Retenciones>
+							<terceros:Retencion impuesto="IVA" importe="150.50" />
+							<terceros:Retencion impuesto="ISR" importe="200.00" />
+						</terceros:Retenciones>
+						<terceros:Traslados>
+							<terceros:Traslado impuesto="IVA" tasa="1500.00" importe="10.00" />
+							<terceros:Traslado impuesto="IEPS" tasa="300.00" importe="340.00" />
+						</terceros:Traslados>
+					</terceros:Impuestos>
+				</terceros:PorCuentadeTerceros>
+			</cfdi:ComplementoConcepto>
+		</cfdi:Concepto>
+		<cfdi:Concepto cantidad="240" unidad="box" noIdentificacion="1181915" descripcion="JGO.BAÑO FLOR CRUDO" valorUnitario="75.00" importe="18000.00">
+			<cfdi:ComplementoConcepto>
+				<terceros:PorCuentadeTerceros version="1.1" rfc="LODO82012915" nombre="CARVAJAL2">
+					<terceros:InformacionFiscalTercero calle="Nuevo Leon" noExterior="24" colonia="Lazaro Cardenas" localidad="Estado de México" referencia="A 15 minutos de Mundo E" municipio="Tlalnepantla" estado="Edo. de Mex." pais="México" codigoPostal="54329" />
+					<terceros:InformacionAduanera numero="65050" fecha="2013-01-14" />
+					<terceros:Impuestos>
+						<terceros:Retenciones>
+							<terceros:Retencion impuesto="IVA" importe="150.50" />
+							<terceros:Retencion impuesto="ISR" importe="200.00" />
+						</terceros:Retenciones>
+						<terceros:Traslados>
+							<terceros:Traslado impuesto="IVA" tasa="1500.00" importe="10.00" />
+							<terceros:Traslado impuesto="IEPS" tasa="300.00" importe="340.00" />
+						</terceros:Traslados>
+					</terceros:Impuestos>
+				</terceros:PorCuentadeTerceros>
+			</cfdi:ComplementoConcepto>
+		</cfdi:Concepto>
+		<cfdi:Concepto cantidad="240" unidad="box" noIdentificacion="1181915" descripcion="JGO.BAÑO FLOR CRUDO" valorUnitario="75.00" importe="18000.00">
+			<cfdi:ComplementoConcepto>
+				<terceros:PorCuentadeTerceros version="1.1" rfc="LODO82012915" nombre="CARVAJAL2">
+					<terceros:InformacionFiscalTercero calle="Nuevo Leon" noExterior="24" colonia="Lazaro Cardenas" localidad="Estado de México" referencia="A 15 minutos de Mundo E" municipio="Tlalnepantla" estado="Edo. de Mex." pais="México" codigoPostal="54329" />
+					<terceros:InformacionAduanera numero="65050" fecha="2013-01-14" />
+					<terceros:Impuestos>
+						<terceros:Retenciones>
+							<terceros:Retencion impuesto="IVA" importe="150.50" />
+							<terceros:Retencion impuesto="ISR" importe="200.00" />
+						</terceros:Retenciones>
+						<terceros:Traslados>
+							<terceros:Traslado impuesto="IVA" tasa="1500.00" importe="10.00" />
+							<terceros:Traslado impuesto="IEPS" tasa="300.00" importe="340.00" />
+						</terceros:Traslados>
+					</terceros:Impuestos>
+				</terceros:PorCuentadeTerceros>
+			</cfdi:ComplementoConcepto>
+		</cfdi:Concepto>
+		<cfdi:Concepto cantidad="240" unidad="box" noIdentificacion="1181915" descripcion="JGO.BAÑO FLOR CRUDO" valorUnitario="75.00" importe="18000.00">
+			<cfdi:ComplementoConcepto>
+				<terceros:PorCuentadeTerceros version="1.1" rfc="LODO82012915" nombre="CARVAJAL2">
+					<terceros:InformacionFiscalTercero calle="Nuevo Leon" noExterior="24" colonia="Lazaro Cardenas" localidad="Estado de México" referencia="A 15 minutos de Mundo E" municipio="Tlalnepantla" estado="Edo. de Mex." pais="México" codigoPostal="54329" />
+					<terceros:InformacionAduanera numero="65050" fecha="2013-01-14" />
+					<terceros:Impuestos>
+						<terceros:Retenciones>
+							<terceros:Retencion impuesto="IVA" importe="150.50" />
+							<terceros:Retencion impuesto="ISR" importe="200.00" />
+						</terceros:Retenciones>
+						<terceros:Traslados>
+							<terceros:Traslado impuesto="IVA" tasa="1500.00" importe="10.00" />
+							<terceros:Traslado impuesto="IEPS" tasa="300.00" importe="340.00" />
+						</terceros:Traslados>
+					</terceros:Impuestos>
+				</terceros:PorCuentadeTerceros>
+			</cfdi:ComplementoConcepto>
+		</cfdi:Concepto>
+		<cfdi:Concepto cantidad="240" unidad="box" noIdentificacion="1181915" descripcion="JGO.BAÑO FLOR CRUDO" valorUnitario="75.00" importe="18000.00">
+			<cfdi:ComplementoConcepto>
+				<terceros:PorCuentadeTerceros version="1.1" rfc="LODO82012915" nombre="CARVAJAL2">
+					<terceros:InformacionFiscalTercero calle="Nuevo Leon" noExterior="24" colonia="Lazaro Cardenas" localidad="Estado de México" referencia="A 15 minutos de Mundo E" municipio="Tlalnepantla" estado="Edo. de Mex." pais="México" codigoPostal="54329" />
+					<terceros:InformacionAduanera numero="65050" fecha="2013-01-14" />
+					<terceros:Impuestos>
+						<terceros:Retenciones>
+							<terceros:Retencion impuesto="IVA" importe="150.50" />
+							<terceros:Retencion impuesto="ISR" importe="200.00" />
+						</terceros:Retenciones>
+						<terceros:Traslados>
+							<terceros:Traslado impuesto="IVA" tasa="1500.00" importe="10.00" />
+							<terceros:Traslado impuesto="IEPS" tasa="300.00" importe="340.00" />
+						</terceros:Traslados>
+					</terceros:Impuestos>
+				</terceros:PorCuentadeTerceros>
+			</cfdi:ComplementoConcepto>
+		</cfdi:Concepto>
+		<cfdi:Concepto cantidad="240" unidad="box" noIdentificacion="1181915" descripcion="JGO.BAÑO FLOR CRUDO" valorUnitario="75.00" importe="18000.00">
+			<cfdi:ComplementoConcepto>
+				<terceros:PorCuentadeTerceros version="1.1" rfc="LODO82012915" nombre="CARVAJAL2">
+					<terceros:InformacionFiscalTercero calle="Nuevo Leon" noExterior="24" colonia="Lazaro Cardenas" localidad="Estado de México" referencia="A 15 minutos de Mundo E" municipio="Tlalnepantla" estado="Edo. de Mex." pais="México" codigoPostal="54329" />
+					<terceros:InformacionAduanera numero="65050" fecha="2013-01-14" />
+					<terceros:Impuestos>
+						<terceros:Retenciones>
+							<terceros:Retencion impuesto="IVA" importe="150.50" />
+							<terceros:Retencion impuesto="ISR" importe="200.00" />
+						</terceros:Retenciones>
+						<terceros:Traslados>
+							<terceros:Traslado impuesto="IVA" tasa="1500.00" importe="10.00" />
+							<terceros:Traslado impuesto="IEPS" tasa="300.00" importe="340.00" />
+						</terceros:Traslados>
+					</terceros:Impuestos>
+				</terceros:PorCuentadeTerceros>
+			</cfdi:ComplementoConcepto>
+		</cfdi:Concepto>
+		<cfdi:Concepto cantidad="240" unidad="box" noIdentificacion="1181915" descripcion="JGO.BAÑO FLOR CRUDO" valorUnitario="75.00" importe="18000.00">
+			<cfdi:ComplementoConcepto>
+				<terceros:PorCuentadeTerceros version="1.1" rfc="LODO82012915" nombre="CARVAJAL2">
+					<terceros:InformacionFiscalTercero calle="Nuevo Leon" noExterior="24" colonia="Lazaro Cardenas" localidad="Estado de México" referencia="A 15 minutos de Mundo E" municipio="Tlalnepantla" estado="Edo. de Mex." pais="México" codigoPostal="54329" />
+					<terceros:InformacionAduanera numero="65050" fecha="2013-01-14" />
+					<terceros:Impuestos>
+						<terceros:Retenciones>
+							<terceros:Retencion impuesto="IVA" importe="150.50" />
+							<terceros:Retencion impuesto="ISR" importe="200.00" />
+						</terceros:Retenciones>
+						<terceros:Traslados>
+							<terceros:Traslado impuesto="IVA" tasa="1500.00" importe="10.00" />
+							<terceros:Traslado impuesto="IEPS" tasa="300.00" importe="340.00" />
+						</terceros:Traslados>
+					</terceros:Impuestos>
+				</terceros:PorCuentadeTerceros>
+			</cfdi:ComplementoConcepto>
+		</cfdi:Concepto>
+		<cfdi:Concepto cantidad="240" unidad="box" noIdentificacion="1181915" descripcion="JGO.BAÑO FLOR CRUDO" valorUnitario="75.00" importe="18000.00">
+			<cfdi:ComplementoConcepto>
+				<terceros:PorCuentadeTerceros version="1.1" rfc="LODO82012915" nombre="CARVAJAL2">
+					<terceros:InformacionFiscalTercero calle="Nuevo Leon" noExterior="24" colonia="Lazaro Cardenas" localidad="Estado de México" referencia="A 15 minutos de Mundo E" municipio="Tlalnepantla" estado="Edo. de Mex." pais="México" codigoPostal="54329" />
+					<terceros:InformacionAduanera numero="65050" fecha="2013-01-14" />
+					<terceros:Impuestos>
+						<terceros:Retenciones>
+							<terceros:Retencion impuesto="IVA" importe="150.50" />
+							<terceros:Retencion impuesto="ISR" importe="200.00" />
+						</terceros:Retenciones>
+						<terceros:Traslados>
+							<terceros:Traslado impuesto="IVA" tasa="1500.00" importe="10.00" />
+							<terceros:Traslado impuesto="IEPS" tasa="300.00" importe="340.00" />
+						</terceros:Traslados>
+					</terceros:Impuestos>
+				</terceros:PorCuentadeTerceros>
+			</cfdi:ComplementoConcepto>
+		</cfdi:Concepto>
+	</cfdi:Conceptos>	
+	<cfdi:Impuestos totalImpuestosTrasladados="0.16">
+		<cfdi:Traslados>
+			<cfdi:Traslado impuesto="IVA" tasa="16.00" importe="0.16" />
+		</cfdi:Traslados>
+	</cfdi:Impuestos>
+	<cfdi:Complemento>
+	</cfdi:Complemento>
+	<cfdi:Addenda>
+		<lev1add:EDCINVOICE xsi:schemaLocation="http://www.edcinvoice.com/lev1add http://www.edcinvoice.com/lev1add/lev1add.xsd" xmlns:lev1add="http://www.edcinvoice.com/lev1add">
+			[H0]|PRO840423SG8|901484|9.32||20001000000100005867|1|P|CARVAJAL2||
+			[H1]|PGN|0003950||2013-05-23T14:42:32|5512365786||PAGO EN UNA SOLA EXHIBICION|90|O|NOTA DE CREDITO|||||||||||280308|centroCostos/||0004017153|16||324155||MEXICO, D.F.|NO IDENTIFICADO|MXN||2013-05-23T00:00:00||F142|NC POR CANCELACION DE LA FACTURA 39398|DE LA PRUEBA DE LEVICOM||victor.villaseñor@ofixpres.com.mx||||(UN PESOS M.N. 16/100 )|I02|P||||0345726|NETO A 90 DIAS FECHA DE FACTURA|9|
+			[H2]|PAPELERA GENERAL, S.A. DE C.V.|LAI860308KB9||AV LOS ANGELES # 303 -1B|303|1B|COL. SAN MARTIN XOCHINAHUAC|||AZCAPOTZALCO|D.F.|MEXICO|02120|General de Ley P.M.||028  ARIANNA GARCIA MARIN||AZCAPOTZALCO 01-426|0@1.00|1.00@0.160@0.00@1.16||||****NO IDENTIFICADO|
+			[H3]|AZCAPOTZALCO|||AV LOS ANGELES # 303 -1B||||||COL. SAN MARTIN XOCHINAHUAC AZCAPOTZALCO|D.F|MEXICO|02120||||||||||||
+			[H4]|PROPIMEX S DE RL DE CV|PRO840423SG8||MARIO PANI # 100 PISO 7|||SANTA FE|||CUAJIMALPA|DISTRITO FEDERAL|MEXICO|05348|||4246411|||||||||
+			[H5]|||||||||||||||||||||||||
+			[D]|||SACAPUNTAS PLASTICO||1.00|PIEZA|PIEZA|1.00||||||||||||||||1.00|16||1.00||||439630|||||1.00|1.00|0.16|||||||||||||||||||||||||||||||||||
+			[S]|1.00||||||.16||1.16|||16|||||||||||||||||||||||1.16|1.00||VIVIANA CORDOVA||
+			[CO]|||3.2|2013-05-23T14:42:32|egreso|PAGO EN UNA SOLA EXHIBICION|90|1.00|MXN|1.16|NO IDENTIFICADO|MEXICO, D.F.|NO IDENTIFICADO|LAI860308KB9|PAPELERA GENERAL, S.A. DE C.V.|AV LOS ANGELES # 303 -1B|303|1B|COL. SAN MARTIN XOCHINAHUAC|AZCAPOTZALCO|D.F.|MEXICO|02120|AV LOS ANGELES # 303 -1B|COL. SAN MAR|
+			[CO]|TIN XOCHINAHUAC AZCAPOTZALCO|D.F|MEXICO|02120|General de Ley P.M.|PRO840423SG8|PROPIMEX S DE RL DE CV|MARIO PANI # 100 PISO 7|SANTA FE|CUAJIMALPA|DISTRITO FEDERAL|MEXICO|05348|1.00|PIEZA|SACAPUNTAS PLASTICO|1.00|1.00|IVA|16.00|0.16|0.16|||
+			[SE]|TTLpwDiXanfw2gKMZ2fcTThR2PqgD0DfG4+6pXM8MVBvrDrEQKPpcoqPE+63GbyHHf7t5EJ5BSrWWFLg2nLkHzdKLM4VbDk5s481YCAdDAsJLp3yQgG76nAjU5VZxUIJDdQylVEuUbXdRS3P1FaKEmi7RccJM3LsCmV2HWSwUgs=|
+		</lev1add:EDCINVOICE></cfdi:Addenda></cfdi:Comprobante>

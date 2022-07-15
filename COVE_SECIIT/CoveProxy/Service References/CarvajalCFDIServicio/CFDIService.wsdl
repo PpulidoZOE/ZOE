@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.levicom.com.mx/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.levicom.com.mx/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.levicom.com.mx/">
+      <s:element name="Login">
+        <s:complexType />
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CFDIWebServiceHeader" type="tns:CFDIWebServiceHeader" />
+      <s:complexType name="CFDIWebServiceHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthenticatedToken" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="Logout">
+        <s:complexType />
+      </s:element>
+      <s:element name="LogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogoutResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTimbre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfdi">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTimbreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTimbreResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelCFDI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cancellations">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelCFDIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CancelCFDIResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginCFDIWebServiceHeader">
+    <wsdl:part name="CFDIWebServiceHeader" element="tns:CFDIWebServiceHeader" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogoutCFDIWebServiceHeader">
+    <wsdl:part name="CFDIWebServiceHeader" element="tns:CFDIWebServiceHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetTimbreSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTimbre" />
+  </wsdl:message>
+  <wsdl:message name="GetTimbreSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTimbreResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTimbreCFDIWebServiceHeader">
+    <wsdl:part name="CFDIWebServiceHeader" element="tns:CFDIWebServiceHeader" />
+  </wsdl:message>
+  <wsdl:message name="CancelCFDISoapIn">
+    <wsdl:part name="parameters" element="tns:CancelCFDI" />
+  </wsdl:message>
+  <wsdl:message name="CancelCFDISoapOut">
+    <wsdl:part name="parameters" element="tns:CancelCFDIResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelCFDICFDIWebServiceHeader">
+    <wsdl:part name="CFDIWebServiceHeader" element="tns:CFDIWebServiceHeader" />
+  </wsdl:message>
+  <wsdl:portType name="CFDIServiceSoap">
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input message="tns:LogoutSoapIn" />
+      <wsdl:output message="tns:LogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimbre">
+      <wsdl:input message="tns:GetTimbreSoapIn" />
+      <wsdl:output message="tns:GetTimbreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelCFDI">
+      <wsdl:input message="tns:CancelCFDISoapIn" />
+      <wsdl:output message="tns:CancelCFDISoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CFDIServiceSoap" type="tns:CFDIServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://www.levicom.com.mx/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:LoginCFDIWebServiceHeader" part="CFDIWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://www.levicom.com.mx/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:LogoutCFDIWebServiceHeader" part="CFDIWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimbre">
+      <soap:operation soapAction="http://www.levicom.com.mx/GetTimbre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetTimbreCFDIWebServiceHeader" part="CFDIWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelCFDI">
+      <soap:operation soapAction="http://www.levicom.com.mx/CancelCFDI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CancelCFDICFDIWebServiceHeader" part="CFDIWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CFDIServiceSoap12" type="tns:CFDIServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://www.levicom.com.mx/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:LoginCFDIWebServiceHeader" part="CFDIWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap12:operation soapAction="http://www.levicom.com.mx/Logout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:LogoutCFDIWebServiceHeader" part="CFDIWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimbre">
+      <soap12:operation soapAction="http://www.levicom.com.mx/GetTimbre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetTimbreCFDIWebServiceHeader" part="CFDIWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelCFDI">
+      <soap12:operation soapAction="http://www.levicom.com.mx/CancelCFDI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CancelCFDICFDIWebServiceHeader" part="CFDIWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CFDIService">
+    <wsdl:port name="CFDIServiceSoap" binding="tns:CFDIServiceSoap">
+      <soap:address location="http://ww3.edcinvoice-cfdi.com:8081/cfdiwebservice/CFDIService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CFDIServiceSoap12" binding="tns:CFDIServiceSoap12">
+      <soap12:address location="http://ww3.edcinvoice-cfdi.com:8081/cfdiwebservice/CFDIService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

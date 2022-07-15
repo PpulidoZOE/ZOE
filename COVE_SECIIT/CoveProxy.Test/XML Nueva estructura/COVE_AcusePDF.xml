@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<solicitarRecibirCoveServicio>
+  <comprobantes>
+    <tipoOperacion>0</tipoOperacion>
+    <patentesAduanales>
+      <patenteAduanal>3491</patenteAduanal>
+    </patentesAduanales>
+    <fechaExpedicion>2012-03-14</fechaExpedicion>
+    <observaciones>TEST TET</observaciones>
+    <rfcConsultas>
+      <rfcConsulta>GATR730803K93</rfcConsulta>
+    </rfcConsultas>
+    <tipoFigura>5</tipoFigura>
+    <correoElectronico>rgarcia@zoeitcustoms.com</correoElectronico>
+    <firmaElectronica>
+      <certificado>aaaaa</certificado>
+      <cadenaOriginal>|TOCE.IMP|TEST001V3|0|2012-03-14|5|TEST TET|GATR730803K93|3491|0|0|3|SIN TAX ID|EMPRESA DE PRUEBA|CALLE MONARCAS|95|USA|1|ENS851002FB0|ENSATEC|COLINAS|11730|PARQUE IND FLORIDO|TIJUANA|BAJA CALIFORNIA|MEX|22244|MARCANCIA DE PRUEBA|6|25.000|USD|1500.000000|37500.000000|37500.0000|MARCA DE PRUEBA|</cadenaOriginal>
+      <firma>bbbbb</firma>
+    </firmaElectronica>
+    <numeroFacturaOriginal>TEST001V3</numeroFacturaOriginal>
+    <factura>
+      <certificadoOrigen>0</certificadoOrigen>
+      <numeroExportadorAutorizado></numeroExportadorAutorizado>
+      <subdivision>0</subdivision>
+    </factura>
+    <emisor>
+      <tipoIdentificador>3</tipoIdentificador>
+      <identificacion>SIN TAX ID</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>EMPRESA DE PRUEBA</nombre>
+      <domicilio>
+        <calle>CALLE MONARCAS</calle>
+        <numeroExterior>95</numeroExterior>
+        <numeroInterior></numeroInterior>
+        <colonia></colonia>
+        <localidad></localidad>
+        <municipio></municipio>
+        <entidadFederativa></entidadFederativa>
+        <pais>USA</pais>
+        <codigoPostal></codigoPostal>
+      </domicilio>
+    </emisor>
+    <destinatario>
+      <tipoIdentificador>1</tipoIdentificador>
+      <identificacion>ENS851002FB0</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>ENSATEC</nombre>
+      <domicilio>
+        <calle>COLINAS</calle>
+        <numeroExterior>11730</numeroExterior>
+        <numeroInterior></numeroInterior>
+        <colonia>PARQUE IND FLORIDO</colonia>
+        <localidad></localidad>
+        <municipio>TIJUANA</municipio>
+        <entidadFederativa>BAJA CALIFORNIA</entidadFederativa>
+        <pais>MEX</pais>
+        <codigoPostal>22244</codigoPostal>
+      </domicilio>
+    </destinatario>
+    <mercancias>
+      <descripcionGenerica>MARCANCIA DE PRUEBA</descripcionGenerica>
+      <claveUnidadMedida>6</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>25.000</cantidad>
+      <valorUnitario>1500.000000</valorUnitario>
+      <valorTotal>37500.000000</valorTotal>
+      <valorDolares>37500.0000</valorDolares>
+      <descripcionesEspecificas>
+        <marca>MARCA DE PRUEBA</marca>
+        <modelo></modelo>
+        <subModelo></subModelo>
+        <numeroSerie></numeroSerie>
+      </descripcionesEspecificas>
+    </mercancias>
+  </comprobantes>
+</solicitarRecibirCoveServicio>

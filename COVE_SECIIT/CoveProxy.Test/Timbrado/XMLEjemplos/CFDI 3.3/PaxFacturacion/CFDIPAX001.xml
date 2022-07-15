@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd http://www.sat.gob.mx/ComercioExterior11 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd" xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" Version="3.3" Folio="CFDIPAX001" Fecha="2018-03-26T15:57:43" FormaPago="01" Sello="" NoCertificado="00001000000401656956" Certificado="" TipoCambio="18.5604" CondicionesDePago="Contado" SubTotal="9787.40" Descuento="0.00" Moneda="USD" Total="9787.40" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="20000" >
+	<cfdi:Emisor Rfc="BMM080124RT5" RegimenFiscal="601" Nombre="WILLIS DE MEXICO, S.A. DE C.V."/>
+	<cfdi:Receptor Rfc="XEXX010101000" UsoCFDI="P01" ResidenciaFiscal="USA" NumRegIdTrib="666454444" Nombre="WILLIS CONSTRUCTION CO." />
+		<cfdi:Conceptos>
+		<cfdi:Concepto Cantidad="10.000" ClaveUnidad="18" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE L" ValorUnitario="139.82" Importe="1398.2000" Descuento="0.00" ClaveProdServ="01010101" NoIdentificacion="MQ000168-009"/>
+	<cfdi:Concepto Cantidad="60.000" ClaveUnidad="18" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE L" ValorUnitario="139.82" Importe="8389.2000" Descuento="0.00" ClaveProdServ="01010101" NoIdentificacion="MQ000168-010"/>
+	</cfdi:Conceptos>
+	<cfdi:Impuestos TotalImpuestosTrasladados="0.00" >
+<cfdi:Traslados>
+<cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+<cfdi:Complemento>
+    <tfd:TimbreFiscalDigital Version="1.1" UUID="bfa5ce30-7849-43ae-9153-ccf6215a3580" FechaTimbrado="2018-03-27T17:11:56" RfcProvCertif="CFA110411FW5" SelloCFD="j74zCddOrzMxE8W78a2QhwHPnWITg4klCnw2ktZEhATTZmCafObixwLtaGBRfqm8eVb1Z5asTuiGlJJ1BWH+mq8QNgnCnj0O85AQfETELAI0IV25v6tARN9oBteW2v+2O1ad7vm7A8h4ziLeQ/c/gaPELeE6Rel7nskE1pioTjNRkkC1n8Gw8e8gDHkztqN2Ah+DrcboghIloqKVGN14Gp6MvsoqT+NUspWCvx7F+pnqvhLY9uoyR3rkhoaowJkZTqs8z9xIXdbOjcuPna/tftGJRpXk9n3a73qDFw1DIH94UTq0+C9T1lULLKNfcggszLbLLrvv7iWnubIC/Y9HuQ==" SelloSAT="nr75KXkQcR74OY6enMAXEUdAVVjv+CejvYW9lQeH5EoE0sbugeffih1NlHfO6rH+xBFnWktD1uqEsYvZlnPDJt6VT+oQ3MS430NL6paT7wDOSgyugpK4Fag+twlQrUYjiVsYXa3+Fc8Wv5fJVawq091oXlttTdRpMHV0TzMVyjbCNkfZCvG0Pgu430iH84ki9VzRKMu+3Y4Q0SMZQ08Eb/oLeg8o2T6XlvjonXayLBwd93wBNFkHbENRmnAKzuHegs5tucD9YQ1B887SiQ6r+LnHFcp7HAYV1QyeCnd+1foVeRnlpKS6OU5GtV53rmjvZKvWlffPIn6XbuihxuwrUg==" NoCertificadoSAT="00001000000407908743" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/timbrefiscaldigital/TimbreFiscalDigitalv11.xsd" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" />
+<cce11:ComercioExterior Version="1.1" TipoOperacion="2" ClaveDePedimento="A1" CertificadoOrigen="0" Incoterm="DAF" Subdivision="0" TipoCambioUSD="18.5604" TotalUSD="9787.40" >
+<cce11:Emisor >
+	<cce11:Domicilio Calle="CALLE PEPE NADOR" Colonia="0001" Municipio="001" Estado="AGU" Pais="MEX" CodigoPostal="20000" />
+</cce11:Emisor>
+<cce11:Receptor> 
+	<cce11:Domicilio Calle="Macedio Alcala no.73" NumeroExterior="4544" Colonia="0001" Municipio="001" Estado="AL" Pais="USA" CodigoPostal="20000" />
+</cce11:Receptor>
+<cce11:Mercancias>
+<cce11:Mercancia NoIdentificacion="MQ000168-009" FraccionArancelaria="73269099" ValorDolares="1398.20" >
+	<cce11:DescripcionesEspecificas Marca="MARCA : MARC: UFC" NumeroSerie="NO. 011" />
+</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="MQ000168-010" FraccionArancelaria="73269099" ValorDolares="8389.20" >
+	<cce11:DescripcionesEspecificas Marca="MARCA : MARC: UFC" NumeroSerie="NO. 090" />
+</cce11:Mercancia>
+</cce11:Mercancias>
+</cce11:ComercioExterior>
+</cfdi:Complemento>
+ </cfdi:Comprobante>
+	

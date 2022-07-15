@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<solicitarRecibirCoveServicio>
+		<comprobantes>
+			<tipoOperacion>0</tipoOperacion>
+			<patentesAduanales>
+				<patenteAduanal>3491</patenteAduanal>
+			</patentesAduanales>
+			<patentesAduanales>
+				<patenteAduanal>3416</patenteAduanal>
+			</patentesAduanales>
+			<fechaExpedicion>2011-11-15</fechaExpedicion>
+			<observaciones>Esta es una prueba del webservice de Cove</observaciones>
+			<rfcConsultas>
+				<rfcConsulta>APH0609268C2</rfcConsulta>
+			</rfcConsultas>
+			<rfcConsultas>
+                <rfcConsulta>AFC000526BJ2</rfcConsulta>
+			</rfcConsultas>
+            <tipoFigura>5</tipoFigura>
+            <correoElectronico>rgarcia@zoeitcustoms.com</correoElectronico>
+<firmaElectronica>
+	<certificado>MIIFMTCCBBmgAwIBAgIUMjAwMDEwMDAwMDAxMDAwMDM4OTIwDQYJKoZIhvcNAQEFBQAwggFvMRgwFgYDVQQDDA9BLkMuIGRlIHBydWViYXMxLzAtBgNVBAoMJlNlcnZpY2lvIGRlIEFkbWluaXN0cmFjacOzbiBUcmlidXRhcmlhMTgwNgYDVQQLDC9BZG1pbmlzdHJhY2nDs24gZGUgU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjacOzbjEpMCcGCSqGSIb3DQEJARYaYXNpc25ldEBwcnVlYmFzLnNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxEjAQBgNVBAcMCUNveW9hY8OhbjEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTIwMAYJKoZIhvcNAQkCDCNSZXNwb25zYWJsZTogSMOpY3RvciBPcm5lbGFzIEFyY2lnYTAeFw0xMTExMTEyMTQwMDhaFw0xNDAyMDgyMTQwMDhaMIGrMRswGQYDVQQDExJHUlVQTyBXVEMgU0EgREUgQ1YxGzAZBgNVBCkTEkdSVVBPIFdUQyBTQSBERSBDVjEbMBkGA1UEChMSR1JVUE8gV1RDIFNBIERFIENWMQswCQYDVQQGEwJNWDElMCMGA1UELRMcR1dU
+OTIxMDI2TDk3IC8gSEVHVDc2MTAwMzRTMjEeMBwGA1UEBRMVIC8gSEVHVDc2MTAwM01ERlJOTjA5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/70QS6a3ldjhPhV9XSZJ5zoDgCJrli9EdT+MzVmTwEypX5rYkglls+cSF9t2yM8XQYj4x5+uRF79nqKt+m2zH/qZJT8rtJ9H7j9ed4H4lxXAXtYZ18DRyZlQy+IgwGZh3/C1J5asFKrTijeFviNBIiLocEqfJDLg6NWIAKQSbYwIDAQABo4IBCDCCAQQwDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCA9gwEQYJYIZIAYb4QgEBBAQDAgWgMB0GA1UdDgQWBBTfky91eqA/IW2QpBBaJkiPwKyU8TAuBgNVHR8EJzAlMCOgIaAfhh1odHRwOi8vcGtpLnNhdC5nb2IubXgvc2F0LmNybDAzBggrBgEFBQcBAQQnMCUwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNhdC5nb2IubXgvMB8GA1UdIwQYMBaAFOtZfQQimlONnnEaoFiWKfU54KDFMBAGA1UdIAQJMAcwBQYDKgMEMB0GA1UdJQQWMBQGCCsGAQUFBwMEBggrBgEFBQcDAjANBgkqhkiG9w0BAQUFAAOCAQEAfKrT8z/vnMbq9KTXSSFRPIrEsaQIvb8Id0gzkm1IwyNvf0MwFkEOVKl6nVJCo4Q1zKJy9kfxXQhaycFCFjDsKh7hwim98iW1KGfdB0keMoLjFHk6z4P47pC9lafI3sLcMR9yI/ShNvTb7ZPwyEJHdlV9elO8ib4uxJGk8gcALx8GVjbjJJe46lv6EKsu4TSDj+yEz1ZxzGEwcYR5pllyhL5xDotGo4Sh1UiGeQDeTpi7WVaKgRlGHT4BNQe5fuie03NsHXu8z7cvUw180zmw4MbsvXGl+g/zpqAZnMMUZ1Br6fJdd0AOiSsUck51SznV6GNDsAbJC1GwXj5Cuor97A==
+</certificado>
+	<cadenaOriginal>|TOCE.IMP|ITUTUET66545|0|2011-11-15|5|Esta es una prueba del webservice de Cove|APH0609268C2|AFC000526BJ2|3491|3416|0|1|9984882|1|APH0609268C2|MARTINEZ|ORTIZ|MARIA|leo|23|23|BOSQUES DE LAS LOMAS|MEXICO|ECATEPEC|MEXICO|MEX|55567|1|AFC000526BJ2|BETANCOURT|MARTINEZ|FELIPE|CAPRICORNIO|78|78|PRADOS DE ECATEPEC|ECATEPEC|TULTITLAN|MEXICO|MEX|66532|CUADERNOS|2|USD|200.000|10.000000|2000.000000|200000.0000|SCRIBE|DE987|C-4567|LA-02012011-WE|</cadenaOriginal>
+	<firma>rFKpcP28jbZD+v00DdFIogjGjS2znlIwlVgMTt87fcLUkcN2ip/5ann+a3RJcCAjLimvOD0wpx38
+xOTDvMpr9TRt4BaKknfMnc3q0/WI+tXY1CeWRIX6slHRk31IceOv2SB0PFxctiyupvO/ZL+HLylA
+Yf58WllS0XZgtvobedc=
+</firma>
+</firmaElectronica>
+                    <numeroFacturaOriginal>ITUTUET66545</numeroFacturaOriginal>
+            <factura>
+               <certificadoOrigen>1</certificadoOrigen>
+               <numeroExportadorAutorizado>9984882</numeroExportadorAutorizado>
+               <subdivision>0</subdivision>
+            </factura>
+            <emisor>
+               <tipoIdentificador>1</tipoIdentificador>
+               <identificacion>APH0609268C2</identificacion>
+               <apellidoPaterno>MARTINEZ</apellidoPaterno>
+               <apellidoMaterno>ORTIZ</apellidoMaterno>
+               <nombre>MARIA</nombre>
+               <domicilio>
+                  <calle>leo</calle>
+                  <numeroExterior>23</numeroExterior>
+                  <numeroInterior>23</numeroInterior>
+                  <colonia>BOSQUES DE LAS LOMAS</colonia>
+                  <localidad>MEXICO</localidad>
+                  <municipio>ECATEPEC</municipio>
+                  <entidadFederativa>MEXICO</entidadFederativa>
+                  <pais>MEX</pais>
+                  <codigoPostal>55567</codigoPostal>
+               </domicilio>
+            </emisor>
+            <destinatario>
+               <tipoIdentificador>1</tipoIdentificador>
+               <identificacion>AFC000526BJ2</identificacion>
+               <apellidoPaterno>BETANCOURT</apellidoPaterno>
+               <apellidoMaterno>MARTINEZ</apellidoMaterno>
+               <nombre>FELIPE</nombre>
+               <domicilio>
+                  <calle>CAPRICORNIO</calle>
+                  <numeroExterior>78</numeroExterior>
+                  <numeroInterior>78</numeroInterior>
+                  <colonia>PRADOS DE ECATEPEC</colonia>
+                  <localidad>ECATEPEC</localidad>
+                  <municipio>TULTITLAN</municipio>
+                  <entidadFederativa>MEXICO</entidadFederativa>
+                  <pais>MEX</pais>
+                  <codigoPostal>66532</codigoPostal>
+               </domicilio>
+            </destinatario>
+            <mercancias>
+               <descripcionGenerica>CUADERNOS</descripcionGenerica>
+               <claveUnidadMedida>2</claveUnidadMedida>
+               <tipoMoneda>USD</tipoMoneda>
+               <cantidad>200.000</cantidad>
+               <valorUnitario>10.00</valorUnitario>
+               <valorTotal>2000.00</valorTotal>
+               <valorDolares>200000.0000</valorDolares>
+               <descripcionesEspecificas>
+                  <marca>SCRIBE</marca>
+                  <modelo>DE987</modelo>
+                  <subModelo>C-4567</subModelo>
+                  <numeroSerie>LA-02012011-WE</numeroSerie>
+               </descripcionesEspecificas>
+            </mercancias>
+         </comprobantes>
+      </solicitarRecibirCoveServicio>

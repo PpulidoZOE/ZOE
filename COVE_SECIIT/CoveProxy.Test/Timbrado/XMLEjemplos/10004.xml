@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3"	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ version="3.2" serie="AA" folio="4" fecha="2016-05-03T10:12:58"
+ sello="" formaDePago="Pago en una sola exhibición"
+ noCertificado="20001000000100005867" 
+ certificado="" 
+ condicionesDePago="Contado"
+ TipoCambio="18.00"
+ subTotal="101000.00"
+ descuento="2000.00"
+ Moneda="USD"
+ total="0.600000"
+ tipoDeComprobante="ingreso"
+ metodoDePago="Cheque"
+ LugarExpedicion="Tijuana"
+ NumCtaPago="No identificado">
+  <cfdi:Emisor rfc="AAA010101AAA" nombre="EATON INDUSTRIES S. DE R.L. DE C.V.">
+    <cfdi:DomicilioFiscal calle="MIKE ALLEN" noExterior="65884184" colonia="Col.Aviacion" municipio="Tijuana" estado="Baja California" pais="MEX" localidad="879" codigoPostal="22201"/>
+    <cfdi:ExpedidoEn municipio="Tijuana" localidad="879" colonia="Col.Aviacion" estado="Baja California" pais="MEX" codigoPostal="22201"/>
+    <cfdi:RegimenFiscal Regimen="EATON INDUSTRIES S. DE R.L. DE C.V."/>
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="AAA010101AAA" nombre="EATON CORPORATION">
+    <cfdi:Domicilio calle="BEACHWOOD, OH.  44122 USA" noExterior="5" colonia="1000 EATON BLVD BEACHWOOD" municipio="BEACHWOOD" estado="BEACHWOOD BLD" pais="USA" codigoPostal="44122"/>
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1.000" unidad="6" descripcion="MANUFACTURAS DE ALUMINIO (TIRAS)" valorUnitario="0.600000" importe="0.6000" noIdentificacion="10004"/>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="0.0000" totalImpuestosRetenidos="0.00" >
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="16" importe="0.0000"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

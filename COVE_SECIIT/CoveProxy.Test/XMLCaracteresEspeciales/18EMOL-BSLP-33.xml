@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<solicitarRecibirCoveServicio>
+		<comprobantes>
+			<tipoOperacion>1</tipoOperacion>
+ <fechaExpedicion>2018-06-25</fechaExpedicion>
+ <observaciones></observaciones>
+ <rfcConsultas>
+				<rfcConsulta>WME8002256L8</rfcConsulta>
+ </rfcConsultas>
+ <patentesAduanales>
+				<patenteAduanal>3429</patenteAduanal>
+ </patentesAduanales>
+ <patentesAduanales>
+				<patenteAduanal>3633</patenteAduanal>
+ </patentesAduanales>
+ <tipoFigura>4</tipoFigura>
+ <correoElectronico>marcos.lopez@medtronic.com</correoElectronico>
+ <firmaElectronica>
+				<certificado>aaa99999aaa</certificado>
+ <cadenaOriginal>|TOCE.EXP|18EMOL-BSLP-ABCDEFG|0|2018-06-25|4|WME8002256L8|3429|3633|0|0|1|NPB960219TM5|WOODHEAD DE MEXICO, S.A. DE C.V.ññ&|AVENIDA INTERMEX    && Ú Ñ|1351|PARQUE INDUSTRIAL INTERMEX|JUAREZ|JUAREZ|CHH|MEX|32575|0|SLP120801Q90|SERVICIOS LOGISTICOS PALCO S, DE R.L. DE C.V.|MEX|32380|TUERCAS DE PLASTICO|C62_1|26750.000|USD|0.064870|1735.272500|1735.2725|CHAROLA DE PLASTICO|C62_1|2400.000|USD|0.305400|732.960000|732.9600|PARTES PARA APARATOS DE ELEVACION|C62_1|2113.000|USD|0.463680|979.755840|979.7558|BOLSAS DE PLASTICO|C62_1|44000.000|USD|0.041300|1817.200000|1817.2000|INSERTO DE CARTON CORRUGADO|C62_1|150.000|USD|2.023290|303.493500|303.4935|CAJA DE CARTON CORRUGADO|C62_1|94.000|USD|3.315460|311.653240|311.6532|</cadenaOriginal>
+ <firma>bbb888bbb</firma>
+			</firmaElectronica>
+ <numeroFacturaOriginal>18EMOL-BSLP-ABCDEFG</numeroFacturaOriginal>
+ <factura>
+				<certificadoOrigen>0</certificadoOrigen>
+ <numeroExportadorAutorizado></numeroExportadorAutorizado>
+ <subdivision>0</subdivision>
+ </factura>
+ <emisor>
+				<tipoIdentificador>1</tipoIdentificador>
+ <identificacion>NPB960219TM5</identificacion>
+ <apellidoPaterno></apellidoPaterno>
+ <apellidoMaterno></apellidoMaterno>
+ <nombre>WOODHEAD DE MEXICO, S.A. DE C.V.ññ&</nombre>
+ <domicilio>
+					<calle>AVENIDA INTERMEX    && Ú Ñ</calle>
+ <numeroExterior></numeroExterior>
+ <numeroInterior>1351</numeroInterior>
+ <colonia>PARQUE INDUSTRIAL INTERMEX</colonia>
+ <localidad>JUAREZ</localidad>
+ <municipio>JUAREZ</municipio>
+ <entidadFederativa>CHH</entidadFederativa>
+ <pais>MEX</pais>
+ <codigoPostal>32575</codigoPostal>
+				</domicilio>
+			</emisor>
+ <destinatario>
+				<tipoIdentificador>0</tipoIdentificador>
+ <identificacion>SLP120801Q90</identificacion>
+ <apellidoPaterno></apellidoPaterno>
+ <apellidoMaterno></apellidoMaterno>
+ <nombre>SERVICIOS LOGISTICOS PALCO S, DE R.L. DE C.V.</nombre>
+ <domicilio>
+					<calle>CALLE</calle>
+ <numeroExterior></numeroExterior>
+ <numeroInterior>12345</numeroInterior>
+ <colonia>PARQUE INDUSTRIAL INTERMEX</colonia>
+ <localidad>JUAREZ</localidad>
+ <municipio>JUAREZ</municipio>
+ <entidadFederativa>CHH</entidadFederativa>
+ <pais>MEX</pais>
+ <codigoPostal>32380</codigoPostal>
+				</domicilio>
+			</destinatario>
+ <mercancias>
+					<descripcionGenerica>TUERCAS DE PLASTICO</descripcionGenerica>
+ <claveUnidadMedida>C62_1</claveUnidadMedida>
+ <tipoMoneda>USD</tipoMoneda>
+ <cantidad>26750.000</cantidad>
+ <valorUnitario>0.064870</valorUnitario>
+ <valorTotal>1735.272500</valorTotal>
+ <valorDolares>1735.2725</valorDolares>
+ </mercancias>
+			<mercancias>
+					<descripcionGenerica>CHAROLA DE PLASTICO</descripcionGenerica>
+ <claveUnidadMedida>C62_1</claveUnidadMedida>
+ <tipoMoneda>USD</tipoMoneda>
+ <cantidad>2400.000</cantidad>
+ <valorUnitario>0.305400</valorUnitario>
+ <valorTotal>732.960000</valorTotal>
+ <valorDolares>732.9600</valorDolares>
+ </mercancias>
+			<mercancias>
+					<descripcionGenerica>PARTES PARA APARATOS DE ELEVACION</descripcionGenerica>
+ <claveUnidadMedida>C62_1</claveUnidadMedida>
+ <tipoMoneda>USD</tipoMoneda>
+ <cantidad>2113.000</cantidad>
+ <valorUnitario>0.463680</valorUnitario>
+ <valorTotal>979.755840</valorTotal>
+ <valorDolares>979.7558</valorDolares>
+ </mercancias>
+			<mercancias>
+					<descripcionGenerica>BOLSAS DE PLASTICO</descripcionGenerica>
+ <claveUnidadMedida>C62_1</claveUnidadMedida>
+ <tipoMoneda>USD</tipoMoneda>
+ <cantidad>44000.000</cantidad>
+ <valorUnitario>0.041300</valorUnitario>
+ <valorTotal>1817.200000</valorTotal>
+ <valorDolares>1817.2000</valorDolares>
+ </mercancias>
+			<mercancias>
+					<descripcionGenerica>INSERTO DE CARTON CORRUGADO</descripcionGenerica>
+ <claveUnidadMedida>C62_1</claveUnidadMedida>
+ <tipoMoneda>USD</tipoMoneda>
+ <cantidad>150.000</cantidad>
+ <valorUnitario>2.023290</valorUnitario>
+ <valorTotal>303.493500</valorTotal>
+ <valorDolares>303.4935</valorDolares>
+ </mercancias>
+			<mercancias>
+					<descripcionGenerica>CAJA DE CARTON CORRUGADO</descripcionGenerica>
+ <claveUnidadMedida>C62_1</claveUnidadMedida>
+ <tipoMoneda>USD</tipoMoneda>
+ <cantidad>94.000</cantidad>
+ <valorUnitario>3.315460</valorUnitario>
+ <valorTotal>311.653240</valorTotal>
+ <valorDolares>311.6532</valorDolares>
+ </mercancias>
+			</comprobantes>
+	</solicitarRecibirCoveServicio>

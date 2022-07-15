@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="3.3" Fecha="2018-01-24T13:57:06" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd"
+    Sello="" FormaPago="01" NoCertificado="00001000000404614920"
+    CondicionesDePago="Una sola Exhibición" Certificado="" SubTotal="288.7982" Moneda="CLF"
+    Total="750.8753" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="64000"
+    TipoCambio="10.0000">
+    <cfdi:Emisor Rfc="AAA010101AAA" Nombre="Accem Servicios Empresariales" RegimenFiscal="622"/>
+    <cfdi:Receptor Rfc="AAAA200303TFA" Nombre="Público en General" UsoCFDI="G01"/>
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="10191500" Cantidad="2.3456" ClaveUnidad="C81"
+            Descripcion="Producto de prueba 1" ValorUnitario="123.1234" Importe="288.7982">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="288.7982" Impuesto="003" TipoFactor="Tasa"
+                        TasaOCuota="1.600000" Importe="462.0771"/>
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="462.0771">
+        <cfdi:Traslados>
+            <cfdi:Traslado Impuesto="003" TipoFactor="Tasa" TasaOCuota="1.600000" Importe="462.0771"/>
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+</cfdi:Comprobante>

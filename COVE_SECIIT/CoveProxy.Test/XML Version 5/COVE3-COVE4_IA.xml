@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<solicitarRecibirRelacionFacturasIAServicio>
+  <comprobantes>
+    <tipoOperacion>1</tipoOperacion>
+    <fechaExpedicion>2012-03-28</fechaExpedicion>
+    <observaciones></observaciones>
+    <rfcConsultas>
+      <rfcConsulta>GATR730803K93</rfcConsulta>
+    </rfcConsultas>
+    <patentesAduanales>
+      <patenteAduanal>3491</patenteAduanal>
+    </patentesAduanales>
+    <tipoFigura>4</tipoFigura>
+    <correoElectronico>rgarcia@zoeitcustoms.com</correoElectronico>
+    <firmaElectronica>
+      <certificado>aaa99999aaa</certificado>
+      <cadenaOriginal>|TOCE.EXP|COVE3-COVE4|1|2012-03-28|4|GATR730803K93|3491|1|ENS851002FB0|ENSATEC S.A. DE C.V. &amp;uacute; &amp;nacute; &amp;Nacute; &amp;aacute; &amp;Eacute; &amp;Iacute; &amp;Oacute; &amp;Uacute;|CALLE COLINAS &amp; &lt; &gt; &quot; &#39; &amp;aacute; &amp;eacute; &amp;iacute; &amp;oacute;|11730|COLINAS|TIJUANA|TITJUANA|BAJA CALIFORNIA|MEX|22680|0|irs|cliente para submaquila|calle int|no ext|no int|col|loc|muni|CA|USA|111|COVE3|0|0|ENSAMBLE DE CONECTOR DE METAL PARA LA INDUSTRIA AUTOMATRIZ|12|20.000|USD|78.000000|78.000000|78.0000|COVE4|0|0|ENSAMBLE DE CONECTOR DE METAL PARA LA INDUSTRIA AUTOMATRIZ|12|100.000|USD|78.000000|390.000000|390.0000|</cadenaOriginal>
+      <firma>bbb888bbb</firma>
+    </firmaElectronica>
+    <numeroRelacionFacturas>COVE3-COVE4</numeroRelacionFacturas>
+    <emisor>
+      <tipoIdentificador>1</tipoIdentificador>
+      <identificacion>ENS851002FB0</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>ENSATEC S.A. DE C.V. &amp;uacute; &amp;nacute; &amp;Nacute; &amp;aacute; &amp;Eacute; &amp;Iacute; &amp;Oacute; &amp;Uacute;</nombre>
+      <domicilio>
+        <calle>CALLE COLINAS &amp; &lt; &gt; &quot; &#39; &amp;aacute; &amp;eacute; &amp;iacute; &amp;oacute;</calle>
+        <numeroExterior></numeroExterior>
+        <numeroInterior>11730</numeroInterior>
+        <colonia>COLINAS</colonia>
+        <localidad>TIJUANA</localidad>
+        <municipio>TITJUANA</municipio>
+        <entidadFederativa>BAJA CALIFORNIA</entidadFederativa>
+        <pais>MEX</pais>
+        <codigoPostal>22680</codigoPostal>
+      </domicilio>
+    </emisor>
+    <destinatario>
+      <tipoIdentificador>0</tipoIdentificador>
+      <identificacion>irs</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>cliente para submaquila</nombre>
+      <domicilio>
+        <calle>calle int</calle>
+        <numeroExterior>no ext</numeroExterior>
+        <numeroInterior>no int</numeroInterior>
+        <colonia>col</colonia>
+        <localidad>loc</localidad>
+        <municipio>muni</municipio>
+        <entidadFederativa>CA</entidadFederativa>
+        <pais>USA</pais>
+        <codigoPostal>111</codigoPostal>
+      </domicilio>
+    </destinatario>
+    <facturas>
+      <numeroFactura>COVE3</numeroFactura>
+      <certificadoOrigen>0</certificadoOrigen>
+      <numeroExportadorAutorizado></numeroExportadorAutorizado>
+      <subdivision>0</subdivision>
+      <mercancias>
+        <descripcionGenerica>ENSAMBLE DE CONECTOR DE METAL PARA LA INDUSTRIA AUTOMATRIZ</descripcionGenerica>
+        <claveUnidadMedida>12</claveUnidadMedida>
+        <tipoMoneda>USD</tipoMoneda>
+        <cantidad>20.000</cantidad>
+        <valorUnitario>78.000000</valorUnitario>
+        <valorTotal>78.000000</valorTotal>
+        <valorDolares>78.0000</valorDolares>
+      </mercancias>
+    </facturas>
+    <facturas>
+      <numeroFactura>COVE4</numeroFactura>
+      <certificadoOrigen>0</certificadoOrigen>
+      <numeroExportadorAutorizado></numeroExportadorAutorizado>
+      <subdivision>0</subdivision>
+      <mercancias>
+        <descripcionGenerica>ENSAMBLE DE CONECTOR DE METAL PARA LA INDUSTRIA AUTOMATRIZ</descripcionGenerica>
+        <claveUnidadMedida>12</claveUnidadMedida>
+        <tipoMoneda>USD</tipoMoneda>
+        <cantidad>100.000</cantidad>
+        <valorUnitario>78.000000</valorUnitario>
+        <valorTotal>390.000000</valorTotal>
+        <valorDolares>390.0000</valorDolares>
+      </mercancias>
+    </facturas>
+  </comprobantes>
+</solicitarRecibirRelacionFacturasIAServicio>

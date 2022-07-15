@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" 
+  version="3.2" 
+  serie="CH" 
+  folio="069" 
+  fecha="2016-06-28T10:26:42" 
+  sello="" 
+  formaDePago="PAGO EN UNA SOLA EXHIBICION" 
+  noCertificado="00001000000201334075" 
+  certificado="" 
+  condicionesDePago="60" subTotal="36105.01" total="41881.80" metodoDePago="TRANSFERENCIA ELECTRONICA" tipoDeComprobante="ingreso" Moneda="MXN" LugarExpedicion="CUAUTITLAN IZCALLI" NumCtaPago="NO IDENTIFICADO" 
+  xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cfdi:Emisor rfc="FMF970224TA4" nombre="Emisor de Prueba">
+    <cfdi:DomicilioFiscal calle="AV DE LAS MONTAÑAS" noExterior="101-B" noInterior="0" colonia="ATLANTA" localidad="CUAUTITLAN IZCALLI" municipio="CUAUTITLAN IZCALLI" estado="ESTADO DE MEXICO" pais="MEXICO" codigoPostal="54740" />
+    <cfdi:RegimenFiscal Regimen="General de Ley Personas Morales" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="TCH850701RM1" nombre="TIENDAS CHEDRAUI S.A. DE C.V.">
+    <cfdi:Domicilio calle="AV. CONSTITUYENTES" noExterior="1150" noInterior="0" colonia="LOMAS ALTAS" localidad="DISTRITO FEDERAL" municipio="MIGUEL HIDALGO" estado="DISTRITO FEDERAL" pais="MEXICO" codigoPostal="11950" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="20" unidad="CJ" noIdentificacion="7501145600665" descripcion="Cepillo Iesa Rectangular 66" valorUnitario="156.63" importe="3132.60" />
+    <cfdi:Concepto cantidad="2" unidad="CJ" noIdentificacion="7501145600146" descripcion="Cepillo Iesa 25" valorUnitario="303.44" importe="606.88" />
+    <cfdi:Concepto cantidad="25" unidad="CJ" noIdentificacion="7501145600726" descripcion="Cepillo Iesa Bebe 66" valorUnitario="156.63" importe="3915.75" />
+    <cfdi:Concepto cantidad="32" unidad="CJ" noIdentificacion="7501145600337" descripcion="Cepillo Iesa 33" valorUnitario="197.28" importe="6312.96" />
+    <cfdi:Concepto cantidad="24" unidad="CJ" noIdentificacion="7501145600252" descripcion="Cepillo Iesa Redondo 25" valorUnitario="273.10" importe="6554.40" />
+    <cfdi:Concepto cantidad="19" unidad="CJ" noIdentificacion="7501145600115" descripcion="Cepillo Iesa Arana 11" valorUnitario="197.28" importe="3748.32" />
+    <cfdi:Concepto cantidad="33" unidad="CJ" noIdentificacion="7501145600177" descripcion="Cepillo Iesa Ovalado 17" valorUnitario="262.98" importe="8678.34" />
+    <cfdi:Concepto cantidad="24" unidad="CJ" noIdentificacion="7501145600139" descripcion="Ligas Iesa 2 Piezas" valorUnitario="131.49" importe="3155.76" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="5776.79">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="5776.79" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

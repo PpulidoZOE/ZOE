@@ -1,0 +1,14 @@
+USUARIO PRUEBA CFDI
+RFC: FMF970224TA4
+
+no. Certificado:  20001000000100005870
+contraseña certificado: 12345678a
+
+http://ww3.edcinvoice-cfdi.com/cfdiwebservice/CFDIService.asmx
+Usuario:  901481
+Contraseña:  #QvX723@
+
+
+
+
+

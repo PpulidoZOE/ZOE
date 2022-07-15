@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<solicitarRecibirCoveServicio>
+  <comprobantes>
+    <edocument>un-edocument</edocument>
+    <tipoOperacion>0</tipoOperacion>
+    <fechaExpedicion>2013-06-26</fechaExpedicion>
+    <observaciones></observaciones>
+    <rfcConsultas>
+      <rfcConsulta>GATR730803K93</rfcConsulta>
+    </rfcConsultas>
+    <patentesAduanales>
+      <patenteAduanal>3051</patenteAduanal>
+    </patentesAduanales>
+    <tipoFigura>5</tipoFigura>
+    <correoElectronico>gluque@zoeitcustoms.com</correoElectronico>
+    <firmaElectronica>
+      <certificado>aaa99999aaa</certificado>
+      <cadenaOriginal>|TOCE.IMP|TEST_COVE|0|2013-06-26|5|GATR730803K93|3051|0|0|0|GATR21345555F|RED NETWORK CO. LTD|KEFA ROAD, SCIENCE &amp; INDUSTRIAL PARK|1|NANCHAN DISTRIC, CHENZEN|CHN|518057|1|SME930909R14|Schlage de Mexico, S.A. de C.V.|USA|CERRADURAS TERMICAS DE BOLSA DE PLASTICO|C62_1|2.000|USD|2000.000000|4000.000000|4000.0000|AUTOBAG|MS-100|00-06XL-4323|</cadenaOriginal>
+      <firma>bbb888bbb</firma>
+    </firmaElectronica>
+    <numeroFacturaOriginal>TEST_COVE</numeroFacturaOriginal>
+    <factura>
+      <certificadoOrigen>0</certificadoOrigen>
+      <numeroExportadorAutorizado></numeroExportadorAutorizado>
+      <subdivision>0</subdivision>
+    </factura>
+    <emisor>
+      <tipoIdentificador>0</tipoIdentificador>
+      <identificacion>GATR21345555F</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>RED NETWORK CO. LTD</nombre>
+      <domicilio>
+        <calle>KEFA ROAD, SCIENCE &amp; INDUSTRIAL PARK</calle>
+        <numeroExterior>1</numeroExterior>
+        <numeroInterior></numeroInterior>
+        <colonia>NANCHAN DISTRIC, CHENZEN</colonia>
+        <localidad></localidad>
+        <municipio></municipio>
+        <entidadFederativa></entidadFederativa>
+        <pais>CHN</pais>
+        <codigoPostal>518057</codigoPostal>
+      </domicilio>
+    </emisor>
+    <destinatario>
+      <tipoIdentificador>1</tipoIdentificador>
+      <identificacion>SME930909R14</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>Schlage de Mexico, S.A. de C.V.</nombre>
+      <domicilio>
+        <calle></calle>
+        <numeroExterior></numeroExterior>
+        <numeroInterior></numeroInterior>
+        <colonia></colonia>
+        <localidad></localidad>
+        <municipio></municipio>
+        <entidadFederativa></entidadFederativa>
+        <pais>USA</pais>
+        <codigoPostal></codigoPostal>
+      </domicilio>
+    </destinatario>
+    <mercancias>
+      <descripcionGenerica>CERRADURAS TERMICAS DE BOLSA DE PLASTICO</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>2.000</cantidad>
+      <valorUnitario>2000.000000</valorUnitario>
+      <valorTotal>4000.000000</valorTotal>
+      <valorDolares>4000.0000</valorDolares>
+      <descripcionesEspecificas>
+        <marca>AUTOBAG</marca>
+        <modelo>MS-100</modelo>
+        <subModelo></subModelo>
+        <numeroSerie>00-06XL-4323</numeroSerie>
+      </descripcionesEspecificas>
+    </mercancias>
+  </comprobantes>
+</solicitarRecibirCoveServicio>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<solicitarRecibirCoveServicio>
+  <comprobantes>
+    <tipoIdentificador>0</tipoIdentificador>
+    <identificacion>ENS851002FB0</identificacion>
+    <fechaExpedicion>2011-08-16</fechaExpedicion>
+    <certificadoOrigen>0</certificadoOrigen>
+    <numeroExportadorConfiable>VACIO</numeroExportadorConfiable>
+    <observaciones>PRUEBA PARA RECIVIRCOVESERVICIO</observaciones>
+    <rfcConsulta>ENS851002FB0</rfcConsulta>
+    <subdivision>0</subdivision>
+    <tipoFiguraAduanal>4</tipoFiguraAduanal>
+    <curp>TOAR221116SWSXXXX1</curp>
+    <correoElectronico>rgarcia@rocketmail.com</correoElectronico>
+    <firmaElectronica>
+      <certificado>aaa99999aaa</certificado>
+      <cadenaOriginal>|0|ENS851002FB0|DF-0000001640|0|0|2011-08-16|0|VACIO|4|TOAR221116SWSXXXX1|ENS851002FB0|PRUEBA PARA RECIVIRCOVESERVICIO|1|ENS851002FB0|PATERNO VACIO|MATERNO VACIO|ENSATEC S.A. DE C.V.|CALLE COLINAS|11730|0|COLINAS|TIJUANA|VACIO|TIJUANA|BC|MEX|22680|0|95454691400|VACIO|VACIO|MEDSEP|INDUSTRIAL PARK ST.|1630|0|VACIO|COVINA|VACIO|COVINA|CA|USA|91722|SISTEMA DE FILTRO ATSBC|6|35.000|304.26.00|10649.36|825.5705|VACIO|VACIO|VACIO|VACIO|</cadenaOriginal>
+      <firma>bbb888bbb</firma>
+    </firmaElectronica>
+    <numeroFacturaOriginal>DF-0000001640</numeroFacturaOriginal>
+    <emisor>
+      <tipoIdentificador>1</tipoIdentificador>
+      <identificacion>ENS851002FB0</identificacion>
+      <apellidoPaterno>PATERNO VACIO</apellidoPaterno>
+      <apellidoMaterno>MATERNO VACIO</apellidoMaterno>
+      <nombre>ENSATEC S.A. DE C.V.</nombre>
+      <domicilio>
+        <calle>CALLE COLINAS</calle>
+        <numeroExterior>11730</numeroExterior>
+        <numeroInterior>0</numeroInterior>
+        <colonia>COLINAS</colonia>
+        <localidad>TIJUANA</localidad>
+        <referencia>VACIO</referencia>
+        <municipio>TIJUANA</municipio>
+        <entidadFederativa>BC</entidadFederativa>
+        <pais>MEX</pais>
+        <codigPostal>22680</codigPostal>
+      </domicilio>
+    </emisor>
+    <destinatario>
+      <tipoIdentificador>0</tipoIdentificador>
+      <identificacion>95454691400</identificacion>
+      <apellidoPaterno>VACIO</apellidoPaterno>
+      <apellidoMaterno>VACIO</apellidoMaterno>
+      <nombre>MEDSEP</nombre>
+      <domicilio>
+        <calle>INDUSTRIAL PARK ST.</calle>
+        <numeroExterior>1630</numeroExterior>
+        <numeroInterior>0</numeroInterior>
+        <colonia>VACIO</colonia>
+        <localidad>COVINA</localidad>
+        <referencia>VACIO</referencia>
+        <municipio>COVINA</municipio>
+        <entidadFederativa>CA</entidadFederativa>
+        <pais>USA</pais>
+        <codigPostal>91722</codigPostal>
+      </domicilio>
+    </destinatario>
+    <mercancias>
+      <descripcionGenerica>SISTEMA DE FILTRO ATSBC</descripcionGenerica>
+      <claveUnidad>6</claveUnidad>
+      <cantidad>35.000</cantidad>
+      <valorUnitario>30426.00</valorUnitario>
+      <valorTotal>10649.36</valorTotal>
+      <valorDolares>825.5705</valorDolares>
+      <descripionesEspecificas>
+        <marca>VACIO</marca>
+        <modelo>VACIO</modelo>
+        <subModelo>VACIO</subModelo>
+        <numeroSerie>VACIO</numeroSerie>
+      </descripionesEspecificas>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>FRENOS ABS</descripcionGenerica>
+      <claveUnidad>6</claveUnidad>
+      <cantidad>35.000</cantidad>
+      <valorUnitario>30426.00</valorUnitario>
+      <valorTotal>10649.36</valorTotal>
+      <valorDolares>825.5705</valorDolares>
+      <descripionesEspecificas>
+        <marca>VACIO</marca>
+        <modelo>VACIO</modelo>
+        <subModelo>VACIO</subModelo>
+        <numeroSerie>VACIO</numeroSerie>
+      </descripionesEspecificas>
+      <descripionesEspecificas>
+        <marca>VACIO_2</marca>
+        <modelo>VACIO_2</modelo>
+        <subModelo>VACIO_2</subModelo>
+        <numeroSerie>VACIO_2</numeroSerie>
+      </descripionesEspecificas>
+    </mercancias>    
+  </comprobantes>
+</solicitarRecibirCoveServicio>

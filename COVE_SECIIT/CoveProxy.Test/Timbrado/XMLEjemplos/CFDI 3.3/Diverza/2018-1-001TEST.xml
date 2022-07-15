@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" 
+Version="3.3" Folio="2018-1-001TEST" Fecha="2018-02-01T10:04:57" FormaPago="01" Sello="" NoCertificado="00001000000402780433" Certificado="" TipoCambio="18.48" CondicionesDePago="Contado" SubTotal="0.16" Descuento="0.00" Moneda="USD" Total="0.16" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="21460" >
+	<cfdi:Emisor Rfc="MAG041126GT8" RegimenFiscal="601" Nombre="WILLIS DE MEXICO, S.A. DE C.V."/>
+	<cfdi:Receptor Rfc="XEXX010101000" UsoCFDI="P01" Nombre="WILLIS CONSTRUCTION CO." />
+		<cfdi:Conceptos>
+		<cfdi:Concepto Cantidad="1.000000" ClaveUnidad="H87" Unidad="6" Descripcion="REDONDOS METALICOS EN FORMA DE L" ValorUnitario="0.1572" Importe="0.1572" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00069"/>
+	</cfdi:Conceptos>
+	<cfdi:Impuestos TotalImpuestosTrasladados="0.00" TotalImpuestosRetenidos="0.00" >
+<cfdi:Traslados>
+<cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+</cfdi:Comprobante>
+	

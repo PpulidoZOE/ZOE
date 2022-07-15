@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
+  xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd"
+  Version="3.3"
+  Serie="ABC"
+  Folio="9010"
+  Fecha="2017-12-05T15:13:17"
+  MetodoPago="PUE"
+  Sello=""
+  NoCertificado="00001000000201334075"
+  Certificado=""
+  SubTotal="4917.00"
+  TipoCambio="18.845100"
+  Moneda="USD"
+  Total="4917.00"
+  TipoDeComprobante="I"
+  FormaPago="03"
+  LugarExpedicion="76224">
+  <cfdi:Emisor Rfc="LAN7008173R5" Nombre="ANATOLIO TRUJANO CORDOVA" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="XEXX010101000" Nombre="Green Lights" UsoCFDI="P01" ResidenciaFiscal="USA" NumRegIdTrib="133369789"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto Unidad="Pieza" Cantidad="1200" NoIdentificacion="A-123LFM" Descripcion="Bombilla 150W " ValorUnitario="1.75" Importe="2100.00" ClaveProdServ="01010101" ClaveUnidad="ZZ"/>
+    <cfdi:Concepto Unidad="Pieza" Cantidad="958" NoIdentificacion="A-123JKL" Descripcion="Bombilla 100W" ValorUnitario="1.50" Importe="1437.00" ClaveProdServ="01010101" ClaveUnidad="ZZ"/>
+    <cfdi:Concepto Unidad="Pieza" Cantidad="1150" NoIdentificacion="A-123WHX" Descripcion="Bombilla 75W" ValorUnitario="1.20" Importe="1380.00" ClaveProdServ="01010101" ClaveUnidad="ZZ"/>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos/>
+  <cfdi:Complemento xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11">
+    <cce11:ComercioExterior 
+      xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11" 
+      xsi:schemaLocation="http://www.sat.gob.mx/ComercioExterior11 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd" 
+      Version="1.1" 
+      TipoOperacion="2" 
+      ClaveDePedimento="A1" 
+      CertificadoOrigen="0" 
+      Incoterm="FOB" 
+      Subdivision="0" 
+      TipoCambioUSD="18.845100" 
+      TotalUSD="4917.00">
+      <cce11:Emisor>
+        <cce11:Domicilio Calle="CARLOS B ZETINA" NumeroExterior="80" Colonia="3738" Municipio="033" Estado="MEX" Pais="MEX" CodigoPostal="55348"/>
+      </cce11:Emisor>
+      <cce11:Receptor>
+        <cce11:Domicilio Calle="Avenue Sahara" NumeroExterior="74" Colonia="BIG DESERT" Localidad="BIG DESERT" Estado="NV" Pais="USA" CodigoPostal="45678"/>
+      </cce11:Receptor>
+      <cce11:Mercancias>
+        <cce11:Mercancia NoIdentificacion="A-123LFM" FraccionArancelaria="94059102" CantidadAduana="1200" UnidadAduana="01" ValorUnitarioAduana="1.75" ValorDolares="2100.00"/>
+        <cce11:Mercancia NoIdentificacion="A-123JKL" FraccionArancelaria="94059102" CantidadAduana="958" UnidadAduana="01" ValorUnitarioAduana="1.50" ValorDolares="1437.00"/>
+        <cce11:Mercancia NoIdentificacion="A-123WHX" FraccionArancelaria="94059102" CantidadAduana="1150" UnidadAduana="01" ValorUnitarioAduana="1.20" ValorDolares="1380.00"/>
+      </cce11:Mercancias>
+    </cce11:ComercioExterior>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

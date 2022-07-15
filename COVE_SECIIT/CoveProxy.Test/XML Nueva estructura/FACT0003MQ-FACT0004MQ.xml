@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<solicitarRecibirRelacionFacturasIAServicio>
+  <comprobantes>
+    <tipoOperacion>1</tipoOperacion>
+    <fechaExpedicion>2012-01-22</fechaExpedicion>
+    <observaciones>PRUEBA FACTURAS IA</observaciones>
+    <rfcConsultas>
+      <rfcConsulta>GATR730803K93</rfcConsulta>
+    </rfcConsultas>
+    <patentesAduanales>
+      <patenteAduanal>3491</patenteAduanal>
+    </patentesAduanales>
+    <tipoFigura>4</tipoFigura>
+    <correoElectronico>rgarcia@zoeitcustoms.com</correoElectronico>
+    <firmaElectronica>
+      <certificado>aaa99999aaa</certificado>
+      <cadenaOriginal>|TOCE.EXP|FACT0003MQ-FACT0004MQ|1|2012-01-22|4|PRUEBA FACTURAS IA|GATR730803K93|3491|1|ENS851002FB0|ENSATEC S.A. DE C.V. &amp;uacute; &amp;nacute; &amp;Nacute; &amp;aacute; &amp;Eacute; &amp;Iacute; &amp;Oacute; &amp;Uacute;|CALLE COLINAS &amp; &lt; &gt; &quot; &#39; &amp;aacute; &amp;eacute; &amp;iacute; &amp;oacute;|11730|COLINAS|TIJUANA|TITJUANA|BAJA CALIFORNIA|MEX|22680|0|irs|cliente para submaquila|calle int|no ext|no int|col|loc|muni|CA|USA|111|FACT0003MQ|maq 11|6|300.000|USD|27.000000|405.000000|30.0000|ruda|2001|3212312312312312|FACT0004MQ|maq 11|6|240.000|USD|27.000000|324.000000|24.0000|ruda|2001|3212312312312312|</cadenaOriginal>
+      <firma>bbb888bbb</firma>
+    </firmaElectronica>
+    <numeroRelacionFacturas>FACT0003MQ-FACT0004MQ</numeroRelacionFacturas>
+    <emisor>
+      <tipoIdentificador>1</tipoIdentificador>
+      <identificacion>ENS851002FB0</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>ENSATEC S.A. DE C.V. &amp;uacute; &amp;nacute; &amp;Nacute; &amp;aacute; &amp;Eacute; &amp;Iacute; &amp;Oacute; &amp;Uacute;</nombre>
+      <domicilio>
+        <calle>CALLE COLINAS &amp; &lt; &gt; &quot; &#39; &amp;aacute; &amp;eacute; &amp;iacute; &amp;oacute;</calle>
+        <numeroExterior></numeroExterior>
+        <numeroInterior>11730</numeroInterior>
+        <colonia>COLINAS</colonia>
+        <localidad>TIJUANA</localidad>
+        <municipio>TITJUANA</municipio>
+        <entidadFederativa>BAJA CALIFORNIA</entidadFederativa>
+        <pais>MEX</pais>
+        <codigoPostal>22680</codigoPostal>
+      </domicilio>
+    </emisor>
+    <destinatario>
+      <tipoIdentificador>0</tipoIdentificador>
+      <identificacion>irs</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>cliente para submaquila</nombre>
+      <domicilio>
+        <calle>calle int</calle>
+        <numeroExterior>no ext</numeroExterior>
+        <numeroInterior>no int</numeroInterior>
+        <colonia>col</colonia>
+        <localidad>loc</localidad>
+        <municipio>muni</municipio>
+        <entidadFederativa>CA</entidadFederativa>
+        <pais>USA</pais>
+        <codigoPostal>111</codigoPostal>
+      </domicilio>
+    </destinatario>
+    <facturas>
+      <numeroFactura>FACT0003MQ</numeroFactura>
+      <certificadoOrigen></certificadoOrigen>
+      <numeroExportadorAutorizado></numeroExportadorAutorizado>
+      <subdivision></subdivision>
+      <mercancias>
+        <descripcionGenerica>maq 11</descripcionGenerica>
+        <claveUnidadMedida>6</claveUnidadMedida>
+        <tipoMoneda>USD</tipoMoneda>
+        <cantidad>300.000</cantidad>
+        <valorUnitario>27.000000</valorUnitario>
+        <valorTotal>405.000000</valorTotal>
+        <valorDolares>30.0000</valorDolares>
+        <descripcionesEspecificas>
+          <marca>ruda</marca>
+          <modelo>2001</modelo>
+          <subModelo></subModelo>
+          <numeroSerie>3212312312312312</numeroSerie>
+        </descripcionesEspecificas>
+      </mercancias>
+    </facturas>
+    <facturas>
+      <numeroFactura>FACT0004MQ</numeroFactura>
+      <certificadoOrigen></certificadoOrigen>
+      <numeroExportadorAutorizado></numeroExportadorAutorizado>
+      <subdivision></subdivision>
+      <mercancias>
+        <descripcionGenerica>maq 11</descripcionGenerica>
+        <claveUnidadMedida>6</claveUnidadMedida>
+        <tipoMoneda>USD</tipoMoneda>
+        <cantidad>240.000</cantidad>
+        <valorUnitario>27.000000</valorUnitario>
+        <valorTotal>324.000000</valorTotal>
+        <valorDolares>24.0000</valorDolares>
+        <descripcionesEspecificas>
+          <marca>ruda</marca>
+          <modelo>2001</modelo>
+          <subModelo></subModelo>
+          <numeroSerie>3212312312312312</numeroSerie>
+        </descripcionesEspecificas>
+      </mercancias>
+    </facturas>
+  </comprobantes>
+</solicitarRecibirRelacionFacturasIAServicio>

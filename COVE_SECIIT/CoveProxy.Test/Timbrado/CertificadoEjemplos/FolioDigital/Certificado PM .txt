@@ -1,0 +1,2 @@
+passwd: 12345678a
+No certificado: 20001000000300022824

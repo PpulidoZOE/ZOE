@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd http://www.sat.gob.mx/ComercioExterior http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior/ComercioExterior10.xsd"   xmlns:cfdi="http://www.sat.gob.mx/cfd/3"   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xmlns:xs="http://www.w3.org/2001/XMLSchema"   xmlns:cce="http://www.sat.gob.mx/ComercioExterior" 
+                  version="3.2" 
+                  serie="AA" 
+                  folio="4" 
+                  fecha="2016-06-09T10:12:58" 
+                  formaDePago="Pago en una sola exhibición" 
+                  sello="" 
+                  noCertificado="" 
+                  certificado="" 
+                  condicionesDePago="Contado" 
+                  TipoCambio="10.92" 
+                  subTotal="1331.00" 
+                  descuento="0.00" 
+                  Moneda="USD" 
+                  total="1331.00" 
+                  tipoDeComprobante="ingreso" 
+                  metodoDePago="Cheque" 
+                  LugarExpedicion="Tijuana" 
+                  NumCtaPago="No identificado" >
+	<cfdi:Emisor rfc="TUMG620310R95" nombre="EATON INDUSTRIES S. DE R.L. DE C.V.">
+	<cfdi:DomicilioFiscal calle="MIKE ALLEN" noExterior="65884184" colonia="Col.Aviacion" municipio="001" estado="NLE" pais="MEX" codigoPostal="22201"/>
+	<cfdi:ExpedidoEn municipio="001" colonia="Col.Aviacion" estado="NLE" pais="MEX" codigoPostal="22201"/>
+	<cfdi:RegimenFiscal Regimen="EATON INDUSTRIES S. DE R.L. DE C.V."/>
+	</cfdi:Emisor>
+	<cfdi:Receptor rfc="XEXX010101000" nombre="EATON CORPORATION">
+		<cfdi:Domicilio calle="BEACHWOOD, OH.  44122 USA" noExterior="8798" colonia="1000 EATON BLVD BEACHWOOD" municipio="BEACHWOOD" estado="CA" pais="USA" codigoPostal="44122-5847"/>
+	</cfdi:Receptor>
+	<cfdi:Conceptos>
+		<cfdi:Concepto cantidad="20.00" unidad="6" descripcion="PARTES PARA VALVULA SELENOIDE (ENSAMBLE)" valorUnitario="66.55" importe="1331.00" noIdentificacion="10003-0001"/>
+	</cfdi:Conceptos>
+	<cfdi:Impuestos totalImpuestosTrasladados="0.00" totalImpuestosRetenidos="0.00" >
+<cfdi:Traslados>
+<cfdi:Traslado impuesto="IVA" tasa="16" importe="0.00"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+<cfdi:Complemento>
+<cce:ComercioExterior Version="1.0" TipoOperacion="2" ClaveDePedimento="A1" CertificadoOrigen="1" NumCertificadoOrigen="112212" NumeroExportadorConfiable="2821382311238" Incoterm="CFR" Subdivision="0" Observaciones="n/d" TipoCambioUSD="10.92" TotalUSD="1331.00">
+<cce:Emisor Curp="MAIC890215HBCYTR06"/>
+<cce:Receptor Curp="MAIC890215HBCYTR06" NumRegIdTrib="9834742NDS"/>
+<cce:Destinatario NumRegIdTrib="9834742NDS" Rfc="AAA010101AAA" Curp="MAIC890215HBCYTR06" Nombre="EATON CORPORATION">
+<cce:Domicilio Calle="BEACHWOOD, OH.  44122 USA" NumeroExterior="8798" NumeroInterior="8484" Colonia="1000 EATON BLVD BEACHWOOD" Localidad="879" Referencia="8974" Municipio="BEACHWOOD" Estado="CA" Pais="USA" CodigoPostal="44122-5847"/>
+</cce:Destinatario>
+<cce:Mercancias>
+<cce:Mercancia NoIdentificacion="10003-0001" CantidadAduana="20.00" UnidadAduana="1" ValorUnitarioAduana="66.55" ValorDolares="1331.00">
+</cce:Mercancia>
+</cce:Mercancias>
+</cce:ComercioExterior>
+</cfdi:Complemento>
+ </cfdi:Comprobante>
+	

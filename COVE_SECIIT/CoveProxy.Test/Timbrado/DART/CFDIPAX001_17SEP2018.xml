@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd http://www.sat.gob.mx/ComercioExterior11 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd" xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" Version="3.3" Folio="CFDIPAX001" Fecha="2018-09-17T09:46:50" FormaPago="01" Sello="" NoCertificado="00001000000402930765" Certificado="" TipoCambio="18.5604" CondicionesDePago="Contado" SubTotal="9787.40" Descuento="0.00" Moneda="USD" Total="9787.40" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="20000" >
+	<cfdi:Emisor Rfc="DTI0511155E8" RegimenFiscal="601" Nombre="TEST, S.A. DE C.V."/>
+	<cfdi:Receptor Rfc="XEXX010101000" UsoCFDI="P01" ResidenciaFiscal="USA" NumRegIdTrib="666454444" Nombre="TEST1 CO." />
+		<cfdi:Conceptos>
+		<cfdi:Concepto Cantidad="10.000" ClaveUnidad="18" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE L" ValorUnitario="139.82" Importe="1398.2000" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="MQ000168-009"/>
+	<cfdi:Concepto Cantidad="60.000" ClaveUnidad="18" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE L" ValorUnitario="139.82" Importe="8389.2000" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="MQ000168-010"/>
+	</cfdi:Conceptos>
+	<cfdi:Impuestos TotalImpuestosTrasladados="0.00" >
+<cfdi:Traslados>
+<cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+<cfdi:Complemento>
+<cce11:ComercioExterior Version="1.1" TipoOperacion="2" ClaveDePedimento="A1" CertificadoOrigen="0" Incoterm="DAF" Subdivision="0" TipoCambioUSD="18.5604" TotalUSD="9787.40" >
+<cce11:Emisor >
+	<cce11:Domicilio Calle="CALLE OLMOS" Colonia="0001" Municipio="001" Estado="AGU" Pais="MEX" CodigoPostal="20000" />
+</cce11:Emisor>
+<cce11:Receptor> 
+	<cce11:Domicilio Calle="Macedio Alcala no.73" NumeroExterior="4544" Colonia="0001" Municipio="001" Estado="AL" Pais="USA" CodigoPostal="20000" />
+</cce11:Receptor>
+<cce11:Mercancias>
+<cce11:Mercancia NoIdentificacion="MQ000168-009" FraccionArancelaria="73269099" CantidadAduana="10.000" UnidadAduana="01" ValorUnitarioAduana="139.82" ValorDolares="1398.20" >
+	<cce11:DescripcionesEspecificas Marca="MARCA : MARC: UFC" NumeroSerie="NO. 011" />
+</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="MQ000168-010" FraccionArancelaria="73269099" CantidadAduana="60.000" UnidadAduana="01" ValorUnitarioAduana="139.82" ValorDolares="8389.20" >
+	<cce11:DescripcionesEspecificas Marca="MARCA : MARC: UFC" NumeroSerie="NO. 090" />
+</cce11:Mercancia>
+</cce11:Mercancias>
+</cce11:ComercioExterior>
+</cfdi:Complemento>
+ </cfdi:Comprobante>
+	

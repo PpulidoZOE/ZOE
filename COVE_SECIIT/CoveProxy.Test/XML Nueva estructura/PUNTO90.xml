@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<solicitarRecibirCoveServicio>
+  <comprobantes>
+    <tipoOperacion>1</tipoOperacion>
+    <fechaExpedicion>2012-03-05</fechaExpedicion>
+    <observaciones></observaciones>
+    <rfcConsultas>
+      <rfcConsulta>GATR730803K93</rfcConsulta>
+    </rfcConsultas>
+    <patentesAduanales>
+      <patenteAduanal>3491</patenteAduanal>
+    </patentesAduanales>
+    <tipoFigura>4</tipoFigura>
+    <correoElectronico>rgarcia@zoeitcustoms.com</correoElectronico>
+    <firmaElectronica>
+      <certificado>aaa99999aaa</certificado>
+      <cadenaOriginal>|TOCE.EXP|PUNTO90|0|2012-03-05|4|GATR730803K93|3491|0|0|1|ENS851002FB0|ENSATEC S.A. DE C.V. &amp;uacute; &amp;nacute; &amp;Nacute; &amp;aacute; &amp;Eacute; &amp;Iacute; &amp;Oacute; &amp;Uacute;|CALLE COLINAS &amp; &lt; &gt; &quot; &#39; &amp;aacute; &amp;eacute; &amp;iacute; &amp;oacute;|11730|COLINAS|TIJUANA|TITJUANA|BAJA CALIFORNIA|MEX|22680|0|irs|cliente para submaquila|calle int|no ext|no int|col|loc|muni|CA|USA|111|TORNILLOS (1)|6|1.000|USD|11.250000|11.250000|0.9000|FORD|MUSTANG|</cadenaOriginal>
+      <firma>bbb888bbb</firma>
+    </firmaElectronica>
+    <numeroFacturaOriginal>PUNTO90</numeroFacturaOriginal>
+    <factura>
+      <certificadoOrigen>0</certificadoOrigen>
+      <numeroExportadorAutorizado></numeroExportadorAutorizado>
+      <subdivision>0</subdivision>
+    </factura>
+    <emisor>
+      <tipoIdentificador>1</tipoIdentificador>
+      <identificacion>ENS851002FB0</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>ENSATEC S.A. DE C.V. &amp;uacute; &amp;nacute; &amp;Nacute; &amp;aacute; &amp;Eacute; &amp;Iacute; &amp;Oacute; &amp;Uacute;</nombre>
+      <domicilio>
+        <calle>CALLE COLINAS &amp; &lt; &gt; &quot; &#39; &amp;aacute; &amp;eacute; &amp;iacute; &amp;oacute;</calle>
+        <numeroExterior></numeroExterior>
+        <numeroInterior>11730</numeroInterior>
+        <colonia>COLINAS</colonia>
+        <localidad>TIJUANA</localidad>
+        <municipio>TITJUANA</municipio>
+        <entidadFederativa>BAJA CALIFORNIA</entidadFederativa>
+        <pais>MEX</pais>
+        <codigoPostal>22680</codigoPostal>
+      </domicilio>
+    </emisor>
+    <destinatario>
+      <tipoIdentificador>0</tipoIdentificador>
+      <identificacion>irs</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>cliente para submaquila</nombre>
+      <domicilio>
+        <calle>calle int</calle>
+        <numeroExterior>no ext</numeroExterior>
+        <numeroInterior>no int</numeroInterior>
+        <colonia>col</colonia>
+        <localidad>loc</localidad>
+        <municipio>muni</municipio>
+        <entidadFederativa>CA</entidadFederativa>
+        <pais>USA</pais>
+        <codigoPostal>111</codigoPostal>
+      </domicilio>
+    </destinatario>
+    <mercancias>
+      <descripcionGenerica>TORNILLOS (1)</descripcionGenerica>
+      <claveUnidadMedida>6</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>1.000</cantidad>
+      <valorUnitario>11.250000</valorUnitario>
+      <valorTotal>11.250000</valorTotal>
+      <valorDolares>0.9000</valorDolares>
+      <descripcionesEspecificas>
+        <marca>FORD</marca>
+        <modelo>MUSTANG</modelo>
+        <subModelo></subModelo>
+        <numeroSerie></numeroSerie>
+      </descripcionesEspecificas>
+    </mercancias>
+  </comprobantes>
+</solicitarRecibirCoveServicio>

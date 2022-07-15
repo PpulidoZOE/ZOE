@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd http://www.sat.gob.mx/ComercioExterior11 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd" xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" Version="3.3" 
+                  Folio="2018-1-003" Fecha="2018-01-25T11:47:42" FormaPago="01" Sello="" NoCertificado="00001000000402780433" Certificado="" TipoCambio="18.58" CondicionesDePago="Contado" SubTotal="1219.70" Descuento="0.00" Moneda="USD" Total="1219.70" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="21460" >
+	<cfdi:Emisor Rfc="WME971122C6A" RegimenFiscal="601" Nombre="WILLIS DE MEXICO, S.A. DE C.V."/>
+	<cfdi:Receptor Rfc="XEXX010101000" UsoCFDI="P01" ResidenciaFiscal="USA" NumRegIdTrib="942554397" Nombre="WILLIS CONSTRUCTION CO." />
+		<cfdi:Conceptos>
+		<cfdi:Concepto Cantidad="600.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.16" Importe="94.3200" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00069"/>
+	<cfdi:Concepto Cantidad="800.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.15" Importe="121.1200" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00070"/>
+	<cfdi:Concepto Cantidad="10.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.68" Importe="6.8200" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00071"/>
+	<cfdi:Concepto Cantidad="578.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.13" Importe="73.1170" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00072"/>
+	<cfdi:Concepto Cantidad="576.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.14" Importe="83.4624" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00073"/>
+	<cfdi:Concepto Cantidad="628.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.09" Importe="56.7084" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00074"/>
+	<cfdi:Concepto Cantidad="1500.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.08" Importe="126.1500" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00075"/>
+	<cfdi:Concepto Cantidad="2800.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.07" Importe="197.4000" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00076"/>
+	<cfdi:Concepto Cantidad="2100.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.06" Importe="117.6000" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00077"/>
+	<cfdi:Concepto Cantidad="10.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.10" Importe="0.9850" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00078"/>
+	<cfdi:Concepto Cantidad="6.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.21" Importe="1.2360" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00079"/>
+	<cfdi:Concepto Cantidad="100.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.12" Importe="12.0800" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00080"/>
+	<cfdi:Concepto Cantidad="15.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.07" Importe="1.0575" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00081"/>
+	<cfdi:Concepto Cantidad="150.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.07" Importe="10.8150" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00082"/>
+	<cfdi:Concepto Cantidad="100.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.05" Importe="4.8000" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00083"/>
+	<cfdi:Concepto Cantidad="300.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; L &quot;" ValorUnitario="0.06" Importe="18.8400" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO3-00084"/>
+	<cfdi:Concepto Cantidad="1000.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; C &quot;" ValorUnitario="0.14" Importe="140.9000" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO5-00010"/>
+	<cfdi:Concepto Cantidad="10.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; C &quot;" ValorUnitario="0.12" Importe="1.1970" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO5-00011"/>
+	<cfdi:Concepto Cantidad="1100.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; C &quot;" ValorUnitario="0.11" Importe="123.3100" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO5-00012"/>
+	<cfdi:Concepto Cantidad="50.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; C &quot;" ValorUnitario="0.16" Importe="8.1100" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO5-00013"/>
+	<cfdi:Concepto Cantidad="15.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; C &quot;" ValorUnitario="0.16" Importe="2.3580" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO5-00014"/>
+	<cfdi:Concepto Cantidad="15.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; C &quot;" ValorUnitario="0.17" Importe="2.5350" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO5-00015"/>
+	<cfdi:Concepto Cantidad="150.000" ClaveUnidad="H87" Unidad="01" Descripcion="REDONDOS METALICOS EN FORMA DE &quot; C &quot;" ValorUnitario="0.10" Importe="14.7750" Descuento="0.0000" ClaveProdServ="01010101" NoIdentificacion="A1-EXPO5-00016"/>
+	</cfdi:Conceptos>
+	<cfdi:Impuestos TotalImpuestosTrasladados="0.00" TotalImpuestosRetenidos="0.00" >
+<cfdi:Traslados>
+<cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+<cfdi:Complemento>
+<cce11:ComercioExterior Version="1.1" TipoOperacion="2" ClaveDePedimento="A1" CertificadoOrigen="0" Incoterm="DAF" Subdivision="0" TipoCambioUSD="18.58" TotalUSD="1219.73" >
+<cce11:Emisor >
+	<cce11:Domicilio Calle="0001" NumeroExterior="0001" Colonia="1000" Municipio="003" Estado="BCN" Pais="MEX" CodigoPostal="21460" />
+</cce11:Emisor>
+<cce11:Receptor> 
+	<cce11:Domicilio Calle="2261 SAN JUAN HIGWAY" NumeroExterior="2261" Colonia="0001" Municipio="999" Estado="CA" Pais="USA" CodigoPostal="37187" />
+</cce11:Receptor>
+<cce11:Mercancias>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00069" FraccionArancelaria="73089099" ValorDolares="94.32" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00070" FraccionArancelaria="73089099" ValorDolares="121.12" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00071" FraccionArancelaria="73089099" ValorDolares="6.82" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00072" FraccionArancelaria="73089099" ValorDolares="73.12" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00073" FraccionArancelaria="73089099" ValorDolares="83.46" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00074" FraccionArancelaria="73089099" ValorDolares="56.71" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00075" FraccionArancelaria="73089099" ValorDolares="126.15" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00076" FraccionArancelaria="73089099" ValorDolares="197.40" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00077" FraccionArancelaria="73089099" ValorDolares="117.60" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00078" FraccionArancelaria="73089099" ValorDolares="0.99" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00079" FraccionArancelaria="73089099" ValorDolares="1.24" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00080" FraccionArancelaria="73089099" ValorDolares="12.08" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00081" FraccionArancelaria="73089099" ValorDolares="1.06" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00082" FraccionArancelaria="73089099" ValorDolares="10.82" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00083" FraccionArancelaria="73089099" ValorDolares="4.80" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO3-00084" FraccionArancelaria="73089099" ValorDolares="18.84" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO5-00010" FraccionArancelaria="73089099" ValorDolares="140.90" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO5-00011" FraccionArancelaria="73089099" ValorDolares="1.20" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO5-00012" FraccionArancelaria="73089099" ValorDolares="123.31" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO5-00013" FraccionArancelaria="73089099" ValorDolares="8.11" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO5-00014" FraccionArancelaria="73089099" ValorDolares="2.36" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO5-00015" FraccionArancelaria="73089099" ValorDolares="2.54" >
+	</cce11:Mercancia>
+<cce11:Mercancia NoIdentificacion="A1-EXPO5-00016" FraccionArancelaria="73089099" ValorDolares="14.78" >
+	</cce11:Mercancia>
+</cce11:Mercancias>
+</cce11:ComercioExterior>
+</cfdi:Complemento>
+ </cfdi:Comprobante>
+	

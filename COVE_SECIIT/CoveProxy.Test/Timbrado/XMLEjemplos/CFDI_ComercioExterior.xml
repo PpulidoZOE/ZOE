@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3"  
+                  version="3.2" 
+                  serie="AA" 
+                  folio="4" 
+                  fecha="2016-05-03T10:12:58" 
+                  sello="" 
+                  formaDePago="Pago en una sola exhibición" 
+                  noCertificado="" 
+                  certificado="" 
+                  condicionesDePago="Contado" 
+                  TipoCambio="18.00" 
+                  subTotal="101000.00" 
+                  descuento="2000.00" 
+                  Moneda="MXN" 
+                  total="99250.00" 
+                  tipoDeComprobante="ingreso" 
+                  metodoDePago="Cheque" 
+                  LugarExpedicion="San Pedro Garza García, Nuevo León, México"
+                  NumCtaPago="No identificado" >
+  <cfdi:Emisor rfc="AAA010101AAA" nombre="EMPRESA DEMO">
+    <cfdi:DomicilioFiscal calle="RIO GUADALQUIVIR" noExterior="238" colonia="0001" municipio="067" estado="OAX" pais="MEX" localidad="02" codigoPostal="68000"/>
+    <cfdi:ExpedidoEn municipio="067" localidad="02" colonia="001" estado="OAX" pais="MEX" codigoPostal="68000"/>
+    <cfdi:RegimenFiscal Regimen="REGIMEN GENERAL DE LEY PERSONAS MORALES"/>
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="XEXX010101000" nombre="PUBLICO EN GENERAL">
+    <cfdi:Domicilio calle="CERRADA DE AZUCENAS" noExterior="109" colonia="REFORMA" municipio="BROOKS" estado="ON" pais="CAN" codigoPostal="A2A 2A1"/>
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1" unidad="CANT" descripcion="IPHONE 5" valorUnitario="5000" importe="5000" noIdentificacion="A-1213"/>
+    <cfdi:Concepto cantidad="4" unidad="PIEZA" descripcion="IPHONE 6S" valorUnitario="12000.00" importe="48000.00" noIdentificacion="A-1214"/>
+    <cfdi:Concepto cantidad="4" unidad="PIEZA" descripcion="IPHONE 6" valorUnitario="12000.00" importe="48000.00" noIdentificacion="A-1215"/>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="250" totalImpuestosRetenidos="0.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="16" importe="250"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Addenda/>
+</cfdi:Comprobante>

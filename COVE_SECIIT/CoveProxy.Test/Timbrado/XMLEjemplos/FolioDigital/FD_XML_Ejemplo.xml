@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.2" folio="10759" fecha="2015-08-05T09:28:54" sello="VHAMGdu4AkbyKYdSx/4uTTSUS+Vji1dd1M6L+KSCBMmuLinTI47KvkVKng6bzMe7B5Tk6Gx4G5GXNdNHdh8Q69zBWUwAnpMo3SWxwzsEPBP6Q9puH2kDaMudv3Y9OjYwWRhu+LJu3dg/j/GdFtrbkQZ3anaPCRgCx17ZWYNGkuI=" formaDePago="Pago en una sola exhibiciÃ³n" noCertificado="00001000000102655336" certificado="MIIC1DCCAj2gAwIBAgIUMDAwMDEwMDAwMDAxMDI2NTUzMzYwDQYJKoZIhvcNAQEFBQAwgboxGDAWBgNVBAMTD0EuQy4gZGUgUHJ1ZWJhczEuMCwGA1UEChQlU2VydmljaW8gZGUgQWRtaW5pc3RyYWNp824gVHJpYnV0YXJpYTE2MDQGA1UECxQtQWRtaW5pc3RyYWNp824gZGUgU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjafNuMQswCQYDVQQGEwJNWDERMA8GA1UEBxQIQ295b2Fj4W4xFjAUBgNVBC0TDSBTQVQ5NzA3MDFOTjMwHhcNMTIwNzMxMTczNjE3WhcNMjIwNzI5MTczNjE3WjB2MRIwEAYDVQQDEwlNYXRyaXogU0ExEjAQBgNVBCkTCU1hdHJpeiBTQTESMBAGA1UEChMJTWF0cml6IFNBMSUwIwYDVQQtExxBQUEwMTAxMDFBQUEgLyBBQUFBMDEwMTAxQUFBMREwDwYDVQQLEwhVbmlkYWQgMTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA2Jnour5DkXOLvpFy+4+/CxE7anshUwjCw1yFZMr5kLDVSOhQpCU+AVDM4MTL+tKbhIbqPocAiwkjjFqgjJFMA1I/nECP2EHidlr836QneSPP27/hfvu7NXyFkOPD3dFhqR6m6wvoL6oxSaZaq5FdNHn4znqQWVxhPJfxTOL+uN0CAwEAAaMaMBgwCQYDVR0TBAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADgYEAiE+YTk/63p/WZJNVzDs401owXINPAsWqgc1yJwg+yUs7/8Hi50GlU332yOy3Moun9HDtt1nasXB/I6E2DF1C1HUqU0YoGdWVEtHWd44GE559VGjCj0jMgk809IPQ2jMos98yuSrYkw6LLPEQ+CKm3IcIjZKc4HokzTg9DwqWvIA=" subTotal="23.75" Moneda="MXN" total="27.55" tipoDeComprobante="ingreso" metodoDePago="No identificado" LugarExpedicion="Puebla, Puebla" 
+                  xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" xmlns:cfdi="http://www.sat.gob.mx/cfd/3">
+  <cfdi:Emisor rfc="DEMO050505FD5" nombre="Folios Digitales">
+    <cfdi:DomicilioFiscal calle="Calle Demo" noExterior="1" noInterior="A" colonia="Colonia Demo" municipio="Puebla" estado="Puebla" pais="MÃ©xico" codigoPostal="72400" />
+    <cfdi:RegimenFiscal Regimen="RÃ©gimen de las Personas FÃ­sicas con Actividades Empresariales y Profesionales" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="ASA960604A1A" nombre="ABARROTERA SAN ANTONIO  S.A. DE C.V.">
+    <cfdi:Domicilio calle="CARRETERA MEXICO-CUAUTLA" noExterior="151" noInterior="24" colonia="CENTRAL DE ABASTOS" localidad="CUAUTLA" municipio="CUAUTLA" estado="MORELOS" pais="MEXICO" codigoPostal="62751" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1.00" unidad="pz" noIdentificacion="F12419" descripcion="FOCO 1141 12 LEDS AZUL CHINO JGO" valorUnitario="23.75" importe="23.75" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="3.80">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="3.80" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

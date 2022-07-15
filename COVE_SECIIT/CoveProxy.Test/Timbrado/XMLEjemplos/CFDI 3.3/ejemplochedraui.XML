@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd"
+                  Version="3.3" Serie="CH" Folio="069" Fecha="2017-12-25T10:26:42"
+                  Sello="TVlleetPmOVyg6rJf7uYpNzsGVfkPho2ERMYXC4CrExnqVE68IjHmUZhdsJwZQQsmvgazwoTNgWcK02H6m3TbLFJ4B6witirQGqCWeM9Iwg3W2zyiuQlcdnP6VIP3k0JKTRnrw3HRjmerACAzD3ysV83ZJlukleEcVx88CtWWpI="
+                  FormaPago="01"
+                  NoCertificado="00001000000201334075"
+                  Certificado="MIIEhTCCA22gAwIBAgIUMDAwMDEwMDAwMDAyMDEzMzQwNzUwDQYJKoZIhvcNAQEFBQAwggGVMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMSEwHwYJKoZIhvcNAQkBFhJhc2lzbmV0QHNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxFDASBgNVBAcMC0N1YXVodMOpbW9jMRUwEwYDVQQtEwxTQVQ5NzA3MDFOTjMxPjA8BgkqhkiG9w0BCQIML1Jlc3BvbnNhYmxlOiBDZWNpbGlhIEd1aWxsZXJtaW5hIEdhcmPDrWEgR3VlcnJhMB4XDTEyMDYxMjIxMDQ1NVoXDTE2MDYxMjIxMDQ1NVowgcYxIzAhBgNVBAMTGk9SR0FOSVpBQ0lPTiBBTE1VIFNBIERFIENWMSMwIQYDVQQpExpPUkdBTklaQUNJT04gQUxNVSBTQSBERSBDVjEjMCEGA1UEChMaT1JHQU5JWkFDSU9OIEFMTVUgU0EgREUgQ1YxJTAjBgNVBC0THE9BTDA4MDgwNUE2MSAvIE1VTFg2NzA3MzA1SDcxHjAcBgNVBAUTFSAvIE1YTEE2NzA3MzBIREZKUEwwOTEOMAwGA1UECxMFQUxNVTEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKlsFTFOkTn9v+xjru83wBw8oMHDsaC09VKR3HOmqEtqxn5gQpubHVKOpd8wDtSlz6DH1f1kMKoVdNCgwxdbE1gwaEJYejY3Wy1/H9rpiHLYbQV3NxO7Y679RkJDwq4it0elwgrL53jJXBhGq9rbhMPpmxT83Tz6pgMx0WhS7YaxAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBBQUAA4IBAQA4foB1xugULO81zy7q16ZOCVHrO9tZAyKHOJkrROJsMpO/ofyCkXfKKP9nrAYANLYLvGBT1Y93YmyVJyYLLXfWJMH+Bqnnyj9X2psPs+OuMW5ieT6n+RaVwIgQSlervycrPrWOfLJAmxfCNjdGmvp9TXjjfB0Uy/FGXnuGRfVmDuOfRm5VdcF2Sfhh5ymo4YKwBfq6+Tf8MFlyLqWsAQRlfwTeEj9eKvA0DGNAFbBDaOFScNisIMClGN5gqGckEKpmpXYi/Xj8eq7rFfzSirziYUoyev/U59iUG9HN5TIkpmwk8eJOLLYBxktSb21Q5tcO7RrlvjgHZ/RjPPdmJgsa"
+                  CondicionesDePago="60"
+                  SubTotal="36105.01" Total="41881.80"
+                  MetodoPago="PPD"
+                  TipoDeComprobante="I"
+                  Moneda="MXN"
+                  LugarExpedicion="20001"
+  xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cfdi:Emisor Rfc="FMF970224TA4" Nombre="Emisor de Prueba" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="TCH850701RM1" Nombre="TIENDAS CHEDRAUI S.A. DE C.V."  UsoCFDI="G03"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="01010101" Cantidad="20" ClaveUnidad="18" NoIdentificacion="7501145600665" Descripcion="Cepillo Iesa Rectangular 66" ValorUnitario="156.63" Importe="3132.60" />
+    <cfdi:Concepto ClaveProdServ="01010101" Cantidad="2"  ClaveUnidad="18" NoIdentificacion="7501145600146" Descripcion="Cepillo Iesa 25" ValorUnitario="303.44" Importe="606.88" />
+    <cfdi:Concepto ClaveProdServ="01010101" Cantidad="25" ClaveUnidad="18" NoIdentificacion="7501145600726" Descripcion="Cepillo Iesa Bebe 66" ValorUnitario="156.63" Importe="3915.75" />
+    <cfdi:Concepto ClaveProdServ="01010101" Cantidad="32" ClaveUnidad="18" NoIdentificacion="7501145600337" Descripcion="Cepillo Iesa 33" ValorUnitario="197.28" Importe="6312.96" />
+    <cfdi:Concepto ClaveProdServ="01010101" Cantidad="24" ClaveUnidad="18" NoIdentificacion="7501145600252" Descripcion="Cepillo Iesa Redondo 25" ValorUnitario="273.10" Importe="6554.40" />
+    <cfdi:Concepto ClaveProdServ="01010101" Cantidad="19" ClaveUnidad="18" NoIdentificacion="7501145600115" Descripcion="Cepillo Iesa Arana 11" ValorUnitario="197.28" Importe="3748.32" />
+    <cfdi:Concepto ClaveProdServ="01010101" Cantidad="33" ClaveUnidad="18" NoIdentificacion="7501145600177" Descripcion="Cepillo Iesa Ovalado 17" ValorUnitario="262.98" Importe="8678.34" />
+    <cfdi:Concepto ClaveProdServ="01010101" Cantidad="24" ClaveUnidad="18" NoIdentificacion="7501145600139" Descripcion="Ligas Iesa 2 Piezas" ValorUnitario="131.49" Importe="3155.76" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="5776.79">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="003" TipoFactor="Tasa" TasaOCuota="1.600000" Importe="5776.79" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

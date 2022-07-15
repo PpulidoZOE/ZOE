@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="90ac0b5d-f891-4038-bec6-6bfdabd57981" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://timbrado.facturarenlinea.com/WSTFD.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WSTFD.xsd" MetadataType="Schema" ID="73f2e44c-e595-4456-a761-2a1d0da18940" SourceId="1" SourceUrl="http://timbrado.facturarenlinea.com/WSTFD.svc?xsd=xsd2" />
+    <MetadataFile FileName="WSTFD1.xsd" MetadataType="Schema" ID="4e5261ea-13fc-4bb0-8179-18fd2ebb688c" SourceId="1" SourceUrl="http://timbrado.facturarenlinea.com/WSTFD.svc?xsd=xsd3" />
+    <MetadataFile FileName="WSTFD2.xsd" MetadataType="Schema" ID="98e136c7-bca3-4371-a08c-c2266707af36" SourceId="1" SourceUrl="http://timbrado.facturarenlinea.com/WSTFD.svc?xsd=xsd0" />
+    <MetadataFile FileName="WSTFD3.xsd" MetadataType="Schema" ID="940ce661-b05d-46b9-b9ab-d1e96bc9776e" SourceId="1" SourceUrl="http://timbrado.facturarenlinea.com/WSTFD.svc?xsd=xsd1" />
+    <MetadataFile FileName="WSTFD.wsdl" MetadataType="Wsdl" ID="03acda42-2213-4b39-96bd-95f122ebeab2" SourceId="1" SourceUrl="https://timbrado.facturarenlinea.com/WSTFD.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

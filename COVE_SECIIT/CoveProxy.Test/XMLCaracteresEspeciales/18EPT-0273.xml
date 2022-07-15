@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<solicitarRecibirCoveServicio>
+  <comprobantes>
+    <tipoOperacion>1</tipoOperacion>
+    <fechaExpedicion>2018-06-25</fechaExpedicion>
+    <observaciones></observaciones>
+    <rfcConsultas>
+      <rfcConsulta>WME8002256L8</rfcConsulta>
+    </rfcConsultas>
+    <patentesAduanales>
+      <patenteAduanal>3429</patenteAduanal>
+    </patentesAduanales>
+    <patentesAduanales>
+      <patenteAduanal>3633</patenteAduanal>
+    </patentesAduanales>
+    <tipoFigura>4</tipoFigura>
+    <correoElectronico>marcos.lopez@medtronic.com</correoElectronico>
+    <firmaElectronica>
+      <certificado>aaa99999aaa</certificado>
+      <cadenaOriginal>|TOCE.EXP|18EPT-0273-987|0|2018-06-25|4|WME8002256L8|3429|3633|0|0|1|NPB960219TM5|WOODHEAD DE MEXICO, S.A. DE C.V. & á,é,í,ó,ú,ñ,Ñ,Á,É,Í,Ó,Ú ' " >|AVENIDA INTERMEX &|1351|PARQUE INDUSTRIAL INTERMEX &|JUAREZ|JUAREZ|CHH|MEX|32575|0|36198258000|WOODHEAD INDUSTRIES LLC|JAMES WATT|11501|EL PASO|EL PASO|TEXAS|USA|79936|BLOQUE DE TERMINALES ELECTRICAS|C62_1|20400.000|USD|0.495000|10098.000000|10098.0000|BLOQUE DE TERMINALES ELECTRICAS|C62_1|1800.000|USD|1.089384|1960.890750|1960.8908|CONECTORES ELECTRICOS|C62_1|8652.000|USD|0.542500|4693.710000|4693.7100|CABLE ELECTRICO CON CONECTOR|C62_1|264.000|USD|21.303000|5623.992000|5623.9920|CABLE ELECTRICO CON CONECTOR|C62_1|671.000|USD|7.758000|5205.618000|5205.6180|CABLE ELECTRICO CON CONECTOR|C62_1|505.000|USD|9.771501|4934.608131|4934.6081|CABLE ELECTRICO CON CONECTOR|C62_1|85.000|USD|28.647000|2434.995000|2434.9950|CABLE ELECTRICO CON CONECTOR|C62_1|533.000|USD|4.932000|2628.756000|2628.7560|CABLE ELECTRICO CON CONECTOR|C62_1|1149.000|USD|3.717000|4270.833000|4270.8330|CABLE ELECTRICO CON CONECTOR|C62_1|1390.000|USD|1.836000|2552.040000|2552.0400|CABLE ELECTRICO CON CONECTOR|C62_1|245.000|USD|10.026000|2456.370000|2456.3700|CABLE ELECTRICO CON CONECTOR|C62_1|186.000|USD|11.682000|2172.852000|2172.8520|CABLE ELECTRICO CON CONECTOR|C62_1|344.000|USD|13.491000|4640.904000|4640.9040|CABLE ELECTRICO CON CONECTOR|C62_1|640.000|USD|10.989000|7032.960000|7032.9600|CABLE ELECTRICO CON CONECTOR|C62_1|211.000|USD|25.137000|5303.907000|5303.9070|SOCKETS|C62_1|1495.000|USD|3.867220|5781.493900|5781.4939|APARATOS DE ELEVACION (BALANCINES)|C62_1|46.000|USD|50.067000|2303.082000|2303.0820|APARATOS DE ELEVACION (BALANCINES)|C62_1|200.000|USD|9.432000|1886.400000|1886.4000|</cadenaOriginal>
+      <firma>bbb888bbb</firma>
+    </firmaElectronica>
+    <numeroFacturaOriginal>18EPT-0273-987</numeroFacturaOriginal>
+    <factura>
+      <certificadoOrigen>0</certificadoOrigen>
+      <numeroExportadorAutorizado></numeroExportadorAutorizado>
+      <subdivision>0</subdivision>
+    </factura>
+    <emisor>
+      <tipoIdentificador>1</tipoIdentificador>
+      <identificacion>NPB960219TM5</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>WOODHEAD DE MEXICO, S.A. DE C.V. & á,é,í,ó,ú,ñ,Ñ,Á,É,Í,Ó,Ú ' " ></nombre>
+      <domicilio>
+        <calle>AVENIDA INTERMEX &</calle>
+        <numeroExterior></numeroExterior>
+        <numeroInterior>1351</numeroInterior>
+        <colonia>PARQUE INDUSTRIAL INTERMEX &</colonia>
+        <localidad>JUAREZ</localidad>
+        <municipio>JUAREZ</municipio>
+        <entidadFederativa>CHH</entidadFederativa>
+        <pais>MEX</pais>
+        <codigoPostal>32575</codigoPostal>
+      </domicilio>
+    </emisor>
+    <destinatario>
+      <tipoIdentificador>0</tipoIdentificador>
+      <identificacion>36198258000</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>WOODHEAD INDUSTRIES LLC</nombre>
+      <domicilio>
+        <calle>JAMES WATT</calle>
+        <numeroExterior>11501</numeroExterior>
+        <numeroInterior></numeroInterior>
+        <colonia></colonia>
+        <localidad>EL PASO</localidad>
+        <municipio>EL PASO</municipio>
+        <entidadFederativa>TEXAS</entidadFederativa>
+        <pais>USA</pais>
+        <codigoPostal>79936</codigoPostal>
+      </domicilio>
+    </destinatario>
+    <mercancias>
+      <descripcionGenerica>BLOQUE DE TERMINALES ELECTRICAS</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>20400.000</cantidad>
+      <valorUnitario>0.495000</valorUnitario>
+      <valorTotal>10098.000000</valorTotal>
+      <valorDolares>10098.0000</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>BLOQUE DE TERMINALES ELECTRICAS</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>1800.000</cantidad>
+      <valorUnitario>1.089384</valorUnitario>
+      <valorTotal>1960.890750</valorTotal>
+      <valorDolares>1960.8908</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CONECTORES ELECTRICOS</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>8652.000</cantidad>
+      <valorUnitario>0.542500</valorUnitario>
+      <valorTotal>4693.710000</valorTotal>
+      <valorDolares>4693.7100</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>264.000</cantidad>
+      <valorUnitario>21.303000</valorUnitario>
+      <valorTotal>5623.992000</valorTotal>
+      <valorDolares>5623.9920</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>671.000</cantidad>
+      <valorUnitario>7.758000</valorUnitario>
+      <valorTotal>5205.618000</valorTotal>
+      <valorDolares>5205.6180</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>505.000</cantidad>
+      <valorUnitario>9.771501</valorUnitario>
+      <valorTotal>4934.608131</valorTotal>
+      <valorDolares>4934.6081</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>85.000</cantidad>
+      <valorUnitario>28.647000</valorUnitario>
+      <valorTotal>2434.995000</valorTotal>
+      <valorDolares>2434.9950</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>533.000</cantidad>
+      <valorUnitario>4.932000</valorUnitario>
+      <valorTotal>2628.756000</valorTotal>
+      <valorDolares>2628.7560</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>1149.000</cantidad>
+      <valorUnitario>3.717000</valorUnitario>
+      <valorTotal>4270.833000</valorTotal>
+      <valorDolares>4270.8330</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>1390.000</cantidad>
+      <valorUnitario>1.836000</valorUnitario>
+      <valorTotal>2552.040000</valorTotal>
+      <valorDolares>2552.0400</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>245.000</cantidad>
+      <valorUnitario>10.026000</valorUnitario>
+      <valorTotal>2456.370000</valorTotal>
+      <valorDolares>2456.3700</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>186.000</cantidad>
+      <valorUnitario>11.682000</valorUnitario>
+      <valorTotal>2172.852000</valorTotal>
+      <valorDolares>2172.8520</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>344.000</cantidad>
+      <valorUnitario>13.491000</valorUnitario>
+      <valorTotal>4640.904000</valorTotal>
+      <valorDolares>4640.9040</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>640.000</cantidad>
+      <valorUnitario>10.989000</valorUnitario>
+      <valorTotal>7032.960000</valorTotal>
+      <valorDolares>7032.9600</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>CABLE ELECTRICO CON CONECTOR</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>211.000</cantidad>
+      <valorUnitario>25.137000</valorUnitario>
+      <valorTotal>5303.907000</valorTotal>
+      <valorDolares>5303.9070</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>SOCKETS</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>1495.000</cantidad>
+      <valorUnitario>3.867220</valorUnitario>
+      <valorTotal>5781.493900</valorTotal>
+      <valorDolares>5781.4939</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>APARATOS DE ELEVACION (BALANCINES)</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>46.000</cantidad>
+      <valorUnitario>50.067000</valorUnitario>
+      <valorTotal>2303.082000</valorTotal>
+      <valorDolares>2303.0820</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>APARATOS DE ELEVACION (BALANCINES)</descripcionGenerica>
+      <claveUnidadMedida>C62_1</claveUnidadMedida>
+      <tipoMoneda>USD</tipoMoneda>
+      <cantidad>200.000</cantidad>
+      <valorUnitario>9.432000</valorUnitario>
+      <valorTotal>1886.400000</valorTotal>
+      <valorDolares>1886.4000</valorDolares>
+    </mercancias>
+  </comprobantes>
+</solicitarRecibirCoveServicio>

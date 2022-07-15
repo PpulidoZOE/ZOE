@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" Version="3.3" Folio="CFDI001" Fecha="2018-01-12T16:47:28" Sello="" NoCertificado="00001000000404142303" Certificado="" TipoCambio="19.00" SubTotal="0.00" Moneda="USD" Total="0" TipoDeComprobante="T" LugarExpedicion="01000" >
+	<cfdi:Emisor Rfc="GAI020902FG4" RegimenFiscal="601" Nombre="ZOE IT CUSTOMS TJ"/>
+	<cfdi:Receptor Rfc="XEXX010101000" UsoCFDI="D01" Nombre="prueba" />
+		<cfdi:Conceptos>
+		<cfdi:Concepto Cantidad="100" ClaveUnidad="18" Unidad="6" Descripcion="PIN ROLL" ValorUnitario="0.0030" Importe="0.3000" ClaveProdServ="01010101" NoIdentificacion="035096"/>
+	<cfdi:Concepto Cantidad="15" ClaveUnidad="18" Unidad="4" Descripcion="PLACA METALICA" ValorUnitario="10.0000" Importe="150.0000" ClaveProdServ="01010101" NoIdentificacion="CTE-001"/>
+	</cfdi:Conceptos>
+	</cfdi:Comprobante>
+	

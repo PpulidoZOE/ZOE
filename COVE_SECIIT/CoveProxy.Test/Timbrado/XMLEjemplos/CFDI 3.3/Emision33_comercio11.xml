@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 
+                        http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd 
+                        http://www.sat.gob.mx/ComercioExterior11 
+                        http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd"
+    Version="3.3" Serie="A" Folio="10002" Fecha="2017-12-29T01:01:01" SubTotal="2735.00"
+    Moneda="USD" TipoCambio="18.845100" Total="2297.40" TipoDeComprobante="I" MetodoPago="PUE"
+    LugarExpedicion="06300" NoCertificado="30001000000300023708" Certificado=""
+    Sello="">
+    <cfdi:Emisor Rfc="AAA010101AAA" Nombre="Empresa Prueba A" RegimenFiscal="601"/>
+    <cfdi:Receptor Rfc="XEXX010101000" Nombre="Alberto Ramos" UsoCFDI="G03" ResidenciaFiscal="USA"
+        NumRegIdTrib="123456789"/>
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="39101600" Unidad="Pieza" ClaveUnidad="C81" Cantidad="500"
+            NoIdentificacion="A19922" Descripcion="Articulo A" ValorUnitario="1.75" Importe="875.00">
+            <cfdi:Impuestos>
+                <cfdi:Retenciones>
+                    <cfdi:Retencion Impuesto="002" Base="875.00" TipoFactor="Tasa"
+                        TasaOCuota="0.160000" Importe="140.00"/>
+                </cfdi:Retenciones>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="39101600" Unidad="Pieza" ClaveUnidad="C81" Cantidad="1000"
+            NoIdentificacion="A20922" Descripcion="Articulo B" ValorUnitario="1.50"
+            Importe="1500.00">
+            <cfdi:Impuestos>
+                <cfdi:Retenciones>
+                    <cfdi:Retencion Impuesto="002" Base="1500.00" TipoFactor="Tasa"
+                        TasaOCuota="0.160000" Importe="240.00"/>
+                </cfdi:Retenciones>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="39101600" Unidad="Pieza" ClaveUnidad="C81" Cantidad="300"
+            NoIdentificacion="A30922" Descripcion="Articulo C" ValorUnitario="1.20" Importe="360.00">
+            <cfdi:Impuestos>
+                <cfdi:Retenciones>
+                    <cfdi:Retencion Impuesto="002" Base="360.00" TipoFactor="Tasa"
+                        TasaOCuota="0.160000" Importe="57.60"/>
+                </cfdi:Retenciones>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosRetenidos="437.60">
+        <cfdi:Retenciones>
+            <cfdi:Retencion Impuesto="002" Importe="437.60"/>
+        </cfdi:Retenciones>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <cce11:ComercioExterior Version="1.1" TipoOperacion="2" ClaveDePedimento="A1"
+            CertificadoOrigen="0" Incoterm="FOB" Subdivision="0" TipoCambioUSD="18.845100"
+            TotalUSD="2735.00">
+            <cce11:Emisor>
+                <cce11:Domicilio Calle="Hidalgo" NumeroExterior="1000" Colonia="0209"
+                    Municipio="014" Estado="QUE" Pais="MEX" CodigoPostal="76224"/>
+            </cce11:Emisor>
+            <cce11:Receptor>
+                <cce11:Domicilio Calle="Avenue 7" NumeroExterior="200" Colonia="RedWood" Estado="NV"
+                    Pais="USA" CodigoPostal="45678"/>
+            </cce11:Receptor>
+            <cce11:Mercancias>
+                <cce11:Mercancia NoIdentificacion="A19922" FraccionArancelaria="94059102"
+                    CantidadAduana="500" UnidadAduana="01" ValorUnitarioAduana="1.75"
+                    ValorDolares="875.00"/>
+                <cce11:Mercancia NoIdentificacion="A20922" FraccionArancelaria="94059102"
+                    CantidadAduana="1000" UnidadAduana="01" ValorUnitarioAduana="1.50"
+                    ValorDolares="1500.00"/>
+                <cce11:Mercancia NoIdentificacion="A30922" FraccionArancelaria="94059102"
+                    CantidadAduana="300" UnidadAduana="01" ValorUnitarioAduana="1.20"
+                    ValorDolares="360.00"/>
+            </cce11:Mercancias>
+        </cce11:ComercioExterior>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

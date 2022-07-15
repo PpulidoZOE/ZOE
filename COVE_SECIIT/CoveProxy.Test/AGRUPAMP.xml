@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<solicitarRecibirCoveServicio>
+  <comprobantes>
+    <tipoIdentificador>1</tipoIdentificador>
+    <identificacion>ENS851002FB0</identificacion>
+    <fechaExpedicion>2011-08-16</fechaExpedicion>
+    <certificadoOrigen>0</certificadoOrigen>
+    <numeroExportadorConfiable></numeroExportadorConfiable>
+    <observaciones></observaciones>
+    <rfcConsulta>GWT921026L97</rfcConsulta>
+    <subdivision>0</subdivision>
+    <tipoFiguraAduanal>1</tipoFiguraAduanal>
+    <curp></curp>
+    <correoElectronico>rgarcia@zoeitcustoms.com</correoElectronico>
+    <firmaElectronica>
+      <certificado>aaa99999aaa</certificado>
+      <cadenaOriginal>|1|ENS851002FB0|AGRUPAMP|0|0|2011-08-16|0|1|GWT921026L97|1|ENS851002FB0|ENSATEC S.A. DE C.V.|CALLE COLINAS|11730|COLINAS|TIJUANA|TITJUANA|BAJA CALIFORNIA|MEX|22680|0|irs|cliente para submaquila|calle int|no ext|no int|col|loc|muni|CA|ATG|111|TORNILLOS (1)|6|3.000|233.53|700.59|63.6900|TORNILLOS (1)|6|6.000|233.53|1401.18|127.3800|</cadenaOriginal>
+      <firma>bbb888bbb</firma>
+    </firmaElectronica>
+    <numeroFacturaOriginal>AGRUPAMP</numeroFacturaOriginal>
+    <emisor>
+      <tipoIdentificador>1</tipoIdentificador>
+      <identificacion>ENS851002FB0</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>ENSATEC S.A. DE C.V.</nombre>
+      <domicilio>
+        <calle>CALLE COLINAS</calle>
+        <numeroExterior></numeroExterior>
+        <numeroInterior>11730</numeroInterior>
+        <colonia>COLINAS</colonia>
+        <localidad>TIJUANA</localidad>
+        <referencia></referencia>
+        <municipio>TITJUANA</municipio>
+        <entidadFederativa>BAJA CALIFORNIA</entidadFederativa>
+        <pais>MEX</pais>
+        <codigPostal>22680</codigPostal>
+      </domicilio>
+    </emisor>
+    <destinatario>
+      <tipoIdentificador>0</tipoIdentificador>
+      <identificacion>irs</identificacion>
+      <apellidoPaterno></apellidoPaterno>
+      <apellidoMaterno></apellidoMaterno>
+      <nombre>cliente para submaquila</nombre>
+      <domicilio>
+        <calle>calle int</calle>
+        <numeroExterior>no ext</numeroExterior>
+        <numeroInterior>no int</numeroInterior>
+        <colonia>col</colonia>
+        <localidad>loc</localidad>
+        <referencia></referencia>
+        <municipio>muni</municipio>
+        <entidadFederativa>CA</entidadFederativa>
+        <pais>ATG</pais>
+        <codigPostal>111</codigPostal>
+      </domicilio>
+    </destinatario>
+    <mercancias>
+      <descripcionGenerica>TORNILLOS (1)</descripcionGenerica>
+      <claveUnidad>6</claveUnidad>
+      <cantidad>3.000</cantidad>
+      <valorUnitario>233.53</valorUnitario>
+      <valorTotal>700.59</valorTotal>
+      <valorDolares>63.6900</valorDolares>
+    </mercancias>
+    <mercancias>
+      <descripcionGenerica>TORNILLOS (1)</descripcionGenerica>
+      <claveUnidad>6</claveUnidad>
+      <cantidad>6.000</cantidad>
+      <valorUnitario>233.53</valorUnitario>
+      <valorTotal>1401.18</valorTotal>
+      <valorDolares>127.3800</valorDolares>
+    </mercancias>
+  </comprobantes>
+</solicitarRecibirCoveServicio>

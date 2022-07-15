@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
+    xmlns:cce="http://www.sat.gob.mx/ComercioExterior"
+    LugarExpedicion="D.F.,MEXICO"
+    NumCtaPago="DESCONOCIDO"
+    formaDePago="PAGO EN UNA SOLA EXHIBICION"
+    metodoDePago="TRANSFERENCIA ELECTRONICA"
+    subTotal="1000.00"
+    total="1160.00"
+    fecha="2016-06-16T22:18:24"
+    certificado=""
+    noCertificado=""
+    sello=""
+    tipoDeComprobante="ingreso"
+    version="3.2" >
+  <cfdi:Emisor nombre="EMPRESA DEMO" rfc="AAA010101AAA">
+    <cfdi:DomicilioFiscal codigoPostal="34343" pais="MEXICO" estado="DISTRITO FEDERAL" municipio="BENITO JUAREZ" calle="REFORMA"/>
+    <cfdi:RegimenFiscal Regimen="PERSONA FISCA"/>
+  </cfdi:Emisor>
+  <cfdi:Receptor nombre="PUBLICO EN GENERAL" rfc="XAXX010101000">
+    <cfdi:Domicilio pais="MEXICO" calle="INSURGENTES"/>
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto importe="1000.00" valorUnitario="1000.00" descripcion="PZA" unidad="CANT" cantidad="1"/>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos>
+    <cfdi:Traslados>
+      <cfdi:Traslado importe="160.00" tasa="160.00" impuesto="IVA"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <cce:ComercioExterior TotalUSD="3952.08" TipoCambioUSD="18.5084"
+        Observaciones="Observaciones" Subdivision="0" Incoterm="FCA"
+        NumeroExportadorConfiable="34555888" CertificadoOrigen="0" ClaveDePedimento="A1"
+        TipoOperacion="2" Version="1.0">
+      <cce:Receptor NumRegIdTrib="752491202"/>
+      <cce:Destinatario NumRegIdTrib="752491265">
+        <cce:Domicilio CodigoPostal="92309" Pais="USA" Estado="NY" Calle="Park. Ave."/>
+      </cce:Destinatario>
+      <cce:Mercancias>
+        <cce:Mercancia ValorDolares="106.29" ValorUnitarioAduana="10.93" UnidadAduana="1"
+            CantidadAduana="180.000" FraccionArancelaria="19059099"
+            NoIdentificacion="76515001191"/>
+      </cce:Mercancias>
+    </cce:ComercioExterior>
+  </cfdi:Complemento>  
+  <cfdi:Addenda/>
+</cfdi:Comprobante>

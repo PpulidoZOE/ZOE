@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cce="http://www.sat.gob.mx/ComercioExterior" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd http://www.sat.gob.mx/ComercioExterior http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior/ComercioExterior10.xsd" 
+                  version="3.2" 
+                  serie="AA" 
+                  folio="4" 
+                  fecha="2016-06-01T10:12:58" 
+                  sello="" 
+                  formaDePago="Pago en una sola exhibición" 
+                  noCertificado="20001000000100005867" 
+                  certificado="" 
+                  condicionesDePago="Contado" 
+                  TipoCambio="18.00" 
+                  subTotal="101000.00" 
+                  descuento="2000.00" 
+                  Moneda="MXN" 
+                  total="99250.00" 
+                  tipoDeComprobante="ingreso" 
+                  metodoDePago="Cheque" 
+                  LugarExpedicion="San Pedro Garza García, Nuevo León, México" 
+                  NumCtaPago="No identificado">
+  <cfdi:Emisor rfc="AAA010101AAA" nombre="FACTURACION MODERNA SA DE CV">
+    <cfdi:DomicilioFiscal calle="RIO GUADALQUIVIR" noExterior="238" colonia="0001" municipio="067" estado="OAX" pais="MEX" localidad="02" codigoPostal="68000"/>
+    <cfdi:ExpedidoEn municipio="067" localidad="02" colonia="001" estado="OAX" pais="MEX" codigoPostal="68000"/>
+    <cfdi:RegimenFiscal Regimen="REGIMEN GENERAL DE LEY PERSONAS MORALES"/>
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="XEXX010101000" nombre="PUBLICO EN GENERAL">
+    <cfdi:Domicilio calle="CERRADA DE AZUCENAS" noExterior="109" colonia="REFORMA" municipio="BROOKS" estado="ON" pais="CAN" codigoPostal="A2A 2A1"/>
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1" unidad="1" descripcion="IPHONE 5" valorUnitario="5000" importe="5000" noIdentificacion="A-1213"/>
+    <cfdi:Concepto cantidad="4" unidad="PIEZA" descripcion="IPHONE 6S" valorUnitario="12000.00" importe="48000.00" noIdentificacion="A-1214"/>
+    <cfdi:Concepto cantidad="4" unidad="PIEZA" descripcion="IPHONE 6" valorUnitario="12000.00" importe="48000.00" noIdentificacion="A-1215"/>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="250" totalImpuestosRetenidos="0.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="16" importe="250"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <cce:ComercioExterior Version="1.0" TipoOperacion="2" ClaveDePedimento="A1" CertificadoOrigen="1" NumCertificadoOrigen="882212" NumeroExportadorConfiable="2821382311238" Incoterm="CFR" Subdivision="0" Observaciones="OBS" TipoCambioUSD="18.80" TotalUSD="4815.83">
+      <cce:Receptor Curp="HIOK800212HOCTRR01" NumRegIdTrib="123456789"/>
+      <cce:Destinatario NumRegIdTrib="493282546" Rfc="ESI920427886" Curp="BAHF880125HOCTRR04" Nombre="EMPRESA DEMO SA DE CV.">
+        <cce:Domicilio Calle="Cosijoeza" NumeroExterior="12" NumeroInterior="1" Colonia="0001" Localidad="01" Referencia="Entre calle Benito Juárez y Arteaga" Municipio="067" Estado="OAX" Pais="MEX" CodigoPostal="68000"/>
+      </cce:Destinatario>
+      <cce:Mercancias>
+        <cce:Mercancia NoIdentificacion="A-1213" CantidadAduana="1.0" UnidadAduana="1" ValorUnitarioAduana="4813.83" ValorDolares="4813.83">
+          <cce:DescripcionesEspecificas Marca="YAMAHA" Modelo="DDA-21" SubModelo="DDD1" NumeroSerie="3292383823"/>
+        </cce:Mercancia>
+        <cce:Mercancia NoIdentificacion="A-1214" FraccionArancelaria="01011001" CantidadAduana="1.0" UnidadAduana="1" ValorUnitarioAduana="1.00" ValorDolares="1.00">
+          <cce:DescripcionesEspecificas Marca="YAMAHA" Modelo="DDA-21" SubModelo="DDD1" NumeroSerie="3292383823"/>
+        </cce:Mercancia>
+        <cce:Mercancia NoIdentificacion="A-1215" FraccionArancelaria="01011001" CantidadAduana="1.0" UnidadAduana="1" ValorUnitarioAduana="1.00" ValorDolares="1.00">
+          <cce:DescripcionesEspecificas Marca="YAMAHA" Modelo="DDA-21" SubModelo="DDD1" NumeroSerie="3292383823"/>
+        </cce:Mercancia>
+      </cce:Mercancias>
+    </cce:ComercioExterior>
+  </cfdi:Complemento>
+</cfdi:Comprobante>
