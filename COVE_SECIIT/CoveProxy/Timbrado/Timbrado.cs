@@ -16,12 +16,14 @@ using CoveProxy.Timbrado;
 using CoveProxy.FacturacionModernaTimbradoServicio;
 using System.Xml.Schema;
 using System.Net.Http;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using SW.Helpers;
 using SW.Services.Stamp;
 using SW.Services.Authentication;
 using RestSharp;
 using static CoveProxy.Timbrado.Helper;
+using static CoveProxy.Timbrado.pdfSW;
 
 namespace CoveProxy.Timbrado
 {
@@ -30,7 +32,7 @@ namespace CoveProxy.Timbrado
         static StringBuilder sb = new StringBuilder();
         static bool errorEnEsquema = false;
         string sError;
-    
+
         #region "Validar esquema de XML"
         internal void ValidarEsquema(string archivoXML)
         {
@@ -137,7 +139,7 @@ namespace CoveProxy.Timbrado
 
                         System.Diagnostics.Trace.WriteLine(string.Format("Inicia agregar sello: {0}", System.DateTime.Now.ToShortTimeString()));
                         layout = util.AgregarSello(archivoXML, archivoXslt, archivoCertificado, archivoKey, certificadoPass, versionCFDI);
-                        CrearXML(layout, rutaArchivoLayout, nombreArchivoLayout,"FIRMADO_");
+                        CrearXML(layout, rutaArchivoLayout, nombreArchivoLayout, "FIRMADO_");
                         System.Diagnostics.Trace.WriteLine(string.Format("Termina agregar sello: {0}", System.DateTime.Now.ToShortTimeString()));
 
                         WSFD.RespuestaTFD respuestaTimbrado = new WSFD.RespuestaTFD();
@@ -347,7 +349,7 @@ namespace CoveProxy.Timbrado
                             webClient.Encoding = System.Text.Encoding.GetEncoding("UTF-8");
 
                             cfdiReturn = webClient.UploadString(urlTimbrado, "POST", layout);
-                            
+
                             doc.LoadXml(cfdiReturn);
 
                             xmlElementTimbre = (XmlElement)doc.GetElementsByTagName("tfd:TimbreFiscalDigital").Item(0);
@@ -537,7 +539,7 @@ namespace CoveProxy.Timbrado
                         }
                         else
                         {
-                            CrearXMLConError(layout, rutaArchivoLayout,  nombreArchivoLayout);
+                            CrearXMLConError(layout, rutaArchivoLayout, nombreArchivoLayout);
                             result.code = "T00N";
                             result.message = "El servicio de timbrado respondio con NULL";
                             result.status = false;
@@ -546,7 +548,7 @@ namespace CoveProxy.Timbrado
                     }
                     catch (Exception e)
                     {
-                        CrearXMLConError(layout, rutaArchivoLayout,  nombreArchivoLayout);
+                        CrearXMLConError(layout, rutaArchivoLayout, nombreArchivoLayout);
                         result.code = "EX-001";
                         result.message = "Error: " + e.Message;
                         result.status = false;
@@ -908,7 +910,7 @@ namespace CoveProxy.Timbrado
                     {
                         File.Copy(archivoXML, string.Format(@"{0}\{1}", folderEntradaPAC, nombreArchivoLayout), overwrite: true);
                         using (var resource = File.CreateText(string.Format(@"{0}\{1}.txt", folderEntradaPAC, nombreArchivoTxt)))
-                        {                            
+                        {
                         };
 
                         var archivoPacSalida = string.Format(@"{0}\{1}", folderSalidaPAC, nombreArchivoLayout);
@@ -933,7 +935,7 @@ namespace CoveProxy.Timbrado
                                     else
                                     {
                                         cfdiReturn = string.Format("ERROR: al tratar de obtener el UUID del archivo:{0}, error: No se encontro el elemento UUID en el XML", archivoPacSalida);
-                                    }                                   
+                                    }
                                 }
                                 catch (Exception ex)
                                 {
@@ -1043,7 +1045,7 @@ namespace CoveProxy.Timbrado
                             try
                             {
                                 if (timbradoResponse.datosAdicionales.status.ToUpperInvariant().Equals("OK", StringComparison.InvariantCulture))
-                                {                                   
+                                {
                                     uuid = timbradoResponse.UUID;
 
                                     // Generar XML fimado
@@ -1065,8 +1067,8 @@ namespace CoveProxy.Timbrado
                                 }
                                 else
                                 {
-                                    uuid = "ERROR: " + (timbradoResponse.datosAdicionales?.errorList?.Count() > 0 ? 
-                                        string.Join(",", timbradoResponse.datosAdicionales.errorList.Select(e => e.message)) : 
+                                    uuid = "ERROR: " + (timbradoResponse.datosAdicionales?.errorList?.Count() > 0 ?
+                                        string.Join(",", timbradoResponse.datosAdicionales.errorList.Select(e => e.message)) :
                                         timbradoResponse.datosAdicionales.status);
 
                                     CrearXMLConError(layout, rutaArchivoLayout, nombreArchivoLayout);
@@ -1100,7 +1102,7 @@ namespace CoveProxy.Timbrado
             #endregion
         }
 
-       internal string TimbrarPACSW(string archivoXML, string archivoXslt, string archivoCertificado, string archivoKey, string certificadoPass, string userId, string userPass, string urlTimbrado, string referencia)
+        internal string TimbrarPACSW(string archivoXML, string archivoXslt, string archivoCertificado, string archivoKey, string certificadoPass, string userId, string userPass, string urlTimbrado, string referencia)
         {
             sError = "Entrando a Timbrar: PAC SW - ";
             string uuid = string.Empty;
@@ -1126,10 +1128,10 @@ namespace CoveProxy.Timbrado
                     layout = util.AgregarSello(archivoXML, archivoXslt, archivoCertificado, archivoKey, certificadoPass, versionCFDI);
                     sError += "Generación de Sello - ";
                     sError += String.Format("URL: {0}, User: {1}, Pass: {2}", uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
-                    //Authentication auth = new Authentication(uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
-                    //AuthResponse authResponse = auth.GetToken();
-                    //token = authResponse.data.token;
-                    token = referencia;
+                    Authentication auth = new Authentication(uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
+                    AuthResponse authResponse = auth.GetToken();
+                    token = authResponse.data.token;
+                    //token = referencia;
                     sError += "Autentifación obtenida - ";
                     var client = new RestClient(urlTimbrado);
                     client.Timeout = -1;
@@ -1154,25 +1156,27 @@ Content-Disposition: form-data; name=xml; filename=xml
 
                     if (response.IsSuccessful)
                     {
-                       var t = (string)jsonData.SelectToken("data").SelectToken("cfdi");
+                        var t = (string)jsonData.SelectToken("data").SelectToken("cfdi");
 
-                       XmlDocument xml = new XmlDocument();
-                       xml.LoadXml(t);
+                        XmlDocument xml = new XmlDocument();
+                        xml.LoadXml(t);
 
-                       var xmlElementTimbre = (XmlElement)xml.GetElementsByTagName("tfd:TimbreFiscalDigital").Item(0);
+                        var xmlElementTimbre = (XmlElement)xml.GetElementsByTagName("tfd:TimbreFiscalDigital").Item(0);
 
                         if (xmlElementTimbre == null) {
                             uuid = string.Format("ERROR No se encontro el elemento TimbreFiscalDigital, Detalle: {0}", response.ErrorMessage);
                             CrearXMLConError(layout, rutaArchivoLayout, nombreArchivoLayout);
-                        }else {
+                        } else {
                             uuid = xmlElementTimbre.GetAttribute("UUID");
                             xml.Save(rutaArchivoLayout + "\\" + uuid + ".xml");
+                            PDFSW(t, token, uuid, rutaArchivoLayout, nombreArchivoLayout);
                         }
                         uuid = xmlElementTimbre.GetAttribute("UUID");
+                        
                     }
                     else
                     {
-                        File.WriteAllText(string.Format("{0}\\ERRORES_{1}.txt", rutaArchivoLayout , Path.GetFileNameWithoutExtension(archivoXML) ), response.Content);
+                        File.WriteAllText(string.Format("{0}\\ERRORES_{1}.txt", rutaArchivoLayout, Path.GetFileNameWithoutExtension(archivoXML)), response.Content);
                         uuid = string.Format("ERROR Codigo HTTP {0}, Mensaje Error: {1}, Error Detallado: {2}", (int)response.StatusCode, (string)jsonData.SelectToken("message"), (string)jsonData.SelectToken("messageDetail"));
                         CrearXMLConError(layout, rutaArchivoLayout, nombreArchivoLayout);
                     }
@@ -1181,7 +1185,7 @@ Content-Disposition: form-data; name=xml; filename=xml
                 {
                     uuid = "ERROR: Otras versiones de CFDI diferentes a 3.3 no es soportada";
                 }
-                
+
             }
             catch (Exception ex)
             {
@@ -1191,6 +1195,46 @@ Content-Disposition: form-data; name=xml; filename=xml
             }
             return uuid;
         }
+
+        public bool PDFSW(string xmlTimbrado, string token, string uuid, string rutaArchivoLayout, string nombreArchivoLayout) {
+
+            pdfSW pdfse = new pdfSW();
+
+            pdfse.xmlContent = xmlTimbrado;
+            pdfse.templateId = "cfdi33";
+            pdfse.logo = "";
+
+            string json = JsonConvert.SerializeObject(pdfse);
+
+            var client = new RestClient("http://api.test.sw.com.mx/pdf/v1/api/GeneratePdf");
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("Authorization", string.Format("bearer {0}", token));
+            request.AddHeader("Content-Type", "application/json; ");
+            var body = string.Format(@"{0}", json);
+            request.AddParameter("application/json; ", body, ParameterType.RequestBody);
+            IRestResponse response = client.Execute(request);
+
+            var jsonData = new JObject();
+            jsonData = JObject.Parse(response.Content);
+
+            if (!response.IsSuccessful)
+            {
+
+                var t = (string)jsonData.SelectToken("data").SelectToken("contentB64");
+
+                Utilerias.ManejoArchivos.Base64ToFile(t, rutaArchivoLayout + "\\" + uuid + ".pdf");
+            }
+            else
+            {
+                uuid = string.Format("ERROR Codigo HTTP {0}, Mensaje Error: {1}, Error Detallado: {2}", (int)response.StatusCode, (string)jsonData.SelectToken("message"), (string)jsonData.SelectToken("messageDetail"));
+                CrearXMLConError(json, rutaArchivoLayout, nombreArchivoLayout);
+
+                return false;
+            }
+
+            return true;
+        
+        } 
 
         public string CrearEkomercioPDF(string emisorRFC, string uuid, string rutaNombreArchivoPDF)
         {

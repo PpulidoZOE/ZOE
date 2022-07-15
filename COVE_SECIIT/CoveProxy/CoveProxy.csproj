@@ -242,6 +242,7 @@
     <Compile Include="Timbrado\openssl.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Timbrado\pdfSWcs.cs" />
     <Compile Include="Timbrado\requestCancelarCFDI.cs" />
     <Compile Include="Timbrado\requestTimbrarCFDI.cs" />
     <Compile Include="Timbrado\Resultado.cs" />

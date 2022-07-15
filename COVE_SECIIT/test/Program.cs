@@ -13,14 +13,14 @@ namespace test
         {
             var p = new ParametrosTimbrado();
 
-            p.layout = @"C:\Temp\prueba.xml";
-            p.archivoXslt = @"C:\Temp\cadenaoriginal_3_3.xslt";
+            p.layout = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\xml_timbrado.xml";
+            p.archivoXslt = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\cadenaoriginal_3_3.xslt";
             p.urlTimbrado = "http://services.test.sw.com.mx/cfdi33/issue/v3";
             p.userID = "omar_figueroa@jabil.com";
             p.userPass = "Jabil+SW";
             p.PAC = "SW";
-            p.archivoCertificado = @"C:\Temp\CSD_Escuela_Kemper_Urgate_EKU9003173C9_20190617_131753s.cer";
-            p.archivoKey = @"C:\Temp\CSD_Escuela_Kemper_Urgate_EKU9003173C9_20190617_131753.key";
+            p.archivoCertificado = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\CSD_EKU9003173C9_20190617131829\CSD_Escuela_Kemper_Urgate_EKU9003173C9_20190617_131753s.cer";
+            p.archivoKey = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\CSD_EKU9003173C9_20190617131829\CSD_Escuela_Kemper_Urgate_EKU9003173C9_20190617_131753.key";
             p.certificadoPass = "12345678a";
 
             var timbrado = new CoveManejador().Timbrar(
