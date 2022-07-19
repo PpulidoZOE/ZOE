@@ -1229,6 +1229,13 @@ namespace CoveProxy
             return timbrador.CrearEkomercioPDF(emisorRFC, uuid, rutaNombreArchivoPDF);
         }
 
+        public string PDFSW(string xmlTimbrado, string uuid, string logo, string urlTimbrado, string urlPDF, string userId, string userPass)
+        {
+            CoveProxy.Timbrado.Timbrador timbrador = new Timbrado.Timbrador();
+
+            return timbrador.PDFSW(xmlTimbrado, uuid, logo, urlTimbrado, urlPDF, userId, userPass);
+        }
+
         public string ObtenerUsuario()
         {
             try

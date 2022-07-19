@@ -1169,7 +1169,6 @@ Content-Disposition: form-data; name=xml; filename=xml
                         } else {
                             uuid = xmlElementTimbre.GetAttribute("UUID");
                             xml.Save(rutaArchivoLayout + "\\" + uuid + ".xml");
-                            PDFSW(t, token, uuid, rutaArchivoLayout, nombreArchivoLayout);
                         }
                         uuid = xmlElementTimbre.GetAttribute("UUID");
                         
@@ -1196,17 +1195,47 @@ Content-Disposition: form-data; name=xml; filename=xml
             return uuid;
         }
 
-        public bool PDFSW(string xmlTimbrado, string token, string uuid, string rutaArchivoLayout, string nombreArchivoLayout) {
+        public string PDFSW(string xmlTimbrado, string uuid, string logo, string urlTimbrado, string urlPDF, string userId, string userPass) {
+
+            #region PDFSW
+
+            string messageResp = "";
+            string token = "";
+            string logoB64= "";
+            string layout = string.Empty;
+            string rutaArchivoLayout = string.Empty;
+            string nombreArchivoLayout = string.Empty;
+
+            rutaArchivoLayout = Path.GetDirectoryName(xmlTimbrado);
+
+            Uri uriServicio = new Uri(urlTimbrado);
+            Authentication auth = new Authentication(uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
+            AuthResponse authResponse = auth.GetToken();
+            token = authResponse.data.token;
+
+            if (File.Exists(xmlTimbrado))
+            {
+                using (StreamReader objReader = new StreamReader(xmlTimbrado, Encoding.UTF8))
+                {
+                    xmlTimbrado = objReader.ReadToEnd();
+                    objReader.Close();
+                }
+            }
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.LoadXml(xmlTimbrado);
+
+            layout = xmlDoc.InnerXml;
+
+            logoB64 = Utilerias.ManejoArchivos.FileToBase64(logo);
 
             pdfSW pdfse = new pdfSW();
-
-            pdfse.xmlContent = xmlTimbrado;
+            pdfse.xmlContent = layout;
             pdfse.templateId = "cfdi33";
-            pdfse.logo = "";
+            pdfse.logo = logoB64;
 
             string json = JsonConvert.SerializeObject(pdfse);
 
-            var client = new RestClient("http://api.test.sw.com.mx/pdf/v1/api/GeneratePdf");
+            var client = new RestClient(urlPDF);
             var request = new RestRequest(Method.POST);
             request.AddHeader("Authorization", string.Format("bearer {0}", token));
             request.AddHeader("Content-Type", "application/json; ");
@@ -1217,24 +1246,22 @@ Content-Disposition: form-data; name=xml; filename=xml
             var jsonData = new JObject();
             jsonData = JObject.Parse(response.Content);
 
-            if (!response.IsSuccessful)
+            if (response.IsSuccessful)
             {
 
                 var t = (string)jsonData.SelectToken("data").SelectToken("contentB64");
-
-                Utilerias.ManejoArchivos.Base64ToFile(t, rutaArchivoLayout + "\\" + uuid + ".pdf");
+                messageResp = rutaArchivoLayout + "\\" + uuid + ".pdf";
+                Utilerias.ManejoArchivos.Base64ToFile(t, messageResp);
             }
             else
             {
-                uuid = string.Format("ERROR Codigo HTTP {0}, Mensaje Error: {1}, Error Detallado: {2}", (int)response.StatusCode, (string)jsonData.SelectToken("message"), (string)jsonData.SelectToken("messageDetail"));
-                CrearXMLConError(json, rutaArchivoLayout, nombreArchivoLayout);
-
-                return false;
+                messageResp = string.Format("ERROR Codigo HTTP {0}, Mensaje Error: {1}, Error Detallado: {2}", (int)response.StatusCode, (string)jsonData.SelectToken("message"), (string)jsonData.SelectToken("messageDetail"));
+                
             }
 
-            return true;
-        
-        } 
+            return messageResp;
+            #endregion
+        }
 
         public string CrearEkomercioPDF(string emisorRFC, string uuid, string rutaNombreArchivoPDF)
         {
