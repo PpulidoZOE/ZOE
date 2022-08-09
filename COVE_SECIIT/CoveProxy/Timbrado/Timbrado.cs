@@ -1104,41 +1104,48 @@ namespace CoveProxy.Timbrado
 
         internal string TimbrarPACSW(string archivoXML, string archivoXslt, string archivoCertificado, string archivoKey, string certificadoPass, string userId, string userPass, string urlTimbrado, string referencia)
         {
-            sError = "Entrando a Timbrar: PAC SW - ";
-            string uuid = string.Empty;
-            string layout = string.Empty;
-            Uri uriServicio = new Uri(urlTimbrado);
-            Comprobante.Utilidades util = new Comprobante.Utilidades();
-            string token = string.Empty;
-            string rutaArchivoLayout = string.Empty;
-            string nombreArchivoLayout = string.Empty;
-            sError += "Definición de Variables Correcta - ";
-            try
+
+            if (userId == "PDF")
             {
-
-                rutaArchivoLayout = Path.GetDirectoryName(archivoXML);
-                nombreArchivoLayout = Path.GetFileName(archivoXML);
-
-                var versionCFDI = util.ObtenerVersinCFDI(archivoXML);
-
-                sError += "Versión de CFDI - ";
-
-                if (versionCFDI == "3.3")
+                return PDFSW(archivoXML, archivoXslt, archivoCertificado, urlTimbrado, archivoKey, userId, referencia);
+            }
+            else
+            {
+                sError = "Entrando a Timbrar: PAC SW - ";
+                string uuid = string.Empty;
+                string layout = string.Empty;
+                Uri uriServicio = new Uri(urlTimbrado);
+                Comprobante.Utilidades util = new Comprobante.Utilidades();
+                string token = string.Empty;
+                string rutaArchivoLayout = string.Empty;
+                string nombreArchivoLayout = string.Empty;
+                sError += "Definición de Variables Correcta - ";
+                try
                 {
-                    layout = util.AgregarSello(archivoXML, archivoXslt, archivoCertificado, archivoKey, certificadoPass, versionCFDI);
-                    sError += "Generación de Sello - ";
-                    sError += String.Format("URL: {0}, User: {1}, Pass: {2}", uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
-                    //Authentication auth = new Authentication(uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
-                    //AuthResponse authResponse = auth.GetToken();
-                    //token = authResponse.data.token;
-                    token = referencia;
-                    sError += "Autentifación obtenida - ";
-                    var client = new RestClient(urlTimbrado);
-                    client.Timeout = -1;
-                    var request = new RestRequest(Method.POST);
-                    request.AddHeader("Authorization", string.Format("bearer {0}", token));
-                    request.AddHeader("Content-Type", "multipart/form-data; boundary=\"----=_Part_11_11939969.1490230712432\"");
-                    var body = string.Format(@"------=_Part_11_11939969.1490230712432
+
+                    rutaArchivoLayout = Path.GetDirectoryName(archivoXML);
+                    nombreArchivoLayout = Path.GetFileName(archivoXML);
+
+                    var versionCFDI = util.ObtenerVersinCFDI(archivoXML);
+
+                    sError += "Versión de CFDI - ";
+
+                    if (versionCFDI == "3.3")
+                    {
+                        layout = util.AgregarSello(archivoXML, archivoXslt, archivoCertificado, archivoKey, certificadoPass, versionCFDI);
+                        sError += "Generación de Sello - ";
+                        sError += String.Format("URL: {0}, User: {1}, Pass: {2}", uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
+                        //Authentication auth = new Authentication(uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
+                        //AuthResponse authResponse = auth.GetToken();
+                        //token = authResponse.data.token;
+                        token = referencia;
+                        sError += "Autentifación obtenida - ";
+                        var client = new RestClient(urlTimbrado);
+                        client.Timeout = -1;
+                        var request = new RestRequest(Method.POST);
+                        request.AddHeader("Authorization", string.Format("bearer {0}", token));
+                        request.AddHeader("Content-Type", "multipart/form-data; boundary=\"----=_Part_11_11939969.1490230712432\"");
+                        var body = string.Format(@"------=_Part_11_11939969.1490230712432
 Content-Type: text/xml
 Content-Transfer-Encoding: binary
 Content-Disposition: form-data; name=xml; filename=xml
@@ -1146,57 +1153,61 @@ Content-Disposition: form-data; name=xml; filename=xml
 {0}
 ------=_Part_11_11939969.1490230712432--", layout);
 
-                    request.AddParameter("multipart/form-data; boundary=\"---- = _Part_11_11939969.1490230712432\"", body, ParameterType.RequestBody);
-                    IRestResponse response = client.Execute(request);
+                        request.AddParameter("multipart/form-data; boundary=\"---- = _Part_11_11939969.1490230712432\"", body, ParameterType.RequestBody);
+                        IRestResponse response = client.Execute(request);
 
-                    sError += "Timbrado - ";
+                        sError += "Timbrado - ";
 
-                    var jsonData = new JObject();
-                    
-                    if (response.IsSuccessful)
-                    {
-                        sError += "Response - Successful: " + response.Content;
+                        var jsonData = new JObject();
 
-                        jsonData = JObject.Parse(response.Content);
-                        var t = (string)jsonData.SelectToken("data").SelectToken("cfdi");
+                        if (response.IsSuccessful)
+                        {
+                            sError += "Response - Successful: " + response.Content;
 
-                        XmlDocument xml = new XmlDocument();
-                        xml.LoadXml(t);
+                            jsonData = JObject.Parse(response.Content);
+                            var t = (string)jsonData.SelectToken("data").SelectToken("cfdi");
 
-                        var xmlElementTimbre = (XmlElement)xml.GetElementsByTagName("tfd:TimbreFiscalDigital").Item(0);
+                            XmlDocument xml = new XmlDocument();
+                            xml.LoadXml(t);
 
-                        if (xmlElementTimbre == null) {
-                            uuid = string.Format("ERROR No se encontro el elemento TimbreFiscalDigital, Detalle: {0}", response.ErrorMessage);
-                            CrearXMLConError(layout, rutaArchivoLayout, nombreArchivoLayout);
-                        } else {
+                            var xmlElementTimbre = (XmlElement)xml.GetElementsByTagName("tfd:TimbreFiscalDigital").Item(0);
+
+                            if (xmlElementTimbre == null)
+                            {
+                                uuid = string.Format("ERROR No se encontro el elemento TimbreFiscalDigital, Detalle: {0}", response.ErrorMessage);
+                                CrearXMLConError(layout, rutaArchivoLayout, nombreArchivoLayout);
+                            }
+                            else
+                            {
+                                uuid = xmlElementTimbre.GetAttribute("UUID");
+                                xml.Save(rutaArchivoLayout + "\\" + uuid + ".xml");
+
+                            }
                             uuid = xmlElementTimbre.GetAttribute("UUID");
-                            xml.Save(rutaArchivoLayout + "\\" + uuid + ".xml");
 
                         }
-                        uuid = xmlElementTimbre.GetAttribute("UUID");
-
+                        else
+                        {
+                            sError += "Response - Unsuccessful";
+                            File.WriteAllText(string.Format("{0}\\ERRORES_{1}.txt", rutaArchivoLayout, Path.GetFileNameWithoutExtension(archivoXML)), response.Content);
+                            uuid = string.Format("ERROR Codigo HTTP {0}, Mensaje Error: {1}, Error Detallado: {2}", (int)response.StatusCode, (string)jsonData.SelectToken("message"), (string)jsonData.SelectToken("messageDetail"));
+                            CrearXMLConError(layout, rutaArchivoLayout, nombreArchivoLayout);
+                        }
                     }
                     else
                     {
-                        sError += "Response - Unsuccessful";
-                        File.WriteAllText(string.Format("{0}\\ERRORES_{1}.txt", rutaArchivoLayout, Path.GetFileNameWithoutExtension(archivoXML)), response.Content);
-                        uuid = string.Format("ERROR Codigo HTTP {0}, Mensaje Error: {1}, Error Detallado: {2}", (int)response.StatusCode, (string)jsonData.SelectToken("message"), (string)jsonData.SelectToken("messageDetail"));
-                        CrearXMLConError(layout, rutaArchivoLayout, nombreArchivoLayout);
+                        uuid = "ERROR: Otras versiones de CFDI diferentes a 3.3 no es soportada";
                     }
-                }
-                else
-                {
-                    uuid = "ERROR: Otras versiones de CFDI diferentes a 3.3 no es soportada";
-                }
 
+                }
+                catch (Exception ex)
+                {
+                    uuid = string.Format("ERROR {0}, stacktrace {1}, Log = {2}",
+                        string.Format("Mensaje: {0}, InnerException: {1} ", ex.Message, (ex.InnerException != null ? ex.InnerException.InnerException != null ? ex.InnerException.InnerException.Message : ex.InnerException.Message : "")),
+                         ex.StackTrace, sError);
+                }
+                return uuid;
             }
-            catch (Exception ex)
-            {
-                uuid = string.Format("ERROR {0}, stacktrace {1}, Log = {2}",
-                    string.Format("Mensaje: {0}, InnerException: {1} ", ex.Message, (ex.InnerException != null ? ex.InnerException.InnerException != null ? ex.InnerException.InnerException.Message : ex.InnerException.Message : "")),
-                     ex.StackTrace, sError);
-            }
-            return uuid;
         }
 
         public string PDFSW(string xmlTimbrado, string uuid, string logo, string urlTimbrado, string urlPDF, string userId, string userPass) {
