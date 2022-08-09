@@ -41,10 +41,14 @@ namespace CoveProxy
 
         [ComVisible(true)]
         [DispId(0X01000010)]
-        string ObtenerUsuario();
+        string PDFSW(string xmlTimbrado, string uuid, string logo, string urlTimbrado, string urlPDF, string userId, string userPass);
 
         [ComVisible(true)]
         [DispId(0X01000011)]
+        string ObtenerUsuario();
+
+        [ComVisible(true)]
+        [DispId(0X01000012)]
         string EnviarFacturaLaser(string archivoXML, string urlServicioWeb);
     }
 

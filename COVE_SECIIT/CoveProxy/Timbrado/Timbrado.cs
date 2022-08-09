@@ -1128,10 +1128,10 @@ namespace CoveProxy.Timbrado
                     layout = util.AgregarSello(archivoXML, archivoXslt, archivoCertificado, archivoKey, certificadoPass, versionCFDI);
                     sError += "Generación de Sello - ";
                     sError += String.Format("URL: {0}, User: {1}, Pass: {2}", uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
-                    Authentication auth = new Authentication(uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
-                    AuthResponse authResponse = auth.GetToken();
-                    token = authResponse.data.token;
-                    //token = referencia;
+                    //Authentication auth = new Authentication(uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
+                    //AuthResponse authResponse = auth.GetToken();
+                    //token = authResponse.data.token;
+                    token = referencia;
                     sError += "Autentifación obtenida - ";
                     var client = new RestClient(urlTimbrado);
                     client.Timeout = -1;
@@ -1152,10 +1152,12 @@ Content-Disposition: form-data; name=xml; filename=xml
                     sError += "Timbrado - ";
 
                     var jsonData = new JObject();
-                    jsonData = JObject.Parse(response.Content);
-
+                    
                     if (response.IsSuccessful)
                     {
+                        sError += "Response - Successful: " + response.Content;
+
+                        jsonData = JObject.Parse(response.Content);
                         var t = (string)jsonData.SelectToken("data").SelectToken("cfdi");
 
                         XmlDocument xml = new XmlDocument();
@@ -1169,12 +1171,14 @@ Content-Disposition: form-data; name=xml; filename=xml
                         } else {
                             uuid = xmlElementTimbre.GetAttribute("UUID");
                             xml.Save(rutaArchivoLayout + "\\" + uuid + ".xml");
+
                         }
                         uuid = xmlElementTimbre.GetAttribute("UUID");
-                        
+
                     }
                     else
                     {
+                        sError += "Response - Unsuccessful";
                         File.WriteAllText(string.Format("{0}\\ERRORES_{1}.txt", rutaArchivoLayout, Path.GetFileNameWithoutExtension(archivoXML)), response.Content);
                         uuid = string.Format("ERROR Codigo HTTP {0}, Mensaje Error: {1}, Error Detallado: {2}", (int)response.StatusCode, (string)jsonData.SelectToken("message"), (string)jsonData.SelectToken("messageDetail"));
                         CrearXMLConError(layout, rutaArchivoLayout, nombreArchivoLayout);
@@ -1197,8 +1201,6 @@ Content-Disposition: form-data; name=xml; filename=xml
 
         public string PDFSW(string xmlTimbrado, string uuid, string logo, string urlTimbrado, string urlPDF, string userId, string userPass) {
 
-            #region PDFSW
-
             string messageResp = "";
             string token = "";
             string logoB64= "";
@@ -1208,10 +1210,11 @@ Content-Disposition: form-data; name=xml; filename=xml
 
             rutaArchivoLayout = Path.GetDirectoryName(xmlTimbrado);
 
-            Uri uriServicio = new Uri(urlTimbrado);
-            Authentication auth = new Authentication(uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
-            AuthResponse authResponse = auth.GetToken();
-            token = authResponse.data.token;
+            //Uri uriServicio = new Uri(urlTimbrado);
+            //Authentication auth = new Authentication(uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
+            //AuthResponse authResponse = auth.GetToken();
+            //token = authResponse.data.token;
+            token = userPass;
 
             if (File.Exists(xmlTimbrado))
             {
@@ -1221,6 +1224,7 @@ Content-Disposition: form-data; name=xml; filename=xml
                     objReader.Close();
                 }
             }
+
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.LoadXml(xmlTimbrado);
 
@@ -1260,7 +1264,6 @@ Content-Disposition: form-data; name=xml; filename=xml
             }
 
             return messageResp;
-            #endregion
         }
 
         public string CrearEkomercioPDF(string emisorRFC, string uuid, string rutaNombreArchivoPDF)
