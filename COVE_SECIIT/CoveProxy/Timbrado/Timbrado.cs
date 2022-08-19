@@ -1120,6 +1120,7 @@ namespace CoveProxy.Timbrado
                 string rutaArchivoLayout = string.Empty;
                 string nombreArchivoLayout = string.Empty;
                 sError += "Definición de Variables Correcta - ";
+
                 try
                 {
 
@@ -1133,6 +1134,7 @@ namespace CoveProxy.Timbrado
                     if (versionCFDI == "3.3")
                     {
                         layout = util.AgregarSello(archivoXML, archivoXslt, archivoCertificado, archivoKey, certificadoPass, versionCFDI);
+
                         sError += "Generación de Sello - ";
                         sError += String.Format("URL: {0}, User: {1}, Pass: {2}", uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
                         //Authentication auth = new Authentication(uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
@@ -1181,6 +1183,7 @@ Content-Disposition: form-data; name=xml; filename=xml
                             {
                                 uuid = xmlElementTimbre.GetAttribute("UUID");
                                 xml.Save(rutaArchivoLayout + "\\" + uuid + ".xml");
+                                util.ArchivoCadenaOriginal(archivoXML, archivoXslt, uuid, rutaArchivoLayout);
 
                             }
                             uuid = xmlElementTimbre.GetAttribute("UUID");
