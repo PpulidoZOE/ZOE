@@ -196,6 +196,15 @@ namespace Comprobante
             return this.originalChain;
         }
 
+        public void ArchivoCadenaOriginal(string xml, string xslt, string uuid, string rutaArchivoLayout)
+        {
+
+            string CadenaOriginal = string.Empty;
+            CadenaOriginal = createOriginalChain(xml, xslt);
+            File.WriteAllText(string.Format("{0}\\cadena-original_{1}.txt", rutaArchivoLayout, uuid), CadenaOriginal);
+        }
+
+
         ///<summary>
         ///Genera el sello del comprobante.
         ///</summary>
