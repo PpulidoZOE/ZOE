@@ -6,5 +6,5 @@
     cause the file to be unrecognizable by the program.
 -->
 <GenericObjectDataSource DisplayName="verificarCFDIResponse" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-   <TypeInfo>CoveProxy.FacturacionModernaTimbradoServicio.verificarCFDIResponse, Service References.FacturacionModernaTimbradoServicio.Reference.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
+   <TypeInfo>CoveProxy.FacturacionModernaTimbradoServicio.verificarCFDIResponse, Service References.FacturacionModernaTimbradoServicio.Reference.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
 </GenericObjectDataSource>
