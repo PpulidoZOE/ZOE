@@ -84,7 +84,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Process\CatalogProcess.cs" />
-    <None Include="Process\Operation - Copy %282%29.dumb" />
     <Compile Include="Process\OperationProcess.cs" />
     <Compile Include="Process\InitProcess.cs" />
     <Compile Include="Process\Logfile.cs" />

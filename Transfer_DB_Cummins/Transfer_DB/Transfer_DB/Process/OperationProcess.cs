@@ -300,25 +300,40 @@ namespace Transfer_DB.Process
             sInsert = "";
             DataTable DtInsert;
 
-            sqlQuery = String.Format(@"SELECT 
-                                COUNT(*)
-                            FROM {0} A
-                            WHERE A.TABLE_NAME = '{2}'
-                                  AND NOT EXISTS (SELECT * 
-                                              FROM {1} B
-                                              WHERE B.TABLE_NAME = '{2}' 
-										        AND A.COLUMN_NAME = B.COLUMN_NAME 
-										        AND A.DATA_TYPE = B.DATA_TYPE 
-										        /*AND A.ORDINAL_POSITION = B.ORDINAL_POSITION*/
-										        AND A.DATA_TYPE = B.DATA_TYPE
-										        AND ISNULL(A.CHARACTER_MAXIMUM_LENGTH, 0) = ISNULL(B.CHARACTER_MAXIMUM_LENGTH, 0))", connect.DbInfSchema, connect2.DbInfSchema, sDelTable);
-            iResult = conn.exceSQLCount(sqlQuery);
+            /*No aplica en esta corrida*/
+            //sqlQuery = String.Format(@"SELECT 
+            //                    COUNT(*)
+            //                FROM {0} A
+            //                WHERE A.TABLE_NAME = '{2}'
+            //                      AND NOT EXISTS (SELECT * 
+            //                                  FROM {1} B
+            //                                  WHERE B.TABLE_NAME = '{2}' 
+										  //      AND A.COLUMN_NAME = B.COLUMN_NAME 
+										  //      AND A.DATA_TYPE = B.DATA_TYPE 
+										  //      /*AND A.ORDINAL_POSITION = B.ORDINAL_POSITION*/
+										  //      AND A.DATA_TYPE = B.DATA_TYPE
+										  //      AND ISNULL(A.CHARACTER_MAXIMUM_LENGTH, 0) = ISNULL(B.CHARACTER_MAXIMUM_LENGTH, 0))", connect.DbInfSchema, connect2.DbInfSchema, sDelTable);
+            //iResult = conn.exceSQLCount(sqlQuery);
 
-            if (iResult > 0)
-            {
-                Logfile.processLogFile(String.Format("There are differences in the structure of table {0}. Make sure that the structure of the table in in both databases is the same. The process can not continue.", sDelTable));
-                return false;
-            }
+            //if (iResult > 0)
+            //{
+            //    Logfile.processLogFile(String.Format("There are differences in the structure of table {0}. Make sure that the structure of the table in in both databases is the same. The process can not continue.", sDelTable));
+            //    return false;
+            //}
+
+            //sqlQuery = String.Format(@"SELECT 
+            //                    A.COLUMN_NAME
+            //                FROM {0} A
+            //                WHERE A.TABLE_NAME = '{2}'
+            //                      AND EXISTS (SELECT * 
+            //                                  FROM {1} B
+            //                                  WHERE B.TABLE_NAME = '{2}' 
+										  //      AND A.COLUMN_NAME = B.COLUMN_NAME 
+										  //      AND A.DATA_TYPE = B.DATA_TYPE 
+										  //      /*AND A.ORDINAL_POSITION = B.ORDINAL_POSITION*/
+										  //      AND A.DATA_TYPE = B.DATA_TYPE
+										  //      AND ISNULL(A.CHARACTER_MAXIMUM_LENGTH, 0) = ISNULL(B.CHARACTER_MAXIMUM_LENGTH, 0))", connect.DbInfSchema, connect2.DbInfSchema, sDelTable);
+
 
             sqlQuery = String.Format(@"SELECT 
                                 A.COLUMN_NAME
@@ -328,10 +343,7 @@ namespace Transfer_DB.Process
                                               FROM {1} B
                                               WHERE B.TABLE_NAME = '{2}' 
 										        AND A.COLUMN_NAME = B.COLUMN_NAME 
-										        AND A.DATA_TYPE = B.DATA_TYPE 
-										        /*AND A.ORDINAL_POSITION = B.ORDINAL_POSITION*/
-										        AND A.DATA_TYPE = B.DATA_TYPE
-										        AND ISNULL(A.CHARACTER_MAXIMUM_LENGTH, 0) = ISNULL(B.CHARACTER_MAXIMUM_LENGTH, 0))", connect.DbInfSchema, connect2.DbInfSchema, sDelTable);
+										        AND A.DATA_TYPE = B.DATA_TYPE)", connect.DbInfSchema, connect2.DbInfSchema, sDelTable);
 
             DtInsert = connect.execSQLReturn(sqlQuery);
 

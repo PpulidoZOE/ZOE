@@ -47,7 +47,7 @@ namespace Transfer_DB.Process
                 Logfile.processLogFile("Checking Tables Integrity...");
                 m_oWorker.ReportProgress(0, "Checking Tables Integrity...");
 
-                if (checkTableIntegrity())
+                if (checkTableIntegrity2())
                 {
                     Logfile.processLogFile("Processing Catalogs...");
                     statusview = "Processing Catalogs...";
@@ -64,8 +64,8 @@ namespace Transfer_DB.Process
                         op = new Operation(conn, conn2, m_oWorker, dates);
                         if (op.starOperation())
                         {
-                            //conn2.Tr.Commit(); //Debug
-                            UtilityFunc.rollBack(conn, conn2);
+                            conn2.Tr.Commit(); //Debug
+                            //UtilityFunc.rollBack(conn, conn2);
                             Logfile.processLogFile("Completed Process...");
                             m_oWorker.ReportProgress(100);
                         }
@@ -139,6 +139,63 @@ namespace Transfer_DB.Process
 							                                            AND A.DATA_TYPE = B.DATA_TYPE 
 							                                            AND A.DATA_TYPE = B.DATA_TYPE
 							                                            AND ISNULL(A.CHARACTER_MAXIMUM_LENGTH, 0) = ISNULL(B.CHARACTER_MAXIMUM_LENGTH, 0))) AS count;", conn.DbInfSchema, conn2.DbInfSchema, tName);
+
+                iResult = conn.exceSQLCount(sqlQuery);
+
+                if (iResult > 0)
+                {
+                    m_oWorker.ReportProgress(0, "       Table Integrity Error, check de log for more information.");
+                    Logfile.processLogFile(String.Format("      There are differences in the structure of table {0}. Make sure that the structure of the table in both databases is the same.", tName));
+                    integrityError = true;
+                }
+            }
+            Dtables.Dispose();
+
+            if (integrityError)
+            {
+                Logfile.processLogFile(String.Format("Please solve all the table structure issues in order to continue!"));
+                m_oWorker.ReportProgress(0, "Please solve all the table structure issues in order to continue!");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        private bool checkTableIntegrity2()
+        {
+            string tName;
+            int iResult = 0;
+            bool integrityError = false;
+            DataTable Dtables;
+            //Verifica solo las tablas con ind = 1
+            
+            sqlQuery = String.Format(@" SELECT DISTINCT(DEL_TABLE) AS TABLES FROM TFOPTABLES where IND_DEL = '1'
+                                        UNION
+                                        SELECT DISTINCT(DEL_TABLE) FROM TFOpTablesInsert where IND_INSERT = '1'
+                                        UNION
+                                        SELECT TNAME FROM TFCATALOGS WHERE ind_insert = '1'");
+
+            Dtables = conn.execSQLReturn(sqlQuery);
+
+            foreach (DataRow row in Dtables.Rows)
+            {
+                tName = row.Field<string>("TABLES").ToString();
+
+                sqlQuery = String.Format(@" 
+	                SELECT 
+		                COUNT(*) as count
+	                FROM {1} A
+	                INNER JOIN {0} B ON A.TABLE_NAME = B.TABLE_NAME AND A.COLUMN_NAME = B.COLUMN_NAME
+	                WHERE 
+	                A.TABLE_NAME = '{2}' AND
+	                (A.DATA_TYPE < B.DATA_TYPE
+	                OR COALESCE(A.CHARACTER_MAXIMUM_LENGTH,0) < COALESCE(B.CHARACTER_MAXIMUM_LENGTH,0)
+	                OR COALESCE(A.CHARACTER_OCTET_LENGTH,0) < COALESCE(B.CHARACTER_OCTET_LENGTH,0)
+	                OR COALESCE(A.NUMERIC_PRECISION,0) < COALESCE(B.NUMERIC_PRECISION,0)
+	                OR COALESCE(A.NUMERIC_PRECISION_RADIX,0) < COALESCE(B.NUMERIC_PRECISION_RADIX,0)
+	                OR COALESCE(A.NUMERIC_SCALE,0) < COALESCE(B.NUMERIC_SCALE,0))", conn.DbInfSchema, conn2.DbInfSchema, tName);
 
                 iResult = conn.exceSQLCount(sqlQuery);
 

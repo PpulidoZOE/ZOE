@@ -47,25 +47,29 @@ namespace Transfer_DB.Process
                         if (true)
                         {
                             m_oWorker.ReportProgress(45, "Processing Avisos...");
-                            if (Op.startOperationProcess("AVS"))
+                            //if (Op.startOperationProcess("AVS"))
+                            if (true)
                             {
                                 m_oWorker.ReportProgress(54, "Processing R1 - Impo...");
-                                if (Op.startOperationProcess("R1I"))
+                                //if (Op.startOperationProcess("R1I"))
+                                if (true)
                                 {
                                     m_oWorker.ReportProgress(63, "Processing R1 - Expo...");
-                                    if (Op.startOperationProcess("R1E"))
+                                    //if (Op.startOperationProcess("R1E"))
+                                    if (true)
                                     {
                                         m_oWorker.ReportProgress(72, "Processing Transactions...");
-                                        if (Op.startOperationProcess("TRS"))
+                                        //if (Op.startOperationProcess("TRS"))
+                                        if (true)
                                         {
-                                            m_oWorker.ReportProgress(90);
-                                            return true;
-                                            //m_oWorker.ReportProgress(81, "Processing Descargas...");
-                                            //if (Op.startOperationProcess("DES"))
-                                            //{
-                                            //    m_oWorker.ReportProgress(90);
-                                            //    return true;
-                                            //}
+                                            //m_oWorker.ReportProgress(90);
+                                            //return true;
+                                            m_oWorker.ReportProgress(81, "Processing Descargas...");
+                                            if (Op.startOperationProcess("DES"))
+                                            {
+                                                m_oWorker.ReportProgress(90);
+                                                return true;
+                                            }
                                         }
                                     }
                                 }
@@ -88,12 +92,12 @@ namespace Transfer_DB.Process
 
             iResult = connect.exceSQLNoReturnSP(sqlQuery, iniDate, finDate, connect.DboName, conn.DboName, iniDateAnio, finDateAnio, iniD, finD, dbSelect.ToString());
 
-            //if (dbSelect.Equals(1))
-            //{
-            //    connect.Tr.Commit();
-            //}
+            if (dbSelect.Equals(1))
+            {
+                connect.Tr.Commit();
+            }
 
-            connect.Tr.Commit();
+            //connect.Tr.Commit();
 
             sqlQuery = "SELECT COUNT(*) FROM TFMAINDATA";
             iResult = connect.exceSQLCount(sqlQuery);
