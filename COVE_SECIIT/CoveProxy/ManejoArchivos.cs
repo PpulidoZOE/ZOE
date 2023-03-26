@@ -5,6 +5,8 @@ using System.Text;
 using System.IO;
 using System.Xml;
 using System.Reflection;
+using Microsoft.SqlServer.Server;
+using System.Text.RegularExpressions;
 
 namespace Utilerias
 {
@@ -53,7 +55,7 @@ namespace Utilerias
             string pathActual = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
 
-            pathArchivoCOVEPROXY = pathActual + "\\"+ NOMBRE_ARCHIVO_INI;
+            pathArchivoCOVEPROXY = pathActual + "\\" + NOMBRE_ARCHIVO_INI;
 
             if (!File.Exists(pathArchivoCOVEPROXY))
             {
@@ -279,7 +281,6 @@ namespace Utilerias
             return textoEncoded;
         }
     }
-
     internal class IniInfo
     {
         public string Clave { get; set; }

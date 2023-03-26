@@ -38,10 +38,12 @@ namespace test
             //p.referencia = "T2lYQ0t4L0RHVkR4dHZ5Nkk1VHNEakZ3Y0J4Nk9GODZuRyt4cE1wVm5tbXB3YVZxTHdOdHAwVXY2NTdJb1hkREtXTzE3dk9pMmdMdkFDR2xFWFVPUXpTUm9mTG1ySXdZbFNja3FRa0RlYURqbzdzdlI2UUx1WGJiKzViUWY2dnZGbFloUDJ6RjhFTGF4M1BySnJ4cHF0YjUvbmRyWWpjTkVLN3ppd3RxL0dJPQ.T2lYQ0t4L0RHVkR4dHZ5Nkk1VHNEakZ3Y0J4Nk9GODZuRyt4cE1wVm5tbFlVcU92YUJTZWlHU3pER1kySnlXRTF4alNUS0ZWcUlVS0NhelhqaXdnWTRncklVSWVvZlFZMWNyUjVxYUFxMWFxcStUL1IzdGpHRTJqdS9Zakw2UGRYTWRoZVR0T3hQWFYzUCszK0tQWTRHWHpVVE5sSVNUQTQ0QWw3clhXTFIwNlJET1RiVWl1Q1Y2YzdTelVDRzlNRlZJTGNoNjRFb3lIZFpFd1ZORzMwNjIzOGp0dW42UDdhRVJOOTN5UWwrYmN2bEJPSS9GTndabkp4Qmo3czZIVE1uMjcxQm5PaW1OU3VIOVB0UURJbkxCQWpMMk9xZEV1QjhYWmp6R3RtdGNESWtjVVZhWUQ5S3NBN08yL0szWTNiVzh0SEFJRUthK2t0WEEwUGdaYnN1UnVJRTZoNzh0TjB4TXRQbVJiU2ozUTBzQUtEd0VqeUViVDR2U3puVnZZaHFrVHdpSm9jeWd1TDRiejV0WWsyWTJqcUMzaUtIMkNjSlZuMHIxcmZYUEhPYW9VVmFOZ1hoeVVxVm12dlFtWExMT3JFeE5EYW1qdVV1dXE3OGozQ0JOM0REdHVTaTV6ZnVuQjA0MU9CSTdEd0NOUmFveUVYRkx4TWN5VVZTKzg.oXbkerv_PNB3HmlJrDAaao8wOTJWwizrl-y04G_BqrA";
 
             /*Pruebas SUPERIOR*/
-            p.layout = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\SUPERIOR\4556-22.xml";
-            p.archivoXslt = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\SUPERIOR\CSD\cadenaoriginal_3_3.xslt";
+            p.layout = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\SUPERIOR\4556-22-0001\4556-22.xml";
+            //p.archivoXslt = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\SUPERIOR\CSD\cadenaoriginal_3_3.xslt";
+            p.archivoXslt = "4556-22";
             p.urlTimbrado = "http://services.test.sw.com.mx/cfdi33/issue/v3";
-            p.userID = "asolis@supind.com";
+            //p.userID = "asolis@supind.com";
+            p.userID = "EMAIL";
             p.userPass = "As*W.abr-2022";
             p.PAC = "SW";
             p.archivoCertificado = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\SUPERIOR\CSD\00001000000503636109.cer";
@@ -69,7 +71,7 @@ namespace test
             //p.uuid = "0e788ede-3666-4fe4-907c-638925d934b1";
             //p.logo = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\zoe_logo.png";
 
-            ////var timbrado = new CoveManejador().PDFSW(p.layout, p.uuid, p.logo, p.urlTimbrado, p.urlPDF, p.userID, p.userPass);
+            //var timbrados = new CoveManejador().PDFSW(p.layout, p.uuid, p.logo, p.urlTimbrado, p.urlPDF, p.userID, p.userPass);
 
             //var timbrado = new CoveManejador().Timbrar(p.layout, p.uuid, p.logo, p.urlPDF, p.certificadoPass,"PDF", p.userPass, p.emisorRFC, p.urlTimbrado, p.PAC, p.userPass);
         }

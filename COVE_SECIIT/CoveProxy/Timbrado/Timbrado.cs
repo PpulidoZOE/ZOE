@@ -24,6 +24,9 @@ using SW.Services.Authentication;
 using RestSharp;
 using static CoveProxy.Timbrado.Helper;
 using static CoveProxy.Timbrado.pdfSW;
+using CoveProxy.BuzonE;
+using System.Net.Mail;
+using Microsoft.SqlServer.Server;
 
 namespace CoveProxy.Timbrado
 {
@@ -1109,6 +1112,13 @@ namespace CoveProxy.Timbrado
             {
                 return PDFSW(archivoXML, archivoXslt, archivoCertificado, urlTimbrado, archivoKey, userId, referencia);
             }
+            else if (userId == "EMAIL")
+            {
+                //archivoXML = Ruta del archivo de xml para extrar la ruta de la carpeta
+                //archivoXslt = Folio de la Factura timbrada
+                EnviarCorreo(archivoXML, archivoXslt);
+                return "Sí";
+            }
             else
             {
                 sError = "Entrando a Timbrar: PAC SW - ";
@@ -1280,6 +1290,14 @@ Content-Disposition: form-data; name=xml; filename=xml
             return messageResp;
         }
 
+        public static bool EnviarCorreo(string xmlfilepath, string noFactura)
+        {
+            EmailSettings mail = new EmailSettings();
+            mail.getEmailData(xmlfilepath);
+            mail.sendEmail();
+            return true;
+
+        }
         public string CrearEkomercioPDF(string emisorRFC, string uuid, string rutaNombreArchivoPDF)
         {
             #region CrearEkomercioPDF

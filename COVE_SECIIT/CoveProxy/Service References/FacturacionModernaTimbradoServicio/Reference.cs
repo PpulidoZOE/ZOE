@@ -38,6 +38,7 @@ namespace CoveProxy.FacturacionModernaTimbradoServicio {
         [System.ServiceModel.OperationContractAttribute(Action="https://t1demo.facturacionmoderna.com/timbrado/soap#activarCancelacion", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         CoveProxy.FacturacionModernaTimbradoServicio.activarCancelacionResponse activarCancelacion(CoveProxy.FacturacionModernaTimbradoServicio.activarCancelacionRequest request);
+        object requestTimbrarCFDI(requestTimbrarCFDI requestTimbrarCFDI);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -285,6 +286,11 @@ namespace CoveProxy.FacturacionModernaTimbradoServicio {
         
         public CoveProxy.FacturacionModernaTimbradoServicio.activarCancelacionResponse activarCancelacion(CoveProxy.FacturacionModernaTimbradoServicio.activarCancelacionRequest request) {
             return base.Channel.activarCancelacion(request);
+        }
+
+        public object requestTimbrarCFDI(requestTimbrarCFDI requestTimbrarCFDI)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
