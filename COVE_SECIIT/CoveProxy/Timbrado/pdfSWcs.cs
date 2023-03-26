@@ -36,83 +36,94 @@ namespace CoveProxy.Timbrado
         private string[] FileAttachments;
         private string[] EmailRecipientsSep;
 
-        public string FilePath1 { get => FilePath; set => FilePath = value; }
-        public string SmtpServer1 { get => SmtpServer; set => SmtpServer = value; }
-        public string SmtpPuerto1 { get => SmtpPuerto; set => SmtpPuerto = value; }
-        public string SmtpUser1 { get => SmtpUser; set => SmtpUser = value; }
-        public string SmtpPassword1 { get => SmtpPassword; set => SmtpPassword = value; }
-        public string EmailSender1 { get => EmailSender; set => EmailSender = value; }
-        public string EmailSubject1 { get => EmailSubject; set => EmailSubject = value; }
-        public string EmailBody1 { get => EmailBody; set => EmailBody = value; }
-        public string EmailRecipients1 { get => EmailRecipients; set => EmailRecipients = value; }
-
-
-        private void getParentFolder (string FullPath)
+        private bool getParentFolder (string FullPath)
         {
-
-            AttachmentPath = Directory.GetParent(FullPath).FullName;
-            IniFilePath = Directory.GetParent(AttachmentPath).FullName;
+            if (Directory.Exists(Directory.GetParent(FullPath).FullName))
+            {
+                AttachmentPath = Directory.GetParent(FullPath).FullName;
+                IniFilePath = Directory.GetParent(AttachmentPath).FullName;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
         }
-
         private void getFileAttachments(string AttachmentPath)
         {
             FileAttachments = Directory.GetFiles(AttachmentPath);
         }
-
         private void getRecipients(string recip)
         {
             EmailRecipientsSep = recip.Split(',');
         }
-        public void getEmailData(string FilePath)
+        public string getEmailData(string FilePath)
         {
             string line;
             string line2;
 
             string pattern = @"\[([^\[\]]+)\]";
+            this.FilePath = FilePath;
 
-            getParentFolder(FilePath);
-            getFileAttachments(AttachmentPath);
-
-            IniFileName = "EmailCFDI.ini";
-            IniFilePath = Path.Combine(IniFilePath, IniFileName);
-
-            string[][] stringSeparators = { new string[] { "SmtpServer" }, new string[] { "SmtpPuerto" }, new string[] { "SmtpUser" },
-                                            new string[] { "SmtpPassword" }, new string[] { "EmailSender" }, new string[] { "EmailSubject" },
-                                            new string[] { "EmailBody" }, new string[] { "EmailRecipients" } };
             try
             {
-                using (StreamReader sr = new StreamReader(IniFilePath))
+                if (File.Exists(this.FilePath))
                 {
-                    line = sr.ReadToEnd();
-                    foreach (Match m in Regex.Matches(line, pattern))
-                    {
-                        line2 = m.Groups[0].Value;
+                    getParentFolder(FilePath);
+                    getFileAttachments(AttachmentPath);
 
-                        SmtpServer = line2.Split(stringSeparators[0], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
-                        SmtpPuerto = line2.Split(stringSeparators[1], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
-                        SmtpUser = line2.Split(stringSeparators[2], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
-                        SmtpPassword = line2.Split(stringSeparators[3], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
-                        EmailSender = line2.Split(stringSeparators[4], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
-                        EmailSubject = line2.Split(stringSeparators[5], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
-                        EmailBody = line2.Split(stringSeparators[6], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
-                        EmailRecipients = line2.Split(stringSeparators[7], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
+                    IniFileName = "EmailCFDI.ini";
+                    IniFilePath = Path.Combine(IniFilePath, IniFileName);
+
+                    if (File.Exists(IniFilePath))
+                    {
+
+                        string[][] stringSeparators = { new string[] { "SmtpServer" }, new string[] { "SmtpPuerto" }, new string[] { "SmtpUser" },
+                                            new string[] { "SmtpPassword" }, new string[] { "EmailSender" }, new string[] { "EmailSubject" },
+                                            new string[] { "EmailBody" }, new string[] { "EmailRecipients" } };
+                        using (StreamReader sr = new StreamReader(IniFilePath))
+                        {
+                            line = sr.ReadToEnd();
+                            foreach (Match m in Regex.Matches(line, pattern))
+                            {
+                                line2 = m.Groups[0].Value;
+
+                                SmtpServer = line2.Split(stringSeparators[0], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
+                                SmtpPuerto = line2.Split(stringSeparators[1], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
+                                SmtpUser = line2.Split(stringSeparators[2], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
+                                SmtpPassword = line2.Split(stringSeparators[3], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
+                                EmailSender = line2.Split(stringSeparators[4], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
+                                EmailSubject = line2.Split(stringSeparators[5], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
+                                EmailBody = line2.Split(stringSeparators[6], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
+                                EmailRecipients = line2.Split(stringSeparators[7], StringSplitOptions.None)[1].Split('=')[1].Split(';')[0].Trim();
+                            }
+                        }
+                        getRecipients(EmailRecipients);
+                        if (String.IsNullOrEmpty(EmailRecipients))
+                            return string.Format("Recipients not found. Please check your email settings file");
+                        else
+                            return sendEmail();
+                    }
+                    else
+                    {
+                        return string.Format("The email settings file does not exist in: {0}", IniFilePath);
                     }
                 }
-
-                getRecipients(EmailRecipients);
-
+                else
+                {
+                    return string.Format("The file path {0} does not exist", this.FilePath);
+                }
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                return string.Format("Error at getEmailData - {0}", e.Message);
             }
         }
-        public bool sendEmail()
+        private string sendEmail()
         {
 
             System.Net.Mail.Attachment attachment;
-
             try
             {
 
@@ -129,8 +140,7 @@ namespace CoveProxy.Timbrado
                 foreach (string reco in EmailRecipientsSep)
                     msj.To.Add(reco);
 
-
-                msj.Subject = EmailSubject;
+                msj.Subject = string.Format("CFDI - {0} - {1}",Path.GetFileNameWithoutExtension(FilePath),EmailSubject);
 
                 msj.IsBodyHtml = true;
                 string body = EmailBody;
@@ -138,19 +148,21 @@ namespace CoveProxy.Timbrado
 
                 foreach (string att in FileAttachments)
                 {
-                    attachment = new System.Net.Mail.Attachment(att);
-                    msj.Attachments.Add(attachment);
+                    if (File.Exists(att))
+                    {
+                        attachment = new System.Net.Mail.Attachment(att);
+                        msj.Attachments.Add(attachment);
+                    }
                 }
                    
                 smtpClient.Send(msj);
-                return true;
+                return "The email was successfully sent.";
             }
             catch (Exception ex)
             {
-                return false;
+                return string.Format("Error sending the mail. Check your mail settings. System Error: {0} - {1}", ex.Message, ex.InnerException);
             }
         }
-
 
     }
 

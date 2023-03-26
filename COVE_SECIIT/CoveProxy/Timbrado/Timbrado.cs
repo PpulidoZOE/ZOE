@@ -1104,7 +1104,7 @@ namespace CoveProxy.Timbrado
             return cfdiReturn;
             #endregion
         }
-
+        
         internal string TimbrarPACSW(string archivoXML, string archivoXslt, string archivoCertificado, string archivoKey, string certificadoPass, string userId, string userPass, string urlTimbrado, string referencia)
         {
 
@@ -1115,9 +1115,7 @@ namespace CoveProxy.Timbrado
             else if (userId == "EMAIL")
             {
                 //archivoXML = Ruta del archivo de xml para extrar la ruta de la carpeta
-                //archivoXslt = Folio de la Factura timbrada
-                EnviarCorreo(archivoXML, archivoXslt);
-                return "Sí";
+                return EnviarCorreo(archivoXML);
             }
             else
             {
@@ -1141,7 +1139,7 @@ namespace CoveProxy.Timbrado
 
                     sError += "Versión de CFDI - ";
 
-                    if (versionCFDI == "3.3")
+                    if (versionCFDI == "3.3" || versionCFDI == "4.0")
                     {
                         layout = util.AgregarSello(archivoXML, archivoXslt, archivoCertificado, archivoKey, certificadoPass, versionCFDI);
 
@@ -1290,14 +1288,12 @@ Content-Disposition: form-data; name=xml; filename=xml
             return messageResp;
         }
 
-        public static bool EnviarCorreo(string xmlfilepath, string noFactura)
+        public string EnviarCorreo(string xmlfilepath)
         {
             EmailSettings mail = new EmailSettings();
-            mail.getEmailData(xmlfilepath);
-            mail.sendEmail();
-            return true;
-
+            return mail.getEmailData(xmlfilepath);
         }
+
         public string CrearEkomercioPDF(string emisorRFC, string uuid, string rutaNombreArchivoPDF)
         {
             #region CrearEkomercioPDF

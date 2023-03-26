@@ -5,8 +5,6 @@ using System.Text;
 using System.IO;
 using System.Xml;
 using System.Reflection;
-using Microsoft.SqlServer.Server;
-using System.Text.RegularExpressions;
 
 namespace Utilerias
 {
