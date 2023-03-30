@@ -1256,7 +1256,7 @@ Content-Disposition: form-data; name=xml; filename=xml
 
             pdfSW pdfse = new pdfSW();
             pdfse.xmlContent = layout;
-            pdfse.templateId = "cfdi33";
+            pdfse.templateId = "cfdi40";
             pdfse.logo = logoB64;
 
             string json = JsonConvert.SerializeObject(pdfse);
