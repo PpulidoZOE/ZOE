@@ -57,7 +57,7 @@ namespace test
             //    p.userID, p.userPass, p.emisorRFC, p.urlTimbrado, p.PAC, p.referencia);
 
             var p = new ParametrosTimbrado();
-            p.layout = @"C:\Users\Pablo\Desktop\MELD\45df2289-62db-4ee3-9798-e144c37811b7.xml";
+            p.layout = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\c838eb1e-a680-4211-a99a-9e929ec41a61.xml";
             p.archivoXslt = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\cadenaoriginal_3_3.xslt";
             p.urlPDF = "http://api.test.sw.com.mx/pdf/v1/api/GeneratePdf";
             p.urlTimbrado = "http://services.test.sw.com.mx/cfdi33/issue/v3";
@@ -68,8 +68,9 @@ namespace test
             p.archivoCertificado = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\CSD_EKU9003173C9_20190617131829\CSD_Escuela_Kemper_Urgate_EKU9003173C9_20190617_131753s.cer";
             p.archivoKey = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\CSD_EKU9003173C9_20190617131829\CSD_Escuela_Kemper_Urgate_EKU9003173C9_20190617_131753.key";
             p.certificadoPass = "12345678a";
-            p.uuid = "45df2289-62db-4ee3-9798-e144c37811b7";
-            p.logo = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\zoe_logo.png";
+            p.uuid = "c838eb1e-a680-4211-a99a-9e929ec41a61";
+            //p.logo = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\zoe_logo.png";
+            p.logo = "";
 
             //var timbrados = new CoveManejador().PDFSW(p.layout, p.uuid, p.logo, p.urlTimbrado, p.urlPDF, p.userID, p.userPass);
 

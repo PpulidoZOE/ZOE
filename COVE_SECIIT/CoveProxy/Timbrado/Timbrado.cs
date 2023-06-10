@@ -1252,7 +1252,10 @@ Content-Disposition: form-data; name=xml; filename=xml
 
             layout = xmlDoc.InnerXml;
 
-            logoB64 = Utilerias.ManejoArchivos.FileToBase64(logo);
+            if (File.Exists(logo))
+            {
+                logoB64 = Utilerias.ManejoArchivos.FileToBase64(logo);
+            }
 
             pdfSW pdfse = new pdfSW();
             pdfse.xmlContent = layout;
