@@ -57,7 +57,7 @@ namespace test
             //    p.userID, p.userPass, p.emisorRFC, p.urlTimbrado, p.PAC, p.referencia);
 
             var p = new ParametrosTimbrado();
-            p.layout = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\c838eb1e-a680-4211-a99a-9e929ec41a61.xml";
+            p.layout = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\MOT2305055702I.xml";
             p.archivoXslt = @"D:\ZOE_IT_DEV\_PRUEBAS_\COVE\cadenaoriginal_3_3.xslt";
             p.urlPDF = "http://api.test.sw.com.mx/pdf/v1/api/GeneratePdf";
             p.urlTimbrado = "http://services.test.sw.com.mx/cfdi33/issue/v3";

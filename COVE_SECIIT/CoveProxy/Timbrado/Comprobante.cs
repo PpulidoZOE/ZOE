@@ -66,6 +66,23 @@ namespace Comprobante
             return xmlNodoVersionCFDI.InnerXml;
         }
 
+        internal Boolean ObtenerComplemento(string xmlCFDI)
+        {
+            XmlDocument xmlFactura = new XmlDocument();
+            xmlFactura.Load(xmlCFDI);
+            var listaElementos = xmlFactura.GetElementsByTagName("cartaporte20:CartaPorte");
+
+            if (listaElementos.Count > 0)
+            {
+                return true;
+            }
+            else {
+                return false;
+            }
+
+
+        }
+
         internal string AgregarSello(string layout, string archivoXslt, string archivoCertificado, string archivoKey, string certificadoPass, string versionCFDI)
         {
             #region AgregarSello

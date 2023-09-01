@@ -1229,17 +1229,16 @@ Content-Disposition: form-data; name=xml; filename=xml
             string layout = string.Empty;
             string rutaArchivoLayout = string.Empty;
             string nombreArchivoLayout = string.Empty;
+            bool complemento = false;
+
+            Comprobante.Utilidades util = new Comprobante.Utilidades();
 
             rutaArchivoLayout = Path.GetDirectoryName(xmlTimbrado);
-
-            //Uri uriServicio = new Uri(urlTimbrado);
-            //Authentication auth = new Authentication(uriServicio.AbsoluteUri.Replace(uriServicio.AbsolutePath, ""), userId, userPass);
-            //AuthResponse authResponse = auth.GetToken();
-            //token = authResponse.data.token;
             token = userPass;
 
             if (File.Exists(xmlTimbrado))
             {
+                complemento = util.ObtenerComplemento(xmlTimbrado);
                 using (StreamReader objReader = new StreamReader(xmlTimbrado, Encoding.UTF8))
                 {
                     xmlTimbrado = objReader.ReadToEnd();
@@ -1259,7 +1258,18 @@ Content-Disposition: form-data; name=xml; filename=xml
 
             pdfSW pdfse = new pdfSW();
             pdfse.xmlContent = layout;
-            pdfse.templateId = "cfdi40";
+
+            if (complemento)
+            {
+                pdfse.templateId = "billoflading40";
+            }
+            else
+            {
+                pdfse.templateId = "cfdi40";
+            }
+
+
+
             pdfse.logo = logoB64;
 
             string json = JsonConvert.SerializeObject(pdfse);
