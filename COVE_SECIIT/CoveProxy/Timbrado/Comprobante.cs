@@ -71,8 +71,9 @@ namespace Comprobante
             XmlDocument xmlFactura = new XmlDocument();
             xmlFactura.Load(xmlCFDI);
             var listaElementos = xmlFactura.GetElementsByTagName("cartaporte20:CartaPorte");
+            var listaElementos2 = xmlFactura.GetElementsByTagName("cartaporte30:CartaPorte");
 
-            if (listaElementos.Count > 0)
+            if (listaElementos.Count > 0 || listaElementos2.Count > 0)
             {
                 return true;
             }
