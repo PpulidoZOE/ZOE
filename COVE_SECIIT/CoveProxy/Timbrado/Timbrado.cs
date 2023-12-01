@@ -1229,7 +1229,7 @@ Content-Disposition: form-data; name=xml; filename=xml
             string layout = string.Empty;
             string rutaArchivoLayout = string.Empty;
             string nombreArchivoLayout = string.Empty;
-            bool complemento = false;
+            string complemento = "";
 
             Comprobante.Utilidades util = new Comprobante.Utilidades();
 
@@ -1259,16 +1259,7 @@ Content-Disposition: form-data; name=xml; filename=xml
             pdfSW pdfse = new pdfSW();
             pdfse.xmlContent = layout;
 
-            if (complemento)
-            {
-                pdfse.templateId = "billoflading40";
-            }
-            else
-            {
-                pdfse.templateId = "cfdi40";
-            }
-
-
+            pdfse.templateId = complemento;
 
             pdfse.logo = logoB64;
 

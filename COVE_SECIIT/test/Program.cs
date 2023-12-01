@@ -74,7 +74,11 @@ namespace test
 
             //var timbrados = new CoveManejador().PDFSW(p.layout, p.uuid, p.logo, p.urlTimbrado, p.urlPDF, p.userID, p.userPass);
 
-            var timbrado = new CoveManejador().Timbrar(p.layout, p.uuid, p.logo, p.urlPDF, p.certificadoPass,"PDF", p.userPass, p.emisorRFC, p.urlTimbrado, p.PAC, p.userPass);
+            //var timbrado = new CoveManejador().Timbrar(p.layout, p.uuid, p.logo, p.urlPDF, p.certificadoPass,"PDF", p.userPass, p.emisorRFC, p.urlTimbrado, p.PAC, p.userPass);
+
+            var timbrado = new CoveManejador().CrearArchivoHTS("https://hts.gsmartcode.com/api/service", "getTable&tableName=bFracciones&filterBy=nivel%3D%275%27&orderBy=FRACCIONPUNTO&startIndex=1&endIndex=50000&formatResult=JSON", "13BD4869A620464C83420D634DBEACA9",997,"C:\\Users\\Pablo\\Desktop\\Fuestes QA\\Fuentes_SECIIT_39_1_1_75_DESARROLLO\\FRACCIONES_GSC.txt");
+
+
         }
 
         public class ParametrosTimbrado

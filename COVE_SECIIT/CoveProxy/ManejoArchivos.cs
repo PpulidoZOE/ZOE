@@ -5,6 +5,8 @@ using System.Text;
 using System.IO;
 using System.Xml;
 using System.Reflection;
+using Newtonsoft.Json;
+using System.Data;
 
 namespace Utilerias
 {
@@ -12,6 +14,16 @@ namespace Utilerias
     {
         const string NOMBRE_ARCHIVO_INI = "ZoeCOVE.ini";
         public static readonly string NOMBRE_ARCHIVO_LOG = "ZoeCoveTrace";
+
+        public static void ConvertJSONToTabDelimitedFile(string jsonContent, string filePath)
+        {
+            DataTable dataTable = (DataTable)JsonConvert.DeserializeObject(jsonContent, typeof(DataTable));
+            StringBuilder stringBuilder = new StringBuilder();
+            foreach (DataRow row in (InternalDataCollectionBase)dataTable.Rows)
+                stringBuilder.AppendLine(string.Join("\t", row.ItemArray));
+            File.WriteAllText(filePath, stringBuilder.ToString(), Encoding.GetEncoding(1252));
+        }
+
 
         public static void BorrarArchivoLog(string nombreArchivoLog)
         {

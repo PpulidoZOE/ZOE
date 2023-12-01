@@ -50,6 +50,15 @@ namespace CoveProxy
         [ComVisible(true)]
         [DispId(0X01000012)]
         string EnviarFacturaLaser(string archivoXML, string urlServicioWeb);
+
+        [ComVisible(true)]
+        [DispId(16777239)]
+        string CrearArchivoHTS(
+          string url,
+          string comando,
+          string key,
+          int maxSizeperValue,
+          string path);
     }
 
     [ComVisible(true)]

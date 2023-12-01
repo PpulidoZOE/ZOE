@@ -16,6 +16,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Security;
 using Utilerias;
+using System.Web;
 
 namespace CoveProxy
 {
@@ -1363,6 +1364,47 @@ namespace CoveProxy
             }
         }
         #endregion
-    }
 
+        [ComVisible(true)]
+        public string CrearArchivoHTS(
+          string url,
+          string comando,
+          string key,
+          int maxSizeperValue,
+          string path)
+        {
+            string str = string.Empty;
+            Uri address = new Uri(HttpUtility.UrlDecode(string.Format("{0}?cmd={1}&apiKey={2}&maxSizeperValue={3}", (object)url, (object)comando, (object)key, (object)maxSizeperValue)));
+            if (maxSizeperValue <= 0)
+                return "ERROR parametro [maxSizeperValue] no puede ser 0 o menor a 0";
+            if (string.IsNullOrWhiteSpace(url))
+                return "ERROR parametro [url] no puede ser vacio";
+            if (string.IsNullOrWhiteSpace(comando))
+                return "ERROR parametro [comando] no puede ser vacio";
+            if (string.IsNullOrWhiteSpace(key))
+                return "ERROR parametro [key] no puede ser vacio";
+            if (string.IsNullOrWhiteSpace(path))
+                return "ERROR parametro [folder] no puede ser vacio";
+            if (!Directory.Exists(Path.GetDirectoryName(path)))
+                return "ERROR no se encontro el folder " + Path.GetDirectoryName(path);
+            try
+            {
+                using (WebDownload webDownload = new WebDownload())
+                {
+                    ManejoArchivos.ConvertJSONToTabDelimitedFile(webDownload.DownloadString(address), path);
+
+                    str = "EXITO archivo " + path + " creado con exito";
+                }
+            }
+            catch (WebException ex)
+            {
+                str = "ERROR: " + ex.Message + ", STACKTRACE: " + ex.StackTrace + ", RESPONSE: " + ex.Response.ToString();
+            }
+            catch (Exception ex)
+            {
+                str = "ERROR: " + ex.Message + ", STACKTRACE: " + ex.StackTrace;
+            }
+            return str;
+        }
+    }
 }
