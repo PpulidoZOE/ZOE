@@ -72,6 +72,7 @@ namespace Comprobante
             xmlFactura.Load(xmlCFDI);
             var listaElementos = xmlFactura.GetElementsByTagName("cartaporte20:CartaPorte");
             var listaElementos2 = xmlFactura.GetElementsByTagName("cartaporte30:CartaPorte");
+            var listaElementos3 = xmlFactura.GetElementsByTagName("cartaporte31:CartaPorte");
 
             if (listaElementos.Count > 0)
             {
@@ -80,6 +81,10 @@ namespace Comprobante
             else if (listaElementos2.Count > 0)
             {
                 return "billoflading40cp30";
+            }
+            else if (listaElementos3.Count > 0)
+            {
+                return "billoflading40cp31";
             }
             else {
                 return "cfdi40";
